@@ -5,7 +5,8 @@ import About from "./components/About";
 
 function App() {
   return (
-    <Router>
+    <div className="app_">
+       <Router>
       {/* Set up Routes */}
       <Routes>
         <Route path="/" element={<Home />} > </Route>
@@ -14,6 +15,8 @@ function App() {
                      
       </Routes>
     </Router>
+    </div>
+   
   );
 }
 
