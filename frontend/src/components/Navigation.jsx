@@ -23,7 +23,31 @@ const Navigation = () => {
 
 
         <div className={`d-flex flex-column flex-md-row ${isNavOpen ? "d-block" : "d-none"} d-lg-flex`}>
-          <Nav className="d-flex flex-column flex-md-row">
+        <Nav  className="d-flex flex-column flex-md-row">
+  <Nav.Link as={Link} to="/" className="nav-link">
+    Home
+  </Nav.Link>
+  <Nav.Link as={Link} to="/about" className="nav-link ">
+    About
+  </Nav.Link>
+  <Nav.Link as={Link} to="/projects" className="nav-link">
+  Projects
+  </Nav.Link>
+  <Nav.Link as={Link} to="/careers" className="nav-link">
+  Careers
+  </Nav.Link>
+  <Nav.Link as={Link} to="/gallery" className="nav-link">
+  Gallery
+  </Nav.Link>
+  <Nav.Link as={Link} to="/blogs" className="nav-link">
+  Blogs
+  </Nav.Link>
+  <Nav.Link as={Link} to="/enquire" className="nav-link">
+   <button className="btn btn-dark text-white ms-8">Enquire Now</button>
+  </Nav.Link>
+ 
+</Nav>
+          {/* <Nav className="d-flex flex-column flex-md-row">
             <Nav.Link href="#" className="mx-2 nav_link">
               <Link className="nav-link active" aria-current="page" to="/">Home</Link></Nav.Link>
 
@@ -44,7 +68,7 @@ const Navigation = () => {
 
             <Link className="nav-link " to="/blogs"><button className="btn btn-dark text-white ms-8">Enquire Now</button></Link>
 
-          </Nav>
+          </Nav> */}
         </div>
       </Container>
     </Navbar>

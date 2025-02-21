@@ -2,15 +2,24 @@ import React from "react";
 
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import FullScreenVideo from "./FullScreenVideo";
+import HomeContent from "./HomeContent";
+import Testimonials from "./Testimonials";
+import Projects from "./Projects";
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className=" bg-gray-100">
 
    
     <Navigation />
-    home page
+   <FullScreenVideo />
+    <HomeContent />
+    <Projects />
+    <Testimonials />
     <Footer />
+    
+  
 
     </div>
   );
