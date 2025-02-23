@@ -1,4 +1,41 @@
-/* GALLERY GRID */
+.proj_home{
+  background-color: white;
+
+}
+/*hr*/
+.hr_line{
+  width: 90%;
+  margin: auto;
+}
+.hr_line hr{
+  background-color: white;
+  margin-top: 0px;
+  color: gray;
+ 
+}
+/*head--------------------*/
+.proj_head_left h3{
+color: #2E2E2E;
+background-color: transparent;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 16px;
+text-decoration: none;
+text-align: center;
+letter-spacing: 0.5em;
+line-height: normal;
+}
+.proj_head_right button:hover{
+  border: 1px solid black !important;
+}
+
+
+
+
+
+
+
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -20,11 +57,12 @@
   border-radius: 3px;
 }
 
-/* OVERLAY BOX */
+
 .overlay-box {
+  cursor: pointer;
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* Dark background for contrast */
+  background-color: rgba(0, 0, 0, 0.6); 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,15 +71,15 @@
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   padding: 20px;
-  color: white; /* Ensures text is visible */
+  color: white; 
 }
 
-/* SHOW OVERLAY ON HOVER */
+
 .image-overlay:hover .overlay-box {
   opacity: 1;
 }
 
-/* TITLE STYLING */
+
 .overlay-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -50,26 +88,29 @@
   color: white;
 }
 
-/* CONTENT STYLING */
+
 .overlay-content {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Spacing between lines */
-  align-items: center;
+  /* gap: 10px;  */
+  /* align-items: center; */
   color: white;
+  text-align: left;
 }
 
-/* TEXT STYLING */
+
 .overlay-content p {
   font-size: 1rem;
   margin: 0;
   color: white;
 }
 
-/* HORIZONTAL LINE */
+
 .overlay-content hr {
   width: 80%;
   border: none;
   border-top: 1px solid white;
 }
+
+

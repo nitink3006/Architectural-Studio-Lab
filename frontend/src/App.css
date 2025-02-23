@@ -1,10 +1,15 @@
 @import "tailwindcss";
 .app_{
-    overflow: hidden;
+    overflow: hidden !important;
    
 }
 
 
+body{
+    padding: 0;
+    margin: 0;
+}
 
-
-
+html, body {
+    overflow-x: hidden;
+  }
