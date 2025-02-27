@@ -3,6 +3,29 @@ import { useRef } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 
+const processSteps = [
+  {
+    title: "Dream",
+    description: "We attentively gather and document your requirements to create your dream space, ensuring every detail aligns with your vision perfectly.",
+    image: "/dream.png",
+  },
+  {
+    title: "Design",
+    description: "We manage procurement, streamline working processes, and oversee site supervision to ensure efficient execution and seamless project completion.",
+    image: "/design.png",
+  },
+  {
+    title: "Execute",
+    description: "We manage procurement, streamline processes, and ensure smooth execution.",
+    image: "/execute.png",
+  },
+  {
+    title: "Deliver",
+    description: "We meticulously carry out final snagging to identify and resolve any issues, ensuring we deliver the highest quality results.",
+    image: "/deliver.png",
+  },
+];
+
 const About = () => {
   const targetRef = useRef(null);
   const processRef = useRef(null);
@@ -48,51 +71,31 @@ const About = () => {
 
       {/* Our Process Section */}
       <div ref={processRef} className="w-full py-20 px-8 flex flex-col md:flex-row items-center text-center md:text-left gap-12 md:gap-16">
-        <motion.div
-          className="w-full md:w-1/4"
-          initial={{ opacity: 0, y: 100 }}
-          animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
+        <motion.div className="w-full md:w-1/4" initial={{ opacity: 0, y: 100 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, ease: "easeOut" }}>
           <h2 className="text-3xl md:text-5xl font-bold">Our Process</h2>
         </motion.div>
 
-        <motion.div
-          className="w-full md:w-3/4 flex flex-col gap-8"
-          initial={{ opacity: 0, y: 100 }}
-          animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        >
+        <motion.div className="w-full md:w-3/4 flex flex-col gap-8" initial={{ opacity: 0, y: 100 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}>
           <motion.p className="text-base sm:text-lg leading-relaxed px-4 sm:px-10 md:px-20 lg:px-40 sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto text-center">
             We follow a research-based process, allowing us to carefully assess all parts of the design before execution. As we deliver turn-key projects, we’ve developed a habit of questioning each execution method, allowing us to replace redundant methods with innovative and new solutions.
           </motion.p>
 
           {/* Process Steps */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
-            {["Dream", "Design", "Execute", "Deliver"].map((step, index) => (
-              <motion.div
-                key={index}
-                className="px-4 sm:px-6 md:px-10"
-                initial={{ opacity: 0, y: 50 }}
-                animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 + index * 0.2 }}
-              >
-                <span className="text-md font-light">{`0${index + 1}.`}</span>
-                <h3 className="text-xl font-serif">{step}</h3>
-                <p className="max-w-md mx-20">
-                  {step === "Dream"
-                    ? "We design the narrative through drawings and illustrations."
-                    : step === "Design"
-                      ? "We organise procurement and working processes along with site supervision."
-                      : step === "Execute"
-                        ? "We oversee procurement and ensure seamless execution."
-                        : "We carry out final snagging to ensure that we deliver the best result."}
-                </p>
+            {processSteps.map((step, index) => (
+              <motion.div key={index} className="flex items-center space-x-4 sm:space-x-6 md:space-x-8" initial={{ opacity: 0, y: 50 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 + index * 0.2 }}>
+                <img src={step.image} alt={step.title} className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain" />
+                <div>
+                  <span className="text-md font-light">{`0${index + 1}.`}</span>
+                  <h3 className="text-xl font-serif">{step.title}</h3>
+                  <p className="max-w-md">{step.description}</p>
+                </div>
               </motion.div>
             ))}
           </div>
         </motion.div>
       </div>
+
 
       {/* Our Inspiration Section */}
       <div ref={inspirationRef} className="w-full bg-gray-100 py-20 px-8 flex flex-col items-center text-center">
@@ -128,7 +131,12 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      <div className="w-full bg-gray-100 flex justify-center items-center py-10 px-0">
+        <video className="w-full h-auto max-h-[90vh] object-cover" autoPlay muted loop playsInline>
+          <source src="/aboutvdo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <Footer />
     </div>
   );
