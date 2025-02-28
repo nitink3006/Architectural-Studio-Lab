@@ -5,6 +5,7 @@ import About from "./components/About";
 import Career from "./components/Career/career";
 import HRBP from "./components/Career/HRBP";
 import JobApplication from "./components/Career/JobApplication";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Route exact path='/about' element={<About />}> </Route>
         <Route path='/careers' element={<Career />}> </Route>
         <Route path='/career/hrbp' element={<HRBP />}> </Route> 
-        <Route path='/job-applications' element={<JobApplication />}> </Route>           
+        <Route path='/job-applications' element={<JobApplication />}> </Route>  
+        <Route exact path="/Blogs" element={<Blog />}> </Route>
+         
       </Routes>
     </Router>
   );
