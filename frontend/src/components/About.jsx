@@ -48,53 +48,83 @@ const About = () => {
         <h1 className="text-4xl md:text-7xl font-bold">About Us</h1>
       </div>
 
-      {/* Sticky Image Until Text Appears */}
-      <div ref={targetRef} className="relative w-full">
-        <div className="sticky top-[70px] h-screen flex justify-center items-center overflow-hidden">
+      {/* Sticky Image with Text Overlay */}
+      <div ref={targetRef} className="relative w-full h-screen">
+        <div className="sticky  top-0 h-screen flex justify-center items-center overflow-hidden">
           <motion.img
             src="/aboutmain2.jpg"
             alt="Our Mission"
-            className="w-full h-full object-cover"
-            style={{ scale: useTransform(scrollYProgress, [0, 0.4], [1, 0.9]) }}
+            className="absolute top-0 w-full h-full object-cover"
           />
-          <motion.div
-            className="absolute text-2xl md:text-4xl font-bold text-white bg-opacity-40 p-12 mx-20 w-[90%] md:w-[50%] text-center"
-            style={{
-              opacity: useTransform(scrollYProgress, [0.2, 0.5], [0, 1]),
-              y: useTransform(scrollYProgress, [0.2, 0.5], [100, 0]),
-            }}
-          >
-            Architectural Studio Lab is an interior design firm focused on creating spaces that merge the functional with the beautiful.
-          </motion.div>
+          <div className="absolute w-full h-screen flex flex-col justify-center items-center px-6 text-white text-center space-y-4">
+            <motion.h2
+              className="text-2xl md:text-4xl font-bold"
+              style={{
+                opacity: useTransform(scrollYProgress, [0.005, 0.1], [0, 1]),
+                y: useTransform(scrollYProgress, [0.05, 0.2], [100, 0]),
+              }}
+            >
+              Opus Architecture Lab is an interior design firm
+            </motion.h2>
+            <motion.h2
+              className="text-2xl md:text-4xl font-bold"
+              style={{
+                opacity: useTransform(scrollYProgress, [0.2, 0.3], [0, 1]),
+                y: useTransform(scrollYProgress, [0.2, 0.4], [100, 0]),
+              }}
+            >
+              focused on creating spaces that merge the functional with the beautiful.
+            </motion.h2>
+          </div>
         </div>
       </div>
-
       {/* Our Process Section */}
-      <div ref={processRef} className="w-full py-20 px-8 flex flex-col md:flex-row items-center text-center md:text-left gap-12 md:gap-16">
-        <motion.div className="w-full md:w-1/4" initial={{ opacity: 0, y: 100 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, ease: "easeOut" }}>
-          <h2 className="text-3xl md:text-5xl font-bold">Our Process</h2>
+      <div ref={processRef} className="w-full py-20 px-8 flex flex-col md:flex-row items-center gap-12 md:gap-16">
+        {/* Left Side Heading */}
+        <motion.div
+          className="w-full md:w-1/3 flex justify-center md:justify-start"
+          initial={{ opacity: 0, y: 100 }}
+          animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        > 
+          <h2 className="text-3xl md:text-5xl font-bold text-left ">
+            Our Process
+          </h2>
         </motion.div>
 
-        <motion.div className="w-full md:w-3/4 flex flex-col gap-8" initial={{ opacity: 0, y: 100 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}>
-          <motion.p className="text-base sm:text-lg leading-relaxed px-4 sm:px-10 md:px-20 lg:px-40 sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto text-center">
+        {/* Right Side Content */}
+        <motion.div
+          className="w-full md:w-2/3 flex flex-col gap-8"
+          initial={{ opacity: 0, y: 100 }}
+          animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        >
+          <motion.p className="text-base sm:text-lg leading-relaxed">
             We follow a research-based process, allowing us to carefully assess all parts of the design before execution. As we deliver turn-key projects, we’ve developed a habit of questioning each execution method, allowing us to replace redundant methods with innovative and new solutions.
           </motion.p>
 
-          {/* Process Steps */}
+          {/* Process Steps Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
             {processSteps.map((step, index) => (
-              <motion.div key={index} className="flex items-center space-x-4 sm:space-x-6 md:space-x-8" initial={{ opacity: 0, y: 50 }} animate={isProcessInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 + index * 0.2 }}>
-                <img src={step.image} alt={step.title} className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain" />
+              <motion.div
+                key={index}
+                className="flex items-center space-x-4 sm:space-x-6"
+                initial={{ opacity: 0, y: 50 }}
+                animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 + index * 0.2 }}
+              >
+                <img src={step.image} alt={step.title} className="w-16 h-16 object-contain" />
                 <div>
                   <span className="text-md font-light">{`0${index + 1}.`}</span>
                   <h3 className="text-xl font-serif">{step.title}</h3>
-                  <p className="max-w-md">{step.description}</p>
+                  <p>{step.description}</p>
                 </div>
               </motion.div>
             ))}
           </div>
         </motion.div>
       </div>
+
 
 
       {/* Our Inspiration Section */}
