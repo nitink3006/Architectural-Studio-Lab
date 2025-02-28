@@ -1,0 +1,58 @@
+{
+    "blogs": [
+      {
+        "id": 1,
+        "title": "How Different Is A Formal Living Room And An Informal Living Room? The Design",
+        "category": "Living Room",
+        "content": "What truly distinguishes a formal living room from an informal one? The design basics! A formal living room often features elegant furniture, symmetrical layouts, and a more polished look. In contrast, an informal living room tends to be more relaxed, with comfortable seating and a cozy atmosphere.",
+        "author": "Admin",
+        "date": "2023-10-01",
+        "image": "https://static.wixstatic.com/media/aaeed6_53c19d775c384f02a5ef6211f837bf36~mv2.jpg/v1/fill/w_409,h_513,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOUNGE%20VIEW%201.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Why Hiring An Interior Designer In Gurgaon Is Essential For Your Home",
+        "category": "Dining",
+        "content": "Hiring an interior designer in Gurgaon can transform your home into a dream space. They bring expertise, creativity, and a professional touch to ensure your home reflects your personality and style.",
+        "author": "Admin",
+        "date": "2023-10-05",
+        "image": "https://static.wixstatic.com/media/bf8702_3667045e979e4bb9a457b9176faad8e8~mv2.jpg/v1/fill/w_297,h_297,fp_0.50_0.50,q_90,enc_auto/bf8702_3667045e979e4bb9a457b9176faad8e8~mv2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "The Best Interior Designers for Your Dream Home",
+        "category": "Bedroom",
+        "content": "Finding the right interior designer is crucial for creating your dream home. Here are some of the best interior designers who can help you achieve the perfect look for your space.",
+        "author": "Admin",
+        "date": "2023-10-10",
+        "image": "https://static.wixstatic.com/media/bf8702_992d9f672fc74095800959555003808e~mv2.webp/v1/fill/w_297,h_297,al_c,q_90,enc_auto/bf8702_992d9f672fc74095800959555003808e~mv2.webp"
+      },
+      {
+        "id": 4,
+        "title": "Creating a Cozy Family Room: Tips and Ideas",
+        "category": "Family Room",
+        "content": "A family room should be a comfortable and inviting space for everyone. Here are some tips and ideas to create a cozy family room that your whole family will love.",
+        "author": "Admin",
+        "date": "2023-10-15",
+        "image": "https://static.wixstatic.com/media/bf8702_aa69eaa5527649d297a25acc31c3817d~mv2.jpg/v1/fill/w_297,h_297,fp_0.50_0.50,q_90,enc_auto/bf8702_aa69eaa5527649d297a25acc31c3817d~mv2.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Creating a Cozy Family Room: Tips and Ideas",
+        "category": "Home Office",
+        "content": "A family room should be a comfortable and inviting space for everyone. Here are some tips and ideas to create a cozy family room that your whole family will love.",
+        "author": "Admin",
+        "date": "2023-10-15",
+        "image": "https://static.wixstatic.com/media/bf8702_aa69eaa5527649d297a25acc31c3817d~mv2.jpg/v1/fill/w_297,h_297,fp_0.50_0.50,q_90,enc_auto/bf8702_aa69eaa5527649d297a25acc31c3817d~mv2.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Creating a Cozy Family Room: Tips and Ideas",
+        "category": "Guest Room",
+        "content": "A family room should be a comfortable and inviting space for everyone. Here are some tips and ideas to create a cozy family room that your whole family will love.",
+        "author": "Admin",
+        "date": "2023-10-15",
+        "image": "https://static.wixstatic.com/media/bf8702_aa69eaa5527649d297a25acc31c3817d~mv2.jpg/v1/fill/w_297,h_297,fp_0.50_0.50,q_90,enc_auto/bf8702_aa69eaa5527649d297a25acc31c3817d~mv2.jpg"
+      }
+    ]
+  }
