@@ -5,3 +5,19 @@
   margin-left: auto;
   width: 100vw;
 }
+.footer_icon div{
+  gap:55px;
+}
+.icon_div , .call:hover{
+ cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+  .footer_icon div{
+   padding-top: 30px;
+    gap:15px;
+    margin: auto;
+  }
+  .footer_back{
+    margin: auto;
+  }
+}

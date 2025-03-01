@@ -19,3 +19,30 @@
 
 
 
+
+
+
+
+
+
+.project-detail {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.project-detail p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+
+
+
