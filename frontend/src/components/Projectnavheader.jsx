@@ -15,11 +15,11 @@ function Projecthead() {
             const rect = projectHeadRef.current.getBoundingClientRect();
             const scrollTop = window.scrollY;
 
-
+           
             if (rect.top <= 60 && !isFixed) {
                 setIsFixed(true);
-            }
-
+            } 
+           
             else if (scrollTop < placeholderRef.current.offsetTop) {
                 setIsFixed(false);
             }
@@ -33,7 +33,7 @@ function Projecthead() {
 
     return (
         <>
-
+          
             <div
                 ref={placeholderRef}
                 style={{ height: isFixed ? `${projectHeadRef.current?.offsetHeight}px` : "0px" }}
@@ -41,17 +41,11 @@ function Projecthead() {
 
             {/* Project Header Section */}
             <div ref={projectHeadRef} className={`pb-5 proj_head_sec ${isFixed ? "fixed" : ""}`}>
-                <div className="hr_line d-none d-md-block">
+                <div className="hr_line">
                     <hr />
                 </div>
-                <div className="proj_head flex flex-md-row flex-col justify-between ps-18 pe-18">
-                    <div className="proj_head_left">
-                        <h3>OUR WORK</h3>
-                    </div>
-                    <div className=" d-md-none d-block">
-                        <hr />
-                    </div>
-
+                <div className="proj_head flex flex-row justify-center ps-18 pe-18">
+                  
                     <div className="proj_head_right flex flex-row ">
                         <div className="proj_head_right_btn1 pe-2 ps-2">
                             <button className="btn border">Commercial</button>
