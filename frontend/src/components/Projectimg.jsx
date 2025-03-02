@@ -1,19 +1,7 @@
 import React from "react";
 import "../Stylesheet/Project.css";
-import Projecthead from "./Projecthead";
-import Projectbtn from "./Projectbtn";
 
-// import { motion, useInView } from "framer-motion";
-// import { useRef } from "react";
-// import { Link } from "react-router-dom";
-import Projectimg from "./Projectimg";
-
-
-
-
-const Projects = () => {
-
-import { motion,  useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -27,7 +15,7 @@ const projects = [
     category: "Residential",
     size: "3500 sqft",
     place: " Gurugram",
-    link: "/Projectcontent1",
+    link: "/Demo2",
 
   },
   {
@@ -120,15 +108,7 @@ const projects = [
 
 
 
-  return (
-    <div className="proj_home mt-0 pb-15 ">
 
-      <Projecthead />
-
-      <Projectimg />
-
-      <Projectbtn />
-    </div>
 
 
   {
@@ -155,14 +135,14 @@ const projects = [
     size: "5000 sqft",
     place: "Rishikesh",
   },
-]; 
+];
 
-const Projects = () => {
+const Projectimg = () => {
 
 
   const inspirationRef = useRef(null);
 
- 
+
   const isInspirationInView = useInView(inspirationRef, { margin: "-100px" });
 
 
@@ -170,10 +150,10 @@ const Projects = () => {
   return (
     <div className="proj_home mt-0 pb-15 ">
 
-      <Projecthead  />
+     
 
       <div ref={inspirationRef} className="">
-      <motion.div
+        <motion.div
           className=""
           initial={{ opacity: 0, y: 100 }}
           animate={isInspirationInView ? { opacity: 1, y: 0 } : {}}
@@ -182,51 +162,52 @@ const Projects = () => {
 
 
 
-      <div className="gallery">
+          <div className="gallery2">
 
-        {projects.map((project, index) => (
+            {projects.map((project, index) => (
 
-<>
-      <Link 
-          to={project.link} 
-          key={index} 
-          className="gallery-item image-overlay">
-          <div key={index} className="gallery-item image-overlay">
-            <img src={project.src} alt={`Gallery ${index + 1}`} />
-            <div className="overlay-box">
+              <>
+                <Link
+                  to={project.link}
+                  key={index}
+                  className="gallery-item image-overlay">
+                  <div key={index} className="gallery-item image-overlay">
+                    <img src={project.src} alt={`Gallery ${index + 1}`} />
+                    <div className="overlay-box">
 
-              <p className="overlay-title">{project.title}</p>
+                      <p className="overlay-title">{project.title}</p>
 
 
-              <div className="overlay-content">
-                <hr />
-                <p>{project.location}</p>
-                <hr />
-                <p>{project.category}</p>
-                <hr />
-                <p>{project.size}</p>
-                <hr />
-                <p>{project.place}</p>
-                <hr />
-              </div>
-            </div>
+                      <div className="overlay-content">
+                        <hr />
+                        <p>{project.location}</p>
+                        <hr />
+                        <p>{project.category}</p>
+                        <hr />
+                        <p>{project.size}</p>
+                        <hr />
+                        <p>{project.place}</p>
+                        <hr />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </>
+
+
+            ))}
           </div>
-      </Link>
-</>
 
-        
-        ))}
+
+        </motion.div>
       </div>
 
 
-      </motion.div>
-</div>
-
-
-      <Projectbtn />
+     
     </div>
+
 
   );
 };
 
-export default Projects;
+export default Projectimg;

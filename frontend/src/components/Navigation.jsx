@@ -179,7 +179,10 @@ const Navigation = () => {
   <Nav.Link as={Link} to="/about" className="nav-link ps-3 pe-3">
     About
   </Nav.Link>
+  <Nav.Link as={Link} to="/Projectnav" className="nav-link ps-3 pe-3">
+
   <Nav.Link as={Link} to="/projects" className="nav-link ps-3 pe-3">
+
   Projects
   </Nav.Link>
   <Nav.Link as={Link} to="/careers" className="nav-link ps-3 pe-3">
