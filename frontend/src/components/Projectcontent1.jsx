@@ -19,7 +19,7 @@ const Projectcontent1 = () => {
 
 
     const isInspirationInView = useInView(inspirationRef, { margin: "-100px" });
-  
+
     return (
         <div>
             <Navigation />
@@ -92,8 +92,7 @@ const Projectcontent1 = () => {
             </div>
 
             {/* row1 */}
-           
-            
+
             <div className="gallery container-fluid  mb-4">
 
 
@@ -121,7 +120,6 @@ const Projectcontent1 = () => {
 
 
             </div>
-           
 
             {/* row2 */}
             <div className="gallery container-fluid  mb-4">
