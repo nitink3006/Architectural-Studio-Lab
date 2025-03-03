@@ -80,17 +80,18 @@ const About = () => {
       </div>
       {/* Our Process Section */}
       <div ref={processRef} className="w-full py-20 px-8 flex flex-col md:flex-row items-center gap-12 md:gap-16">
-        {/* Left Side Heading */}
         <motion.div
-          className="w-full md:w-1/3 flex justify-center md:justify-start"
+          className="w-full  md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left"
           initial={{ opacity: 0, y: 100 }}
           animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
-        > 
-          <h2 className="text-3xl md:text-5xl font-bold text-left ">
-            Our Process
-          </h2>
+        >
+          <h2 className="text-3xl md:text-5xl font-bold mx-30">Our Process</h2>
+          <motion.p className="text-base sm:text-lg leading-relaxed mt-2">
+            We follow a research-based process, allowing us to carefully assess all parts of the design before execution. As we deliver turn-key projects, we’ve developed a habit of questioning each execution method, allowing us to replace redundant methods with innovative and new solutions.
+          </motion.p>
         </motion.div>
+
 
         {/* Right Side Content */}
         <motion.div
@@ -99,9 +100,6 @@ const About = () => {
           animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
-          <motion.p className="text-base sm:text-lg leading-relaxed">
-            We follow a research-based process, allowing us to carefully assess all parts of the design before execution. As we deliver turn-key projects, we’ve developed a habit of questioning each execution method, allowing us to replace redundant methods with innovative and new solutions.
-          </motion.p>
 
           {/* Process Steps Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
