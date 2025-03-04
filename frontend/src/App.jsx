@@ -15,6 +15,7 @@ import HRBP from "./components/Career/HRBP";
 import JobApplication from "./components/Career/JobApplication";
 import Blog from "./components/Blog";
 import Projects from "./components/Projects";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
           {" "}
         </Route>
         <Route exact path="/projects" element={<Projects />}>
+          {" "}
+        </Route>
+        <Route exact path="/gallery" element={<Gallery />}>
           {" "}
         </Route>
       </Routes>
