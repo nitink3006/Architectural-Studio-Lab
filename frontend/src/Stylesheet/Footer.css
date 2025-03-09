@@ -16,6 +16,7 @@
    padding-top: 30px;
     gap:15px;
     margin: auto;
+    justify-content: center;
   }
   .footer_back{
     margin: auto;
