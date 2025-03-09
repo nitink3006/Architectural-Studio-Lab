@@ -40,7 +40,7 @@ function Projecthead() {
             ></div>
 
             {/* Project Header Section */}
-            <div ref={projectHeadRef} className={`pb-5 proj_head_sec ${isFixed ? "fixed" : ""}`}>
+            <div ref={projectHeadRef} className={`pb-2 proj_head_sec ${isFixed ? "fixed" : ""}`}>
                 <div className="hr_line">
                     <hr />
                 </div>
