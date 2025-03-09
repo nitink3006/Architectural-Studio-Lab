@@ -7,6 +7,7 @@ import Projectnav from "./components/Projectnav";
 
 import Projectcontent1 from "./components/Projectcontent1";
 import Demo2 from "./components/Demo2";
+import Mumbaioffice from "./components/Mumbaioffice";
 
 // import Projectcontent1 from "./components/Projectcontent1";
 
@@ -29,12 +30,13 @@ function App() {
           {" "}
         </Route>
 
-        <Route exact path="/Projectnav" element={<Projectnav />}>
+        <Route exact path="/projects-all" element={<Projectnav />}>
           {" "}
         </Route>
 
         <Route path="/Projectcontent1" element={<Projectcontent1 />} />
         <Route path="/Demo2" element={<Demo2 />} />
+        <Route path="/mumbai-office" element={<Mumbaioffice />} />
 
         <Route path="/careers" element={<Career />}>
           {" "}
