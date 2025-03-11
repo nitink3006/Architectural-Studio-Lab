@@ -1,10 +1,9 @@
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useRef, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../Stylesheet/Project.css";
 
 const projects = [
-  //------------------------------------------ row1-----------------------------------------------
   {
     src: "https://static.wixstatic.com/media/820b23_7f3179837f104ca690816660998f87a5~mv2.jpg/v1/fill/w_464,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Copy%20of%20DSC08585%20copy%20(3).jpg",
     title: "The Japandi Home",
@@ -61,7 +60,7 @@ const projects = [
     src: "https://static.wixstatic.com/media/76aad7_70bd94d3a60b4c7eb4aa98db1433fa5b~mv2.jpg/v1/fill/w_464,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%A9AG-DSC03040-Edit-Edit-min.jpg",
     title: "Home in the Hills",
     location: "Rishikesh Villa",
-    category: "Hospitality",
+    category: "Commercial",
     size: "5000 sqft",
     place: "Rishikesh",
     link: "/Projectcontent1",
@@ -79,7 +78,7 @@ const projects = [
     src: "https://static.wixstatic.com/media/748419_c30fb606858b433ca25092a1c00c0e7e~mv2.jpg/v1/fill/w_464,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ChalkDS_Mang_-2-min.jpg",
     title: "The Japandi Home",
     location: "Pioneer Araya",
-    category: "Residential",
+    category: "Commercial",
     size: "3500 sqft",
     place: " Gurugram",
   },
@@ -120,7 +119,7 @@ const projects = [
     src: "https://static.wixstatic.com/media/820b23_862ca02c4d884d18adce9c3bcc7e3621~mv2.png/v1/fill/w_464,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Copy%20of%20Living%20(16-02-2022).png",
     title: "The Zephyr Villa",
     location: "Goa Villa",
-    category: "Hospitality",
+    category: "Commercial",
     size: "3000 sqft",
     place: "Siolim , Goa",
   },
@@ -134,55 +133,91 @@ const projects = [
   },
 ];
 
-const Projectimg = () => {
+const Projectimg = ({ selectedCategory }) => {
+  // Filter projects based on category
+  const filteredProjects =
+    selectedCategory && selectedCategory !== "All"
+      ? projects.filter((project) => project.category === selectedCategory)
+      : projects;
+
+  // Group projects into rows of 3
   const groupedProjects = [];
-  for (let i = 0; i < projects.length; i += 3) {
-    groupedProjects.push(projects.slice(i, i + 3));
+  for (let i = 0; i < filteredProjects.length; i += 3) {
+    groupedProjects.push(filteredProjects.slice(i, i + 3));
   }
+
+  // Store row refs
+  const rowRefs = useRef([]);
+  const [inViewRows, setInViewRows] = useState({});
+
+  useEffect(() => {
+    const observers = [];
+
+    rowRefs.current.forEach((ref, index) => {
+      if (ref) {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            setInViewRows((prev) => ({
+              ...prev,
+              [index]: entry.isIntersecting,
+            }));
+          },
+          { threshold: 0.2 }
+        );
+        observer.observe(ref);
+        observers.push(observer);
+      }
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, [groupedProjects]);
 
   return (
     <div className="proj_home mt-2 pb-15">
-      {groupedProjects.map((row, rowIndex) => {
-        const rowRef = useRef(null);
-        const isRowInView = useInView(rowRef, { margin: "-100px" });
- 
-        return (
-          <motion.div
-            key={rowIndex}
-            ref={rowRef}
-            className="gallery2 "
-            initial={{ opacity: 0, y: 100 }}
-            animate={isRowInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut" , delay: 0.2 }}
-          >
-            {row.map((project, index) => (
-              <Link
-                to={project.link}
-                key={index}
-                className="gallery-item image-overlay"
-              >
-                <div className="gallery-item image-overlay">
-                  <img src={project.src} alt={`Gallery ${index + 1}`} />
-                  <div className="overlay-box">
-                    <p className="overlay-title">{project.title}</p>
-                    <div className="overlay-content">
-                      <hr />
-                      <p>{project.location}</p>
-                      <hr />
-                      <p>{project.category}</p>
-                      <hr />
-                      <p>{project.size}</p>
-                      <hr />
-                      <p>{project.place}</p>
-                      <hr />
+      {groupedProjects.length === 0 ? (
+        <p className="no-results">No projects found in this category.</p>
+      ) : (
+        groupedProjects.map((row, rowIndex) => {
+          return (
+            <motion.div
+              key={rowIndex}
+              ref={(el) => (rowRefs.current[rowIndex] = el)}
+              className="gallery2"
+              initial={{ opacity: 0, y: 100 }}
+              animate={inViewRows[rowIndex] ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            >
+              {row.map((project, index) => (
+                <Link
+                  to={project.link}
+                  key={index}
+                  className="gallery-item image-overlay"
+                >
+                  <div className="gallery-item image-overlay">
+                    <img src={project.src} alt={`Gallery ${index + 1}`} />
+                    <div className="overlay-box">
+                      <p className="overlay-title">{project.title}</p>
+                      <div className="overlay-content">
+                        <hr />
+                        <p>{project.location}</p>
+                        <hr />
+                        <p>{project.category}</p>
+                        <hr />
+                        <p>{project.size}</p>
+                        <hr />
+                        <p>{project.place}</p>
+                        <hr />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
-          </motion.div>
-        );
-      })}
+                </Link>
+              ))}
+            </motion.div>
+          );
+        })
+      )}
     </div>
   );
 };
