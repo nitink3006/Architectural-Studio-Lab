@@ -7,17 +7,18 @@ import Projectimg2 from "./Projectimg2";
 import Projectimg3 from "./Projectimg3";
 
 const Projects = () => {
+   const [selectedCategory, setSelectedCategory] = useState(null);
   const [clickCount, setClickCount] = useState(0);
   const inspirationRef = useRef(null);
   const isInspirationInView = useInView(inspirationRef, { margin: "-100px" });
 
   return (
     <div className="proj_home mt-0 pb-15">
-      <Projecthead />
-      <Projectimg />
+      <Projecthead selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+      <Projectimg  selectedCategory={selectedCategory}/> 
 
-      {clickCount >= 1 && <Projectimg2 />}
-      {clickCount >= 2 && <Projectimg3 />}
+      {clickCount >= 1 && <Projectimg2  selectedCategory={selectedCategory}/>}
+      {clickCount >= 2 && <Projectimg3  selectedCategory={selectedCategory}/>}
 
       <div className="mx-auto flex flex-col flex-md-row justify-content-center align-items-center pt-10 gap-5">
         <button
