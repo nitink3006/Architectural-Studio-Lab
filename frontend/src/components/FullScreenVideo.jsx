@@ -16,8 +16,8 @@ const FullScreenVideo = () => {
 
       {/* Overlay Text */}
       <div className="overlay-text">
-        <h1>Impactful Spaces</h1>
-        <h1>Elevated Design</h1>
+        <h1 className="futura_font">Impactful Spaces</h1>
+        <h1 className="futura_font">Elevated Design</h1>
        
       </div>
       <div className="overlay-text_p">

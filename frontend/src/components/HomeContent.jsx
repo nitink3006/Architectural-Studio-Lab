@@ -1,9 +1,9 @@
 import React from 'react';
 import '../Stylesheet/Homecon.css';
-
+ 
 function HomeContent() {
   return (
-    <div className='home_content'>
+    <div className='home_content bg-Soft_Grey'>
       <div className="row flex flex-row  p-15 ">
         <div className="col-md-6 flex align-items-center justify-content-center">
           <svg className='home_cont_svg' xmlns="http://www.w3.org/2000/svg" version="1.0" width="265.000000pt" height="190.000000pt" viewBox="0 0 265.000000 190.000000" preserveAspectRatio="xMidYMid meet">

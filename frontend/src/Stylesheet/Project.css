@@ -1,10 +1,12 @@
+.bg-Soft_Grey{ 
+  background-color: #D6D6D6 !important;
+}
 
 
-
-.proj_home{
+/* .proj_home{
   background-color: white;
 
-}
+} */
 /*hr*/
 .hr_line{
   width: 90%;
@@ -19,9 +21,10 @@
 
 /*head--------------------*/
 .proj_head_left h3{
-color: #2E2E2E;
+/* color: #2E2E2E; */
+color: #2C2C2C;
 background-color: transparent;
-font-family: sans-serif;
+font-family: "Fira Sans", sans-serif;
 font-weight: bold;
 font-size: 16px;
 text-decoration: none;
@@ -33,7 +36,14 @@ line-height: normal;
   border: 1px solid black !important;
 }
 
-
+.btn{
+  font-family: "Fira Sans", sans-serif !important;
+  color: #2C2C2C !important;
+  
+}
+.border{
+ border-color: black !important;
+}
 
 
 
@@ -45,7 +55,8 @@ line-height: normal;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   padding: 20px;
-  background-color: white;
+  /* background-color: white; */
+  background-color:#D6D6D6;
 }
 
 .gallery-item {
@@ -132,7 +143,8 @@ line-height: normal;
 
 .proj_head_sec {
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
+  background-color:#D6D6D6;
   padding: 15px 0;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
@@ -141,14 +153,18 @@ line-height: normal;
 
 .fixed {
   position: fixed;
-  top: 40px; 
+  top: 45px; 
   left: 0;
   width: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+.proj_load_more_btn{
+  color: #222222 ;
+}
 .proj_load_more_btn:hover{
+  /* background-color: rgba(0, 0, 0, 0.87) !important; */
   background-color: rgba(0, 0, 0, 0.87) !important;
-  color: white;
+  color: #B0B0B0 ;
 }
 /*-----------------------------------------media query------------------------------------------------*/
 

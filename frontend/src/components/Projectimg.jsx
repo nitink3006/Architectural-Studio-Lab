@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../Stylesheet/Project.css";
-
+ 
 const projects = [
   {
     src: "https://static.wixstatic.com/media/820b23_7f3179837f104ca690816660998f87a5~mv2.jpg/v1/fill/w_464,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Copy%20of%20DSC08585%20copy%20(3).jpg",
@@ -175,7 +175,7 @@ const Projectimg = ({ selectedCategory }) => {
   }, [groupedProjects]);
 
   return (
-    <div className="proj_home mt-2 pb-15">
+    <div className="proj_home mt-2 pb-15 bg-Soft_Grey">
       {groupedProjects.length === 0 ? (
         <p className="no-results">No projects found in this category.</p>
       ) : (

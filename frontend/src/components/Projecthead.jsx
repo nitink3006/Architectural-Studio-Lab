@@ -5,7 +5,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
   const [isFixed, setIsFixed] = useState(false);
   const projectHeadRef = useRef(null);
   const placeholderRef = useRef(null);
-
+ 
   useEffect(() => {
     const handleScroll = () => {
       if (!projectHeadRef.current || !placeholderRef.current) return;
@@ -39,7 +39,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
       {/* Project Header Section */}
       <div
         ref={projectHeadRef}
-        className={`pb-3 proj_head_sec ${isFixed ? "fixed" : ""}`}
+        className={`pb-3 proj_head_sec ${isFixed ? "fixed" : ""}`} bg-Soft_Grey
       >
         <div className="hr_line d-md-block d-none">
           <hr />
@@ -57,9 +57,9 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
 
           {/* Right Section - Category Buttons */}
           <div className="proj_head_right flex flex-row">
-            <div className="proj_head_right_btn1 pe-2 ps-2">
+            <div className="proj_head_right_btn1 pe-2 ps-2 text_dark_grey">
               <button
-                className={`btn border ${selectedCategory === "Commercial" ? "active" : ""}`}
+                className={`btn border ${selectedCategory === "Commercial" ? "active" : ""}`} text_dark_grey
                 onClick={() => setSelectedCategory("Commercial")}
               >
                 Commercial

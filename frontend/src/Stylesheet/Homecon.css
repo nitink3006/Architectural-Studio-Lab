@@ -1,16 +1,18 @@
-.home_content{
+/* .home_content{
     background-color: rgba(255, 255, 255, 1);
-}
+} */
 .home_cont_svg{
-    fill: rgb(205, 209, 205);
+    fill: rgb(162, 162, 162);
   
 }
 .homecont_para {
-    color: rgb(109, 103, 103);
+    /* color: rgb(109, 103, 103); */
+    color: #2C2C2C;
     line-height: 32px;
     font-size: 18px;
     text-align: justify;
     text-justify: auto;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 

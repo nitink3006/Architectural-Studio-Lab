@@ -1,6 +1,8 @@
 .testi_head{
-    color: #575757;
-    font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    /* color: #575757; */
+    color: #222222;
+    /* font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif; */
+    font-family: "Fira Sans", sans-serif;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
@@ -8,13 +10,15 @@
     letter-spacing: 0.5em;
 }
 .test_para{
-    color: #575757;
+    /* color: #575757; */
+    color: #2C2C2C;
     font-size: 12px;
     text-align: left;
     letter-spacing: 0.02em;
     line-height: 1.4;
     text-align: justify;
     text-justify: auto;
+    font-family: "Nunito Sans", sans-serif;
     /* text-align: center; */
     
 }
@@ -32,7 +36,8 @@
   justify-content: center;
 }
 .test_h3{
-    color: #B8B8B8;
+    /* color: #B8B8B8; */
+    color: #222222;
     font-weight: normal;
     text-decoration: none;
     text-align: left;
