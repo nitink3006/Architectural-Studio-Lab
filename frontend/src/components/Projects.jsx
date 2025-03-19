@@ -13,7 +13,7 @@ const Projects = () => {
   const isInspirationInView = useInView(inspirationRef, { margin: "-100px" });
 
   return (
-    <div className="proj_home mt-0 pb-15">
+    <div className="proj_home mt-0 pb-15 bg-Soft_Grey">
       <Projecthead selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <Projectimg  selectedCategory={selectedCategory}/> 
 

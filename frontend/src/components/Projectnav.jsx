@@ -12,10 +12,10 @@ function Projectnav() {
   const [clickCount, setClickCount] = useState(0);
 
   return (
-    <div>
+    <div className="bg-Soft_Grey">
       <Navigation />
 
-      <div className="pt-40 text-center text-5xl">
+      <div className="pt-40 text-center text-5xl bg-Soft_Grey">
         <p>
           <em>Our </em>
           <span>
@@ -24,7 +24,7 @@ function Projectnav() {
         </p>
       </div>
 
-      <div className="text-center">
+      <div className="text-center bg-Soft_Grey">
         <p>2018 - 2024</p>
       </div>
 

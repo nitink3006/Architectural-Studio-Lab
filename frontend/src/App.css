@@ -1,10 +1,26 @@
-@import "tailwindcss";
+@import "tailwindcss";  
 .app_{
     overflow: hidden !important;
    
 }
-
-
+.futura_font{ 
+    font-family: "Fira Sans", sans-serif;
+}
+.Avenir_heading{ 
+    font-family: "Nunito Sans", sans-serif;
+}
+.bg-Soft_Grey{ 
+    background-color: #D6D6D6;
+}
+.bg_soft_gray_nav{
+    background-color: #dddddd;
+}
+.text_black{
+    color: #222222 !important;
+}
+.text_dark_grey{
+    color:#2C2C2C !important;
+}
 body{
     padding: 0;
     margin: 0;

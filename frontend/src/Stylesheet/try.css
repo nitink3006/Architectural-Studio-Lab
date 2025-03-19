@@ -1,4 +1,7 @@
-
+.logo_img {
+  width: 150px;
+  height: 55px;
+}
 .nav-link{
     padding: 0 !important;
 }
@@ -94,20 +97,24 @@
 
   .nav-link {
     font-size: 1.2rem;
-    color: #a89f9f !important;
+    /* color: #a89f9f !important; */
+    color: #222222 !important;
     text-decoration: none;
     transition: color 0.4s ease-in-out, transform 0.2s ease-in-out;
+    font-family: "Nunito Sans", sans-serif;
 
   }
   
 
  .nav-link:hover {
-    color: #000 !important;
+    /* color: #000 !important; */
+    color: #B0B0B0 !important;
     font-weight: 450;
   }
 
   /* Enquire Now Button =mob*/
   .enquire-btn {
+    font-family:  "Nunito Sans", sans-serif;
     background-color: black;
     color: white;
     border: none;
@@ -122,6 +129,7 @@
     /* Enquire Now Button =des*/
    .btn-enq
 {
+  font-family:  "Nunito Sans", sans-serif;
   min-height: 60px;
  
   min-width: 160px;
@@ -133,6 +141,7 @@
 
 }
 .btn-enq:hover{
+  color: #B0B0B0;
     background-color: rgb(173, 173, 169);
 } 
   .enquire-btn:hover {

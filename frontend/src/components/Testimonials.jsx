@@ -97,7 +97,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonial-container ">
+    <div className="testimonial-container bg-Soft_Grey">
       <h1 className="testi_head pt-5 pb-5">TESTIMONIALS</h1>
       {/* <button className="scroll-btn left" onClick={scrollLeft}>❮</button> */}
       <div className="testimonial-wrapper p-3" ref={scrollRef}>

@@ -23,7 +23,7 @@
     font-weight: bold;
   }
 .overlay-text h1{
-  font-family:  sans-serif;
+  font-family: "Fira Sans", sans-serif;
     font-weight: normal;
     font-size: 90px;
     text-decoration: none;
@@ -32,6 +32,7 @@
     line-height: normal;
 }
   .overlay-text_p{
+    font-family:  "Nunito Sans", sans-serif;
     position: absolute;
     top: 95%;
     left: 50%;

@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer bg-dark text-white container-fluid flex flex-md-row flex-col justify-between p-20 ps-5 pe-5">
             <div className="footer_dt">
                 <div className="text-gray-400 text-xs">
-                    ©2025 Chalk Studio Interiors. Website Designed by 
+                    ©2025 Opus Architectural Lab. Website Designed by 
                     <a href="https://www.hintt.co/" target="_blank" rel="noopener noreferrer">
                         <span className="text-decoration-underline text-sm text-gray-200 call"> HINT </span>
                     </a>

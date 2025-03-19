@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 import "../Stylesheet/try.css";
 import emailjs from "emailjs-com"; // Import emailjs-com
 import { motion } from "framer-motion";
+import logo from '../assets/images/logo_opus architecture lab(social media).jpg'
 
 const Navigation = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false); 
 
   const toggleNav = () => setIsNavOpen(!isNavOpen);
   const closeNav = () => setIsNavOpen(false); // Function to close menu
@@ -67,11 +68,18 @@ const Navigation = () => {
         className="w-100 shadow-sm "
       >
         <div
-          className="d-flex justify-content-between align-items-center container-fluid"
+          className="d-flex justify-content-between align-items-center container-fluid bg_soft_gray_nav"
           style={{ padding: "0rem" }}
         >
-          <Navbar.Brand href="#" className=" pe-2 ps-5 fs-4 fw-normal" >
-            Opus Architectural Lab
+          <Navbar.Brand href="#" className=" pe-2 ps-5 fs-4 fw-normal futura_heading" >
+            {/* Opus Architectural Lab */}
+            <img src={logo} alt="logo" className="logo_img" />
+            {/* <div className="d-flex">
+            <img src={logo} alt="logo" className="logo_img" />
+            <p> Opus Architectural Lab</p>
+            </div> 
+            */}
+           
           </Navbar.Brand>
 
           {/* desktop */}
@@ -96,7 +104,7 @@ const Navigation = () => {
             </Nav.Link>
 
             <button
-              className="btn-enq bg-black text-white px-6 py-3 text-lg"
+              className="btn-enq bg-black text-white px-6 py-3 text-lg "
               onClick={() => setIsOpen(true)}
             >
               Enquire Now
