@@ -21,50 +21,76 @@ const Footer = () => {
                 <div className="text-gray-400 text-xs">
                     ©2025 Opus Architectural Lab. Website Designed by
                     <a
-                        href="https://www.hintt.co/"
+                        href="https://www.webcrafticx.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <span className="text-decoration-underline text-sm text-gray-200 call">
                             {" "}
-                            HINT{" "}
+                            WebCrafticX{" "}
                         </span>
                     </a>
                 </div>
             </div>
 
             <div className="footer_icon">
-                <div className="flex flex-md-row icon_div">
-                    <CiMail
-                        className="text-gray-400 hover:text-white"
-                        size={20}
-                    />
-                    <CiLinkedin
-                        className="text-gray-400 hover:text-white"
-                        size={20}
-                    />
-                    <CiInstagram
-                        className="text-gray-400 hover:text-white"
-                        size={20}
-                    />
-                    <CiFacebook
-                        className="text-gray-400 hover:text-white"
-                        size={20}
-                    />
-                    <FaWhatsapp
-                        className="text-gray-400 hover:text-white"
-                        size={20}
-                    />
+                <div className="flex flex-md-row icon_div space-x-4">
+                    <a
+                        href="mailto:opus.archlab@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <CiMail
+                            className="text-gray-400 hover:text-white"
+                            size={20}
+                        />
+                    </a>
+                    <a
+                        // href="https://www.linkedin.com/in/your-profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <CiLinkedin
+                            className="text-gray-400 hover:text-white"
+                            size={20}
+                        />
+                    </a>
+                    <a
+                        // href="https://facebook.com/your-handle"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <CiFacebook
+                            className="text-gray-400 hover:text-white"
+                            size={20}
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/opus.archlab?igsh=MXdwNWVzM2w5MzFwaw=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <CiInstagram
+                            className="text-gray-400 hover:text-white"
+                            size={20}
+                        />
+                    </a>
                     <CiLocationOn
                         className="text-gray-400 hover:text-white"
                         size={20}
                     />
                 </div>
+
                 <div>
                     <div className="text-gray-400 text-center pt-5">
                         Call Us -{" "}
                         <span className="call">
-                            <u>+91 99998 03196</u>
+                            <a
+                                href="tel:+919999803196"
+                                className="call text-white"
+                            >
+                                <u>+91 99998 03196</u>
+                            </a>
                         </span>
                     </div>
                 </div>
