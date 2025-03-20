@@ -99,6 +99,7 @@
     font-size: 1.2rem;
     /* color: #a89f9f !important; */
     color: #222222 !important;
+    
     text-decoration: none;
     transition: color 0.4s ease-in-out, transform 0.2s ease-in-out;
     font-family: "Nunito Sans", sans-serif;
@@ -111,6 +112,12 @@
     color: #B0B0B0 !important;
     font-weight: 450;
   }
+
+  /* Active Link Styles */
+.nav-link.active {
+  color: #B0B0B0 !important; /* Apply the same hover color */
+  font-weight: 450 !important;
+}
 
   /* Enquire Now Button =mob*/
   .enquire-btn {
