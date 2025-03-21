@@ -120,7 +120,7 @@ const Career = () => {
                 </div>
                 <div className="flex gap-6 items-center">
                   <p className="text-gray-500 text-sm avenir_font text_dark_grey">{job.location}</p>
-                  <Link to={`/career/${job.title.replace(/\s+/g, "-").toLowerCase()}`} className="bg-white border border-dark text-dark viewbtn">
+                  <Link to={`/career/${job.title.replace(/\s+/g, "-").toLowerCase()}`} className=" border border-dark text-dark viewbtn">
                     <button className="border text-sm font-semibold futura_font px-6 py-2">
                       VIEW
                     </button>
