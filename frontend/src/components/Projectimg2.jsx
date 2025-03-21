@@ -176,7 +176,7 @@ const Projectimg = ({ selectedCategory }) => {
   }, [groupedProjects]);
 
   return (
-    <div className="proj_home mt-2 pb-15">
+    <div className="mt-2 pb-15 proj_home">
       {groupedProjects.length === 0 ? (
         <p className="no-results">No projects found in this category.</p>
       ) : (
@@ -199,16 +199,16 @@ const Projectimg = ({ selectedCategory }) => {
                   <div className="gallery-item image-overlay">
                     <img src={project.src} alt={`Gallery ${index + 1}`} />
                     <div className="overlay-box">
-                      <p className="overlay-title">{project.title}</p>
+                      <p className="futura_font overlay-title">{project.title}</p>
                       <div className="overlay-content">
                         <hr />
-                        <p>{project.location}</p>
+                        <p className="avenir_font">{project.location}</p>
                         <hr />
-                        <p>{project.category}</p>
+                        <p className="avenir_font">{project.category}</p>
                         <hr />
-                        <p>{project.size}</p>
+                        <p className="avenir_font">{project.size}</p>
                         <hr />
-                        <p>{project.place}</p>
+                        <p className="avenir_font">{project.place}</p>
                         <hr />
                       </div>
                     </div>

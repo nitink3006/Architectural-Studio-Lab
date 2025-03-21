@@ -57,9 +57,9 @@ const Career = () => {
   return (
     <>
       <Navigation />
-      <div className="relative min-h-screen flex flex-col">
+      <div className="flex flex-col bg-Soft_Grey min-h-screen relative">
         <div ref={ref} className="p-10 text-center mt-32">
-          <h1 className="text-4xl font-semibold">
+          <h1 className="text-4xl font-semibold futura_font_bold">
             Career <span className="text-gray-400 font-bold">Opportunities</span>
           </h1>
         </div>
@@ -67,13 +67,13 @@ const Career = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="relative w-full h-[80vh] bg-cover bg-center"
+          className="bg-center bg-cover h-[80vh] w-full relative"
           style={{
             backgroundImage:
               "url('https://static.wixstatic.com/media/11062b_1e00f3c8acda4ab38eeb0378083d5517~mv2.jpg/v1/fill/w_1899,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_1e00f3c8acda4ab38eeb0378083d5517~mv2.jpg')",
           }}
         >
-          <div className="absolute bottom-28 left-[54rem] transform -translate-x-1/2 text-center text-5xl font-bold text-white">
+          <div className="text-5xl text-center text-white -translate-x-1/2 absolute bottom-28 font-bold futura_font_bold left-[54rem] transform">
             <motion.p
               custom={0}
               variants={textVariants}
@@ -101,13 +101,13 @@ const Career = () => {
           </div>
         </motion.div>
 
-        <div className="p-16 flex-1">
-          <h2 className="text-gray-400 text-sm tracking-widest">CURRENT OPENINGS</h2>
+        <div className="flex-1 p-16">
+          <h2 className="text-gray-400 text-sm futura_font_bold tracking-widest">CURRENT OPENINGS</h2>
           <div className="mt-6">
             {jobs.map((job, index) => (
               <motion.div
                 key={index}
-                className="flex justify-between items-center border-b py-4"
+                className="flex border-b justify-between items-center py-4"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.2 }}
@@ -115,13 +115,13 @@ const Career = () => {
                 variants={jobVariants}
               >
                 <div>
-                  <h3 className="text-lg font-semibold">{job.title}</h3>
-                  <p className="text-gray-500 text-sm">Full-Time</p>
+                  <h3 className="text-lg font-semibold futura_font">{job.title}</h3>
+                  <p className="text-gray-500 text-sm avenir_font">Full-Time</p>
                 </div>
-                <div className="flex items-center gap-6">
-                  <p className="text-gray-500 text-sm">{job.location}</p>
+                <div className="flex gap-6 items-center">
+                  <p className="text-gray-500 text-sm avenir_font">{job.location}</p>
                   <Link to={`/career/${job.title.replace(/\s+/g, "-").toLowerCase()}`}>
-                    <button className="border px-6 py-2 text-sm font-semibold">
+                    <button className="border text-sm font-semibold futura_font px-6 py-2">
                       VIEW
                     </button>
                   </Link>

@@ -18,7 +18,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
       } else if (scrollTop < placeholderRef.current.offsetTop) {
         setIsFixed(false);
       }
-    };
+    }; 
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -41,23 +41,23 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
         ref={projectHeadRef}
         className={`pb-3 proj_head_sec ${isFixed ? "fixed" : ""}`} bg-Soft_Grey
       >
-        <div className="hr_line d-md-block d-none">
+        <div className="d-md-block d-none hr_line">
           <hr />
         </div>
 
-        <div className="proj_head flex flex-md-row flex-col justify-between ps-18 pe-18">
+        <div className="flex flex-col flex-md-row justify-between pe-18 proj_head ps-18">
           {/* Left Section - "OUR WORK" */}
           <div className="proj_head_left">
             <h3>OUR WORK</h3>
           </div>
 
-          <div className="hr_line d-md-none d-block">
+          <div className="d-block d-md-none hr_line">
             <hr />
           </div>
 
           {/* Right Section - Category Buttons */}
-          <div className="proj_head_right flex flex-row">
-            <div className="proj_head_right_btn1 pe-2 ps-2 text_dark_grey">
+          <div className="flex flex-row proj_head_right">
+            <div className="pe-2 proj_head_right_btn1 ps-2 text_dark_grey">
               <button
                 className={`btn border ${selectedCategory === "Commercial" ? "active" : ""}`} text_dark_grey
                 onClick={() => setSelectedCategory("Commercial")}
@@ -65,7 +65,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
                 Commercial
               </button>
             </div>
-            <div className="proj_head_right_btn2 pe-2 ps-2">
+            <div className="pe-2 proj_head_right_btn2 ps-2">
               <button
                 className={`btn border ${selectedCategory === "Hospitality" ? "active" : ""}`}
                 onClick={() => setSelectedCategory("Hospitality")}
@@ -73,7 +73,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
                 Hospitality
               </button>
             </div>
-            <div className="proj_head_right_btn3 pe-2 ps-2">
+            <div className="pe-2 proj_head_right_btn3 ps-2">
               <button
                 className={`btn border ${selectedCategory === "Residential" ? "active" : ""}`}
                 onClick={() => setSelectedCategory("Residential")}

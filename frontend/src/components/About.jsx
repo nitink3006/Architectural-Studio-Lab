@@ -40,25 +40,25 @@ const About = () => {
   const isInspirationInView = useInView(inspirationRef, { margin: "-10px" });
 
   return (
-    <div className="relative w-full min-h-screen text-black flex flex-col scroll-smooth">
+    <div className="flex flex-col bg-Soft_Grey text-black w-full min-h-screen relative scroll-smooth">
       <Navigation />
 
       {/* About Us Section */}
-      <div className="w-full h-[45vh] flex items-center justify-center px-4 text-center">
-        <h1 className="text-4xl md:text-7xl font-bold">About Us</h1>
+      <div className="flex h-[45vh] justify-center text-center w-full items-center px-4">
+        <h1 className="text-4xl font-bold futura_font md:text-7xl">About Us</h1>
       </div>
 
       {/* Sticky Image with Text Overlay */}
-      <div ref={targetRef} className="relative w-full h-screen">
-        <div className="sticky  top-0 h-screen flex justify-center items-center overflow-hidden">
+      <div ref={targetRef} className="h-screen w-full relative">
+        <div className="flex h-screen justify-center items-center overflow-hidden sticky top-0">
           <motion.img
             src="/aboutmain2.jpg"
             alt="Our Mission"
-            className="absolute top-0 w-full h-full object-cover"
+            className="h-full w-full absolute object-cover top-0"
           />
-          <div className="absolute w-full h-screen flex flex-col justify-center items-center px-6 text-white text-center space-y-4">
+          <div className="flex flex-col h-screen justify-center text-center text-white w-full absolute futura_font_bold items-center px-6 space-y-4">
             <motion.h2
-              className="text-2xl md:text-4xl font-bold"
+              className="text-2xl font-bold md:text-4xl"
               style={{
                 opacity: useTransform(scrollYProgress, [0.005, 0.1], [0, 1]),
                 y: useTransform(scrollYProgress, [0.05, 0.2], [100, 0]),
@@ -67,7 +67,7 @@ const About = () => {
               Opus Architecture Lab is an interior design firm
             </motion.h2>
             <motion.h2
-              className="text-2xl md:text-4xl font-bold"
+              className="text-2xl font-bold md:text-4xl"
               style={{
                 opacity: useTransform(scrollYProgress, [0.2, 0.3], [0, 1]),
                 y: useTransform(scrollYProgress, [0.2, 0.4], [100, 0]),
@@ -79,15 +79,15 @@ const About = () => {
         </div>
       </div>
       {/* Our Process Section */}
-      <div ref={processRef} className="w-full py-20 px-8 flex flex-col md:flex-row items-center gap-12 md:gap-16">
+      <div ref={processRef} className="flex flex-col w-full gap-12 items-center md:flex-row md:gap-16 px-8 py-20">
         <motion.div
-          className="w-full  md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left"
+          className="flex flex-col text-center w-full items-center md:items-start md:text-left md:w-1/3"
           initial={{ opacity: 0, y: 100 }}
           animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold mx-30">Our Process</h2>
-          <motion.p className="text-base sm:text-lg leading-relaxed mt-2">
+          <h2 className="text-3xl font-bold futura_font_bold md:text-5xl mx-30">Our Process</h2>
+          <motion.p className="text-base avenir_font_light leading-relaxed mt-2 sm:text-lg">
             We follow a research-based process, allowing us to carefully assess all parts of the design before execution. As we deliver turn-key projects, we’ve developed a habit of questioning each execution method, allowing us to replace redundant methods with innovative and new solutions.
           </motion.p>
         </motion.div>
@@ -95,27 +95,27 @@ const About = () => {
 
         {/* Right Side Content */}
         <motion.div
-          className="w-full md:w-2/3 flex flex-col gap-8"
+          className="flex flex-col w-full gap-8 md:w-2/3"
           initial={{ opacity: 0, y: 100 }}
           animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
 
           {/* Process Steps Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+          <div className="grid grid-cols-1 gap-6 md:gap-10 sm:gap-8 sm:grid-cols-2">
             {processSteps.map((step, index) => (
               <motion.div
                 key={index}
-                className="flex items-center space-x-4 sm:space-x-6"
+                className="flex items-center sm:space-x-6 space-x-4"
                 initial={{ opacity: 0, y: 50 }}
                 animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 + index * 0.2 }}
               >
-                <img src={step.image} alt={step.title} className="w-16 h-16 object-contain" />
+                <img src={step.image} alt={step.title} className="h-16 w-16 object-contain" />
                 <div>
                   <span className="text-md font-light">{`0${index + 1}.`}</span>
-                  <h3 className="text-xl font-serif">{step.title}</h3>
-                  <p>{step.description}</p>
+                  <h3 className="text-xl futura_font_bold">{step.title}</h3>
+                  <p className="avenir_font_light">{step.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -126,9 +126,9 @@ const About = () => {
 
 
       {/* Our Inspiration Section */}
-      <div ref={inspirationRef} className="w-full bg-gray-100 py-20 px-8 flex flex-col items-center text-center">
+      <div ref={inspirationRef} className="flex flex-col text-center w-full items-center px-8 py-20">
         <motion.h2
-          className="text-3xl md:text-5xl font-bold"
+          className="text-3xl font-bold futura_font_bold md:text-5xl"
           initial={{ opacity: 0, y: 50 }}
           animate={isInspirationInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -136,7 +136,7 @@ const About = () => {
           Our Inspiration
         </motion.h2>
         <motion.p
-          className="text-base sm:text-lg leading-relaxed px-4 sm:px-10 md:px-20 lg:px-40 sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto text-center mt-6"
+          className="text-base text-center avenir_font_light leading-relaxed lg:max-w-xl lg:px-40 md:max-w-lg md:px-20 mt-6 mx-auto px-4 sm:max-w-md sm:px-10 sm:text-lg xl:max-w-2xl"
           initial={{ opacity: 0, y: 50 }}
           animate={isInspirationInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
@@ -146,21 +146,21 @@ const About = () => {
         </motion.p>
 
         {/* Image Gallery */}
-        <div className="relative w-full overflow-x-auto scroll-smooth scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 mt-10">
-          <div className="flex space-x-6 w-max snap-x snap-mandatory">
+        <div className="w-full mt-10 overflow-x-auto relative scroll-smooth scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200">
+          <div className="flex w-max snap-mandatory snap-x space-x-6">
             {["/img1.jpg", "/img2.jpg", "/img3.jpg", "/img4.jpg", "/img5.jpg", "/img6.jpg", "/img7.jpg", "/img8.jpg"].map((src, index) => (
               <img
                 key={index}
                 src={src}
                 alt="Inspiration"
-                className="w-[250px] h-[180px] sm:w-[300px] sm:h-[200px] md:w-[400px] md:h-[250px] object-cover rounded-lg shadow-lg snap-start"
+                className="h-[180px] rounded-lg shadow-lg w-[250px] md:h-[250px] md:w-[400px] object-cover sm:h-[200px] sm:w-[300px] snap-start"
               />
             ))}
           </div>
         </div>
       </div>
-      <div className="w-full bg-gray-100 flex justify-center items-center py-10 px-0">
-        <video className="w-full h-auto max-h-[90vh] object-cover" autoPlay muted loop playsInline>
+      <div className="flex justify-center w-full items-center px-0 py-10">
+        <video className="h-auto w-full max-h-[90vh] object-cover" autoPlay muted loop playsInline>
           <source src="/aboutvdo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

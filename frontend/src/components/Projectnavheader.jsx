@@ -38,17 +38,17 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
                 <div className="hr_line">
                     <hr />
                 </div>
-                <div className="proj_head flex flex-row justify-center ps-18 pe-18">
-                    <div className="proj_head_right flex flex-row">
-                        <div className="proj_head_right_btn1 pe-2 ps-2">
+                <div className="flex flex-row justify-center pe-18 proj_head ps-18">
+                    <div className="flex flex-row proj_head_right">
+                        <div className="pe-2 proj_head_right_btn1 ps-2">
                             <button
-                                className={`btn border ${selectedCategory === "Commercial" ? "active" : ""}`}
+                                className={`futura_font btn border ${selectedCategory === "Commercial" ? "active" : ""}`}
                                 onClick={() => setSelectedCategory("Commercial")}
                             >
                                 Commercial
                             </button>
                         </div>
-                        <div className="proj_head_right_btn2 pe-2 ps-2">
+                        <div className="pe-2 proj_head_right_btn2 ps-2">
                             <button
                                 className={`btn border ${selectedCategory === "Hospitality" ? "active" : ""}`}
                                 onClick={() => setSelectedCategory("Hospitality")}
@@ -56,7 +56,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
                                 Hospitality
                             </button>
                         </div>
-                        <div className="proj_head_right_btn3 pe-2 ps-2">
+                        <div className="pe-2 proj_head_right_btn3 ps-2">
                             <button
                                 className={`btn border ${selectedCategory === "Residential" ? "active" : ""}`}
                                 onClick={() => setSelectedCategory("Residential")}
