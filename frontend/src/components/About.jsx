@@ -45,7 +45,7 @@ const About = () => {
 
       {/* About Us Section */}
       <div className="flex h-[45vh] justify-center text-center w-full items-center px-4">
-        <h1 className="text-4xl font-bold futura_font md:text-7xl">About Us</h1>
+        <h1 className="text-4xl font-bold futura_font md:text-7xl text_black">About Us</h1>
       </div>
 
       {/* Sticky Image with Text Overlay */}
@@ -86,8 +86,8 @@ const About = () => {
           animate={isProcessInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-3xl font-bold futura_font_bold md:text-5xl mx-30">Our Process</h2>
-          <motion.p className="text-base avenir_font_light leading-relaxed mt-2 sm:text-lg">
+          <h2 className="text-3xl font-bold futura_font_bold md:text-5xl mx-30 text_black">Our Process</h2>
+          <motion.p className="text-base avenir_font_light leading-relaxed mt-2 sm:text-lg text_dark_grey">
             We follow a research-based process, allowing us to carefully assess all parts of the design before execution. As we deliver turn-key projects, we’ve developed a habit of questioning each execution method, allowing us to replace redundant methods with innovative and new solutions.
           </motion.p>
         </motion.div>
@@ -114,8 +114,8 @@ const About = () => {
                 <img src={step.image} alt={step.title} className="h-16 w-16 object-contain" />
                 <div>
                   <span className="text-md font-light">{`0${index + 1}.`}</span>
-                  <h3 className="text-xl futura_font_bold">{step.title}</h3>
-                  <p className="avenir_font_light">{step.description}</p>
+                  <h3 className="text-xl futura_font_bold text_black">{step.title}</h3>
+                  <p className="avenir_font_light text_dark_grey">{step.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -128,7 +128,7 @@ const About = () => {
       {/* Our Inspiration Section */}
       <div ref={inspirationRef} className="flex flex-col text-center w-full items-center px-8 py-20">
         <motion.h2
-          className="text-3xl font-bold futura_font_bold md:text-5xl"
+          className="text-3xl font-bold futura_font_bold md:text-5xl text_black"
           initial={{ opacity: 0, y: 50 }}
           animate={isInspirationInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -136,7 +136,7 @@ const About = () => {
           Our Inspiration
         </motion.h2>
         <motion.p
-          className="text-base text-center avenir_font_light leading-relaxed lg:max-w-xl lg:px-40 md:max-w-lg md:px-20 mt-6 mx-auto px-4 sm:max-w-md sm:px-10 sm:text-lg xl:max-w-2xl"
+          className="text_dark_grey text-base text-center avenir_font_light leading-relaxed lg:max-w-xl lg:px-40 md:max-w-lg md:px-20 mt-6 mx-auto px-4 sm:max-w-md sm:px-10 sm:text-lg xl:max-w-2xl"
           initial={{ opacity: 0, y: 50 }}
           animate={isInspirationInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}

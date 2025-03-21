@@ -48,7 +48,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
         <div className="flex flex-col flex-md-row justify-between pe-18 proj_head ps-18">
           {/* Left Section - "OUR WORK" */}
           <div className="proj_head_left">
-            <h3>OUR WORK</h3>
+            <h3 className="text_black">OUR WORK</h3>
           </div>
 
           <div className="d-block d-md-none hr_line">
@@ -59,7 +59,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
           <div className="flex flex-row proj_head_right">
             <div className="pe-2 proj_head_right_btn1 ps-2 text_dark_grey">
               <button
-                className={`btn border ${selectedCategory === "Commercial" ? "active" : ""}`} text_dark_grey
+                className={`text_black btn border ${selectedCategory === "Commercial" ? "active" : ""}`} text_dark_grey
                 onClick={() => setSelectedCategory("Commercial")}
               >
                 Commercial
@@ -67,7 +67,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
             </div>
             <div className="pe-2 proj_head_right_btn2 ps-2">
               <button
-                className={`btn border ${selectedCategory === "Hospitality" ? "active" : ""}`}
+                className={`text_black btn border ${selectedCategory === "Hospitality" ? "active" : ""}`}
                 onClick={() => setSelectedCategory("Hospitality")}
               >
                 Hospitality
@@ -75,7 +75,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
             </div>
             <div className="pe-2 proj_head_right_btn3 ps-2">
               <button
-                className={`btn border ${selectedCategory === "Residential" ? "active" : ""}`}
+                className={`text_black btn border ${selectedCategory === "Residential" ? "active" : ""}`}
                 onClick={() => setSelectedCategory("Residential")}
               >
                 Residential

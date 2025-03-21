@@ -29,7 +29,7 @@ const Projects = () => {
           Load More
         </button>
       <a href="/projects-all">
-      <button className="bg-dark border text-white futura_font me-2 ms-2 pb-3 pe-16 ps-16 pt-3">
+      <button className="bg-dark border text-white futura_font me-2 ms-2 pb-3 pe-16 ps-16 pt-3 view_all">
           View All Projects
         </button>
       </a>

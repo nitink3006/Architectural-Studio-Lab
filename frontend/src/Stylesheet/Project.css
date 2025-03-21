@@ -38,8 +38,11 @@ line-height: normal;
 
 .btn{
   font-family: "Futura" !important;
-  color: #2C2C2C !important;
+  /* color: #2C2C2C !important; */
   
+}
+.btn:hover{
+  color: #B0B0B0 !important;
 }
 .border{
  border-color: black !important;
@@ -154,7 +157,7 @@ line-height: normal;
 .fixed {
   position: fixed;
   top: 45px; 
-  left: 0;
+  left: 0; 
   width: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -163,8 +166,11 @@ line-height: normal;
 }
 .proj_load_more_btn:hover{
   /* background-color: rgba(0, 0, 0, 0.87) !important; */
-  background-color: rgba(0, 0, 0, 0.87) !important;
-  color: #B0B0B0 ;
+  /* background-color: rgba(0, 0, 0, 0.87) !important; */
+  color: #B0B0B0  !important;
+}
+.view_all:hover{
+  color: #B0B0B0  !important;
 }
 /*-----------------------------------------media query------------------------------------------------*/
 

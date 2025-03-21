@@ -28,7 +28,7 @@
     font-family: 'Avenir';
     src: url('./assets/avenir-font/AvenirLTStd-Book.otf') format('truetype');
   
-  }  
+  }   
   @font-face {
     font-family: 'Avenir-light';
     src: url('./assets/avenir-font/AvenirLTStd-Light.otf') format('truetype');
@@ -48,7 +48,7 @@
 }
 .bg_soft_gray_nav{
     background-color: #dddddd;
-}
+} 
 .text_black{
     color: #222222 !important;
 }
