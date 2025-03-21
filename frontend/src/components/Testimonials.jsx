@@ -93,7 +93,6 @@ const Testimonials = () => {
   };
 
   return (
-
     <div
       className="bg-Soft_Grey testimonial-container"
       style={{ overflowX: "hidden", overflowY: "hidden" }}
@@ -160,7 +159,7 @@ const Testimonials = () => {
 
         {isOpen && (
           <motion.div
-            className="flex bg-black bg-opacity-50 justify-center fixed inset-0 items-start z-[1000] pt-6"
+            className="flex bg-black bg-opacity-50 justify-center fixed inset-0 items-start z-[1000] pt-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -172,7 +171,7 @@ const Testimonials = () => {
               transition={{ duration: 0.4 }}
             >
               <motion.button
-                className="bg-white text-4xl text-gray-400 absolute hover:text-gray-600 right-3 top-3"
+                className="bg-white text-4xl text-gray-600 absolute hover:text-gray-600 right-3 top-3"
                 onClick={() => setIsOpen(false)}
                 whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.2 }}

@@ -31,13 +31,14 @@
 }
 
 .enq_Btn button {
-  background-color: rgba(46, 46, 46, 1);
-  color: rgb(232, 232, 232);
+  background-color: #000;
+  color: white;
   transition: background-color 0.3s ease-in-out;
+  font-family: "Futura";
 }
 
 .enq_Btn button:hover {
-  background-color: #B8B8B8;
+  color: #B0B0B0 !important;
 }
 
 /* Main testimonial container */
