@@ -98,7 +98,7 @@ const Testimonials = () => {
       className="bg-Soft_Grey testimonial-container"
       style={{ overflowX: "hidden", overflowY: "hidden" }}
     >
-      <h1 className="futura_font pb-5 pt-5 testi_head">TESTIMONIALS</h1
+      <h1 className="futura_font pb-5 pt-5 testi_head">TESTIMONIALS</h1>
       <div className="px-12">
         <Swiper
           slidesPerView={1}
