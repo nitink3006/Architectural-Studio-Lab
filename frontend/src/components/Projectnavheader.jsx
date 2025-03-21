@@ -42,7 +42,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
                     <div className="flex flex-row proj_head_right">
                         <div className="pe-2 proj_head_right_btn1 ps-2">
                             <button
-                                className={`futura_font btn border ${selectedCategory === "Commercial" ? "active" : ""}`}
+                                className={`text_black futura_font btn border ${selectedCategory === "Commercial" ? "active" : ""}`}
                                 onClick={() => setSelectedCategory("Commercial")}
                             >
                                 Commercial
@@ -50,7 +50,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
                         </div>
                         <div className="pe-2 proj_head_right_btn2 ps-2">
                             <button
-                                className={`btn border ${selectedCategory === "Hospitality" ? "active" : ""}`}
+                                className={` text_black btn border ${selectedCategory === "Hospitality" ? "active" : ""}`}
                                 onClick={() => setSelectedCategory("Hospitality")}
                             >
                                 Hospitality
@@ -58,7 +58,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
                         </div>
                         <div className="pe-2 proj_head_right_btn3 ps-2">
                             <button
-                                className={`btn border ${selectedCategory === "Residential" ? "active" : ""}`}
+                                className={`text_black btn border ${selectedCategory === "Residential" ? "active" : ""}`}
                                 onClick={() => setSelectedCategory("Residential")}
                             >
                                 Residential

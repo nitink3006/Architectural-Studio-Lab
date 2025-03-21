@@ -40,18 +40,18 @@ const Blog = () => {
     }, []);
 
     return (
-        <div className="flex flex-col w-full min-h-screen">
+        <div className="flex flex-col w-full min-h-screen bg-Soft_Grey">
             <Navigation />
 
             {/* Header Section */}
             <div className="flex h-[36vh] justify-center w-full items-center">
-                <span className="text-3xl font-extralight font-sans futura_font italic md:text-6xl">
+                <span className="text-3xl font-extralight font-sans futura_font italic md:text-6xl text_black">
                     The <strong className="not-italic">Blog</strong>
                 </span>
             </div>
 
             {/* Blog Layout - Sidebar + Content */}
-            <div className="flex flex-col bg-gray-50 p-6 gap-8 md:flex-row">
+            <div className="flex flex-col b-gray-50 p-6 gap-8 md:flex-row">
                 {/* Left Side - Featured Blog Image */} 
                 {blogData.blogs.length > 0 && (
                     <motion.div
@@ -81,9 +81,9 @@ const Blog = () => {
                         {categories.map((category, index) => (
                             <button
                                 key={index}
-                                className={`futura_font px-4 py-2 text-lg ${
+                                className={` futura_font px-4 py-2 text-lg ${
                                     selectedCategory === category
-                                        ? "font-bold text-orange-200"
+                                        ? "font-bold text-orange-400"
                                         : "text-gray-600"
                                 }`}
                                 onClick={() => setSelectedCategory(category)}
@@ -109,11 +109,11 @@ const Blog = () => {
                                     className="h-48 w-full object-cover"
                                 />
                                 <div className="p-4">
-                                    <h3 className="text-xl font-semibold futura_font">{blog.title}</h3>
-                                    <p className="text-gray-600 text-sm avenir_font my-2">
+                                    <h3 className="text-xl font-semibold futura_font text_black">{blog.title}</h3>
+                                    <p className="text_dark_grey text-sm avenir_font my-2">
                                         {blog.content.slice(0, 100)}...
                                     </p>
-                                    <div className="flex justify-between text-gray-500 text-xs avenir_font items-center">
+                                    <div className="flex justify-between tex-gray-500 text-xs avenir_font items-center text_dark_grey">
                                         <span >{blog.author}</span>
                                         <span>{new Date(blog.date).toLocaleDateString()}</span>
                                     </div>

@@ -149,8 +149,8 @@
 
 }
 .btn-enq:hover{
-  color: #B0B0B0;
-    background-color: rgb(173, 173, 169);
+  color: #B0B0B0 !important;
+    /* background-color: rgb(173, 173, 169); */
 } 
   .enquire-btn:hover {
     background-color: #222;
@@ -166,7 +166,10 @@
 
 
 
-
+.viewbtn button:hover{
+  background-color: #000;
+  color:#B0B0B0;
+}
 
 
 
