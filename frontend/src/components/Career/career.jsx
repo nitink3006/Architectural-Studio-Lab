@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import Navigation from "../Navigation";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-
+import "../../Stylesheet/try.css";
 const Career = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -59,7 +59,7 @@ const Career = () => {
       <Navigation />
       <div className="flex flex-col bg-Soft_Grey min-h-screen relative">
         <div ref={ref} className="p-10 text-center mt-32">
-          <h1 className="text-4xl font-semibold futura_font_bold">
+          <h1 className="text-4xl font-semibold futura_font_bold text_black">
             Career <span className="text-gray-400 font-bold">Opportunities</span>
           </h1>
         </div>
@@ -102,7 +102,7 @@ const Career = () => {
         </motion.div>
 
         <div className="flex-1 p-16">
-          <h2 className="text-gray-400 text-sm futura_font_bold tracking-widest">CURRENT OPENINGS</h2>
+          <h2 className="text-gray-400 text-sm futura_font_bold tracking-widest text_black">CURRENT OPENINGS</h2>
           <div className="mt-6">
             {jobs.map((job, index) => (
               <motion.div
@@ -116,11 +116,11 @@ const Career = () => {
               >
                 <div>
                   <h3 className="text-lg font-semibold futura_font">{job.title}</h3>
-                  <p className="text-gray-500 text-sm avenir_font">Full-Time</p>
+                  <p className="text-gray-500 text-sm avenir_font text_dark_grey">Full-Time</p>
                 </div>
                 <div className="flex gap-6 items-center">
-                  <p className="text-gray-500 text-sm avenir_font">{job.location}</p>
-                  <Link to={`/career/${job.title.replace(/\s+/g, "-").toLowerCase()}`}>
+                  <p className="text-gray-500 text-sm avenir_font text_dark_grey">{job.location}</p>
+                  <Link to={`/career/${job.title.replace(/\s+/g, "-").toLowerCase()}`} className="bg-white border border-dark text-dark viewbtn">
                     <button className="border text-sm font-semibold futura_font px-6 py-2">
                       VIEW
                     </button>

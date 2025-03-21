@@ -59,14 +59,14 @@ const Gallery = () => {
       <Navigation />
 
       <div className="flex bg-Soft_Grey h-[36vh] justify-center w-full items-center">
-        <span className="text-3xl font-extralight font-sans futura_font italic md:text-6xl">
-          The <strong className="not-italic">Gallery</strong>
+        <span className="text-3xl font-extralight font-sans futura_font italic md:text-6xl text_black">
+          The <strong className="not-italic ">Gallery</strong>
         </span>
       </div>
 
       <div className="bg-Soft_Grey p-6 avenir_font_light">
         {media.length === 0 ? (
-          <p className="text-center text-gray-500">Loading media...</p>
+          <p className="text-center text-gray-500 text_dark_grey" >Loading media...</p>
         ) : (
           <Masonry
             breakpointCols={breakpointColumnsObj}

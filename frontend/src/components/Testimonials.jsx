@@ -90,7 +90,7 @@ const Testimonials = () => {
 
   return (
     <div className="bg-Soft_Grey testimonial-container" style={{ overflowX: "hidden", overflowY: "hidden" }}>
-      <h1 className="futura_font pb-5 pt-5 testi_head">TESTIMONIALS</h1>
+      <h1 className="futura_font pb-5 pt-5 testi_head text_black">TESTIMONIALS</h1>
      
   {/* Only ONE scroll button section – placed OUTSIDE the wrapper */}
   <div className="carousel-controls">
@@ -100,11 +100,11 @@ const Testimonials = () => {
           <div className="testimonial-card" key={index}>
             <img src={item.image} alt={item.title} className="testimonial-img" />
             <div className="p-8">
-              <h3 className="futura_font pb-2 test_h3">{item.title}</h3>
-              <p className="avenir_font test_para">"{item.text}"</p>
+              <h3 className="futura_font pb-2 test_h3 text_black">{item.title}</h3>
+              <p className="avenir_font test_para text_dark_grey">"{item.text}"</p>
               {item.subtext && (
                 <strong>
-                  <p className="avenir_font pt-4 test_para">"{item.subtext}"</p>
+                  <p className="avenir_font pt-4 test_para text_dark_grey">"{item.subtext}"</p>
                 </strong>
               )}
             </div> 
