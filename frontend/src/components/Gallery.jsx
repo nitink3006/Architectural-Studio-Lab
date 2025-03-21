@@ -55,16 +55,16 @@ const Gallery = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col">
+    <div className="flex flex-col w-full min-h-screen">
       <Navigation />
 
-      <div className="w-full h-[36vh] flex items-center justify-center">
-        <span className="text-3xl font-sans md:text-6xl font-extralight italic">
+      <div className="flex bg-Soft_Grey h-[36vh] justify-center w-full items-center">
+        <span className="text-3xl font-extralight font-sans futura_font italic md:text-6xl">
           The <strong className="not-italic">Gallery</strong>
         </span>
       </div>
 
-      <div className="p-6">
+      <div className="bg-Soft_Grey p-6 avenir_font_light">
         {media.length === 0 ? (
           <p className="text-center text-gray-500">Loading media...</p>
         ) : (
@@ -80,7 +80,7 @@ const Gallery = () => {
                   <img
                     src={item.src}
                     alt={`Gallery-${index}`}
-                    className="w-full rounded-xl shadow-lg transition-all duration-150 ease-in-out hover:blur-[3px]" // ⏩ Fast Hover Effect
+                    className="rounded-xl shadow-lg w-full duration-150 ease-in-out hover:blur-[3px] transition-all" // ⏩ Fast Hover Effect
                     loading="lazy"
                     onLoad={() => handleMediaLoad(index)}
                   />
@@ -91,7 +91,7 @@ const Gallery = () => {
                     loop
                     muted
                     playsInline
-                    className="w-full rounded-xl shadow-lg transition-all duration-150 ease-in-out hover:blur-[3px]" // ⏩ Fast Hover Effect for Video
+                    className="rounded-xl shadow-lg w-full duration-150 ease-in-out hover:blur-[3px] transition-all" // ⏩ Fast Hover Effect for Video
                     onLoadedData={() => handleMediaLoad(index)}
                   />
                 )}

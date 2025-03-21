@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Projectimg from "./Projectimg";
 import Projectimg2 from "./Projectimg2";
 import Projectimg3 from "./Projectimg3";
+
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Projectnavheader from "./Projectnavheader";
@@ -15,8 +16,8 @@ function Projectnav() {
     <div className="bg-Soft_Grey">
       <Navigation />
 
-      <div className="pt-40 text-center text-5xl bg-Soft_Grey">
-        <p>
+      <div className="bg-Soft_Grey text-5xl text-center pt-40">
+        <p className="futura_font">
           <em>Our </em>
           <span>
             <strong>Projects</strong>
@@ -24,7 +25,7 @@ function Projectnav() {
         </p>
       </div>
 
-      <div className="text-center bg-Soft_Grey">
+      <div className="bg-Soft_Grey text-center avenir_font_light">
         <p>2018 - 2024</p>
       </div>
 
@@ -37,9 +38,9 @@ function Projectnav() {
       {clickCount >= 2 && <Projectimg3 selectedCategory={selectedCategory} />}
 
       {/* Load More Button */}
-      <div className="projnav_load_btn flex justify-center mb-20">
+      <div className="flex justify-center mb-20 projnav_load_btn">
         <button
-          className={`border ps-20 pe-20 pt-3 pb-3 ms-2 me-2 proj_load_more_btn ${
+          className={`border futura_font ps-20 pe-20 pt-3 pb-3 ms-2 me-2 bg-dark text-white proj_load_more_btn ${
             clickCount >= 2 ? "disabled opacity-50 cursor-not-allowed" : ""
           }`}
           onClick={() => setClickCount((prev) => prev + 1)}
@@ -48,6 +49,7 @@ function Projectnav() {
           Load More
         </button>
       </div>
+
 
       <Footer />
     </div>

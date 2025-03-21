@@ -2,13 +2,47 @@
 .app_{
     overflow: hidden !important;
    
-}
-.futura_font{ 
+} 
+@font-face {
+    font-family: 'Futura';
+    src: url('./assets/futura/Futura\ Medium.ttf') format('truetype');
+   
+  }
+  @font-face {
+    font-family: 'Futura-bold';
+    src: url('./assets/futura/Futura\ Bold.ttf') format('truetype');
+   
+  }
+  .futura_font_bold{
+    font-family: "Futura-bold" !important;
+    font-weight: bold;
+  }
+  .futura_font{
+    font-family: "Futura" !important;
+  }
+  .avenir_font{
+    font-family: 'Avenir' !important;
+  }
+
+  @font-face {
+    font-family: 'Avenir';
+    src: url('./assets/avenir-font/AvenirLTStd-Book.otf') format('truetype');
+  
+  }  
+  @font-face {
+    font-family: 'Avenir-light';
+    src: url('./assets/avenir-font/AvenirLTStd-Light.otf') format('truetype');
+  
+  } 
+  .avenir_font_light{
+    font-family: 'Avenir-light' !important;
+  }
+/* .futura_font{ 
     font-family: "Fira Sans", sans-serif;
 }
 .Avenir_heading{ 
     font-family: "Nunito Sans", sans-serif;
-}
+} */
 .bg-Soft_Grey{ 
     background-color: #D6D6D6;
 }

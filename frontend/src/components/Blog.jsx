@@ -40,22 +40,22 @@ const Blog = () => {
     }, []);
 
     return (
-        <div className="w-full min-h-screen flex flex-col">
+        <div className="flex flex-col w-full min-h-screen">
             <Navigation />
 
             {/* Header Section */}
-            <div className="w-full h-[36vh] flex items-center justify-center">
-                <span className="text-3xl font-sans md:text-6xl font-extralight italic">
+            <div className="flex h-[36vh] justify-center w-full items-center">
+                <span className="text-3xl font-extralight font-sans futura_font italic md:text-6xl">
                     The <strong className="not-italic">Blog</strong>
                 </span>
             </div>
 
             {/* Blog Layout - Sidebar + Content */}
-            <div className="flex flex-col md:flex-row gap-8 p-6 bg-gray-50">
+            <div className="flex flex-col bg-gray-50 p-6 gap-8 md:flex-row">
                 {/* Left Side - Featured Blog Image */} 
                 {blogData.blogs.length > 0 && (
                     <motion.div
-                        className="w-full md:w-1/2 h-[60vh] p-4 sticky top-20 self-start"
+                        className="h-[60vh] p-4 w-full md:w-1/2 self-start sticky top-20"
                         initial={hasAnimated ? {} : { opacity: 0, scale: 0.9 }}
                         animate={hasAnimated ? {} : { opacity: 1, scale: 1 }}
                         transition={hasAnimated ? {} : { duration: 0.5 }}
@@ -64,10 +64,10 @@ const Blog = () => {
                         <img
                             src={blogData.blogs[0].image}
                             alt={blogData.blogs[0].title}
-                            className="w-full h-full object-cover shadow-md"
+                            className="h-full shadow-md w-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-opacity-40 flex items-end p-6">
-                            <h2 className="text-white px-6 text-2xl md:text-4xl font-semibold">
+                        <div className="flex bg-opacity-40 p-6 absolute inset-0 items-end">
+                            <h2 className="text-2xl text-white font-semibold futura_font md:text-4xl px-6">
                                 {blogData.blogs[0].title}
                             </h2>
                         </div>
@@ -75,13 +75,13 @@ const Blog = () => {
                 )}
 
                 {/* Right Side - Scrollable Content */}
-                <div className="w-full md:w-1/2 max-h-[80vh] overflow-y-auto">
+                <div className="w-full max-h-[80vh] md:w-1/2 overflow-y-auto">
                     {/* Blog Category Buttons */}
                     <div className="flex flex-row flex-wrap gap-2 mb-4">
                         {categories.map((category, index) => (
                             <button
                                 key={index}
-                                className={`px-4 py-2 text-lg ${
+                                className={`futura_font px-4 py-2 text-lg ${
                                     selectedCategory === category
                                         ? "font-bold text-orange-200"
                                         : "text-gray-600"
@@ -94,7 +94,7 @@ const Blog = () => {
                     </div>
 
                     {/* Blog Cards Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+                    <div className="grid grid-cols-1 p-6 gap-6 md:grid-cols-2">
                         {filteredBlogs.map((blog, index) => (
                             <motion.div
                                 key={blog.id}
@@ -106,15 +106,15 @@ const Blog = () => {
                                 <img
                                     src={blog.image}
                                     alt={blog.title}
-                                    className="w-full h-48 object-cover"
+                                    className="h-48 w-full object-cover"
                                 />
                                 <div className="p-4">
-                                    <h3 className="text-xl font-semibold">{blog.title}</h3>
-                                    <p className="text-gray-600 text-sm my-2">
+                                    <h3 className="text-xl font-semibold futura_font">{blog.title}</h3>
+                                    <p className="text-gray-600 text-sm avenir_font my-2">
                                         {blog.content.slice(0, 100)}...
                                     </p>
-                                    <div className="flex justify-between items-center text-gray-500 text-xs">
-                                        <span>{blog.author}</span>
+                                    <div className="flex justify-between text-gray-500 text-xs avenir_font items-center">
+                                        <span >{blog.author}</span>
                                         <span>{new Date(blog.date).toLocaleDateString()}</span>
                                     </div>
                                 </div>

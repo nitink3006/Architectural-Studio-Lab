@@ -24,8 +24,8 @@
 /* color: #2E2E2E; */
 color: #2C2C2C;
 background-color: transparent;
-font-family: "Fira Sans", sans-serif;
-font-weight: bold;
+font-family: "Futura";
+font-weight: bolder;
 font-size: 16px;
 text-decoration: none;
 text-align: center;
@@ -37,7 +37,7 @@ line-height: normal;
 }
 
 .btn{
-  font-family: "Fira Sans", sans-serif !important;
+  font-family: "Futura" !important;
   color: #2C2C2C !important;
   
 }

@@ -23,11 +23,11 @@ const Projectcontent1 = () => {
     return (
         <div>
             <Navigation />
-            <h1 className='proj_cont1_head pt-20'>The Japandi Home</h1>
-            <div className='proj_cont1_hr mt-3'>
+            <h1 className='futura_font proj_cont1_head pt-20'>The Japandi Home</h1>
+            <div className='mt-3 proj_cont1_hr'>
                 <hr />
             </div>
-            <h4 className='text-center mt-3 pb-10 fw-normal'>
+            <h4 className='text-center fw-normal mt-3 pb-10'>
                 Pioneer Araya
             </h4>
             <div ref={inspirationRef} className="">
@@ -41,7 +41,7 @@ const Projectcontent1 = () => {
                 </motion.div>
             </div>
 
-            <div className='proj_cont_em_para pt-15 pb-8'>
+            <div className='pb-8 proj_cont_em_para pt-15'>
 
                 <p className=''>
                     <em>
@@ -50,9 +50,9 @@ const Projectcontent1 = () => {
                 </p>
             </div>
 
-            <div className='flex flex-md-row flex-col justify-content-md-center justify-content-start gap-md-15 gap-2 align-items-center mb-25 proj_cont1_about '>
-                <div className='flex flex-row gap-4 '>
-                    <div className=' text-gray-400 fs-5'>
+            <div className='flex flex-col flex-md-row align-items-center justify-content-md-center justify-content-start gap-2 gap-md-15 mb-25 proj_cont1_about'>
+                <div className='flex flex-row gap-4'>
+                    <div className='text-gray-400 fs-5'>
                         <FaBox />
                     </div>
                     <div>
@@ -62,8 +62,8 @@ const Projectcontent1 = () => {
                   
                 </div>
               
-                <div className='flex flex-row gap-4 '>
-                    <div className=' text-gray-400 fs-4'>
+                <div className='flex flex-row gap-4'>
+                    <div className='text-gray-400 fs-4'>
                         <FaRegSquare />
                     </div>
                     <div>
@@ -72,7 +72,7 @@ const Projectcontent1 = () => {
                     </div>
                 </div>
                 <div className='flex flex-row gap-4'>
-                    <div className='  text-gray-400 fs-4'>
+                    <div className='text-gray-400 fs-4'>
                         <CiHome />
                     </div>
                     <div>
@@ -81,7 +81,7 @@ const Projectcontent1 = () => {
                     </div>
                 </div>
                 <div className='flex flex-row gap-4'>
-                    <div className=' text-gray-400 fs-4'>
+                    <div className='text-gray-400 fs-4'>
                         <CiLocationOn />
                     </div>
                     <div>
@@ -93,23 +93,23 @@ const Projectcontent1 = () => {
 
             {/* row1 */}
 
-            <div className="gallery container-fluid  mb-4">
+            <div className="container-fluid gallery mb-4">
 
 
                 {/* --------------row1------------ */}
-                <div className="gallery_row1 row flex flex-md-row flex-column ">
-                    <div className="gallery_row1_img1 col-md-3 col-12 gallery-item">
+                <div className="flex flex-column flex-md-row row gallery_row1">
+                    <div className="col-12 col-md-3 gallery_row1_img1 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
 
                     </div>
-                    <div className="gallery_row1_img2 col-md-3 col-12 gallery-item">
+                    <div className="col-12 col-md-3 gallery_row1_img2 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
                     </div>
-                    <div className="gallery_row1_img3 col-md-6 col-12 gallery-item">
+                    <div className="col-12 col-md-6 gallery_row1_img3 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
@@ -122,23 +122,23 @@ const Projectcontent1 = () => {
             </div>
 
             {/* row2 */}
-            <div className="gallery container-fluid  mb-4">
+            <div className="container-fluid gallery mb-4">
 
 
                 {/* --------------row1------------ */}
-                <div className="gallery_row1 row flex flex-md-row flex-column ">
-                    <div className="gallery_row1_img1 col-md-3 col-12 gallery-item">
+                <div className="flex flex-column flex-md-row row gallery_row1">
+                    <div className="col-12 col-md-3 gallery_row1_img1 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
 
                     </div>
-                    <div className="gallery_row1_img2 col-md-3 col-12 gallery-item">
+                    <div className="col-12 col-md-3 gallery_row1_img2 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
                     </div>
-                    <div className="gallery_row1_img3 col-md-6 col-12 gallery-item">
+                    <div className="col-12 col-md-6 gallery_row1_img3 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
@@ -152,54 +152,23 @@ const Projectcontent1 = () => {
 
 
             {/* row3 */}
-            <div className="gallery container-fluid  mb-4">
+            <div className="container-fluid gallery mb-4">
 
 
                 {/* --------------row3------------ */}
-                <div className="gallery_row1 row flex flex-md-row flex-column ">
-                    <div className="gallery_row1_img1 col-md-2 col-12 gallery-item">
+                <div className="flex flex-column flex-md-row row gallery_row1">
+                    <div className="col-12 col-md-2 gallery_row1_img1 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
 
                     </div>
-                    <div className="gallery_row1_img2 col-md-5 col-12 gallery-item">
+                    <div className="col-12 col-md-5 gallery_row1_img2 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
                     </div>
-                    <div className="gallery_row1_img3 col-md-5 col-12 gallery-item">
-                        <div className='gallery-img-wrapper'>
-                            <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-
-
-            {/* row4 */}
-            <div className="gallery container-fluid  mb-4">
-
-
-                {/* --------------row4------------ */}
-                <div className="gallery_row1 row flex flex-md-row flex-column ">
-                    <div className="gallery_row1_img1 col-md-3 col-12 gallery-item">
-                        <div className='gallery-img-wrapper'>
-                            <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
-                        </div>
-
-                    </div>
-                    <div className="gallery_row1_img2 col-md-3 col-12 gallery-item">
-                        <div className='gallery-img-wrapper'>
-                            <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
-                        </div>
-                    </div>
-                    <div className="gallery_row1_img3 col-md-6 col-12 gallery-item">
+                    <div className="col-12 col-md-5 gallery_row1_img3 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
@@ -214,23 +183,23 @@ const Projectcontent1 = () => {
 
 
             {/* row4 */}
-            <div className="gallery container-fluid  mb-30 ">
+            <div className="container-fluid gallery mb-4">
 
 
                 {/* --------------row4------------ */}
-                <div className="gallery_row1 row flex flex-md-row flex-column ">
-                    <div className="gallery_row1_img1 col-md-6 col-12 gallery-item">
+                <div className="flex flex-column flex-md-row row gallery_row1">
+                    <div className="col-12 col-md-3 gallery_row1_img1 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
 
                     </div>
-                    <div className="gallery_row1_img2 col-md-3 col-12 gallery-item">
+                    <div className="col-12 col-md-3 gallery_row1_img2 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
                     </div>
-                    <div className="gallery_row1_img3 col-md-3 col-12 gallery-item">
+                    <div className="col-12 col-md-6 gallery_row1_img3 gallery-item">
                         <div className='gallery-img-wrapper'>
                             <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
                         </div>
@@ -242,7 +211,38 @@ const Projectcontent1 = () => {
 
             </div>
 
-            <div className='proj_cont1_hr2 mb-30 '>
+
+
+            {/* row4 */}
+            <div className="container-fluid gallery mb-30">
+
+
+                {/* --------------row4------------ */}
+                <div className="flex flex-column flex-md-row row gallery_row1">
+                    <div className="col-12 col-md-6 gallery_row1_img1 gallery-item">
+                        <div className='gallery-img-wrapper'>
+                            <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
+                        </div>
+
+                    </div>
+                    <div className="col-12 col-md-3 gallery_row1_img2 gallery-item">
+                        <div className='gallery-img-wrapper'>
+                            <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-3 gallery_row1_img3 gallery-item">
+                        <div className='gallery-img-wrapper'>
+                            <img src="https://www.decorilla.com/online-decorating/wp-content/uploads/2021/11/Japandi-dining-room-AD.jpg" alt="Gallery Image 1" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div className='mb-30 proj_cont1_hr2'>
             <hr />
         </div>
        

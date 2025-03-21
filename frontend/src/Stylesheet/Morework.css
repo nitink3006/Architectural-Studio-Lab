@@ -15,10 +15,16 @@
 
   .gallery-wrapper {
     width: 100%;
-    overflow-x: auto; 
-    white-space: nowrap;
-    scrollbar-width: thin;
-  }
+    overflow: hidden;
+    /* white-space: nowrap;
+    scrollbar-width: thin; */
+   
+    scroll-behavior: smooth;
+   
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+    cursor: grab;
+  } 
   
  
   .gallery-wrapper::-webkit-scrollbar {
@@ -77,3 +83,35 @@
     margin-top: 8px;
   }
   
+
+
+
+
+
+
+
+
+
+
+  /* Scroll buttons */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  align-items: center;
+}
+
+.carousel-controls button {
+  padding: 10px 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+  background-color: #ccc;
+}

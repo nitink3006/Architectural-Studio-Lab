@@ -6,7 +6,7 @@ import {
     CiFacebook,
     CiLocationOn,
 } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 import "../Stylesheet/Footer.css";
 
 const Footer = () => {
@@ -15,17 +15,17 @@ const Footer = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    return (
-        <div className="footer bg-dark text-white container-fluid flex flex-md-row flex-col justify-between p-20 ps-5 pe-5">
+    return ( 
+        <div className="container-fluid flex flex-col flex-md-row bg-dark justify-between p-20 text-white footer pe-5 ps-5">
             <div className="footer_dt">
-                <div className="text-gray-400 text-xs">
-                    ©2025 Opus Architectural Lab. Website Designed by
+                <div className="text-gray-400 text-xs avenir_font footer_design">
+                    ©2025 Opus Architectural Lab.<br></br> Website Designed by
                     <a
                         href="https://www.webcrafticx.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span className="text-decoration-underline text-sm text-gray-200 call">
+                        <span className="text-decoration-underline text-gray-200 text-sm call">
                             {" "}
                             WebCrafticX{" "}
                         </span>
@@ -82,12 +82,12 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <div className="text-gray-400 text-center pt-5">
+                    <div className="text-center text-gray-400 avenir_font pt-5">
                         Call Us -{" "}
                         <span className="call">
                             <a
                                 href="tel:+919999803196"
-                                className="call text-white"
+                                className="text-white call"
                             >
                                 <u>+91 99998 03196</u>
                             </a>
@@ -102,7 +102,7 @@ const Footer = () => {
                     className="text-gray-400 cursor-pointer"
                     onClick={scrollToTop}
                 >
-                    <em className="call">Back To Top</em>
+                    <em className="avenir_font call">Back To Top</em>
                 </div>
             </div>
         </div>

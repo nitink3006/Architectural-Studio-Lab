@@ -6,11 +6,11 @@ import "../Stylesheet/Project.css";
 function Projectbtn() {
   //  const [showMore, setShowMore] = useState(false);
   return (
-    <div className='mx-auto flex flex-col flex-md-row justify-content-center align-items-center pt-10 '>
+    <div className='flex flex-col flex-md-row align-items-center justify-content-center mx-auto pt-10'>
        
-      <button className='border ps-20 pe-20 pt-3 pb-3 ms-2 me-2 proj_load_more_btn '
+      <button className='bg-dark border text-white me-2 ms-2 pb-3 pe-20 proj_load_more_btn ps-20 pt-3'
        onClick={() => setShowMore(true)} >Load More</button>
-      <button className='border ps-16 pe-16 pt-3 pb-3  ms-2 me-2 bg-dark text-white '>View All Projects</button>
+      <button className='bg-dark border text-white me-2 ms-2 pb-3 pe-16 ps-16 pt-3'>View All Projects</button>
     </div>
   )
 }

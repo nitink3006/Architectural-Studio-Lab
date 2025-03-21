@@ -65,15 +65,15 @@ const Navigation = () => {
                 bg="white"
                 variant="light"
                 fixed="top"
-                className="w-100 shadow-sm "
+                className="shadow-sm w-100"
             >
                 <div
-                    className="d-flex justify-content-between align-items-center container-fluid bg_soft_gray_nav"
+                    className="container-fluid d-flex align-items-center justify-content-between bg_soft_gray_nav"
                     style={{ padding: "0rem" }}
                 >
                     <Navbar.Brand
                         href="#"
-                        className=" px-4 fs-4 fw-normal futura_heading"
+                        className="fs-4 fw-normal px-4"
                     >
                         {/* Opus Architectural Lab */}
                         <img src={logo} alt="logo" className="logo_img" />
@@ -85,7 +85,7 @@ const Navigation = () => {
                     </Navbar.Brand>
 
                     {/* desktop */}
-                    <div className="d-lg-flex flex-row desktop_nav  d-none ">
+                    <div className="d-lg-flex d-none flex-row desktop_nav">
                         <Nav.Link
                             as={Link}
                             to="/"
@@ -144,7 +144,7 @@ const Navigation = () => {
                         </Nav.Link>
 
                         <button
-                            className="btn-enq bg-black text-white px-6 py-3 text-lg "
+                            className="btn-enq bg-black text-lg text-white px-6 py-3"
                             onClick={() => setIsOpen(true)}
                         >
                             Enquire Now
@@ -152,20 +152,20 @@ const Navigation = () => {
 
                         {isOpen && (
                             <motion.div
-                                className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+                                className="flex bg-black bg-opacity-50 justify-center fixed inset-0 items-center z-50"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                             >
                                 <motion.div
-                                    className="bg-white w-full max-w-lg h-auto p-4 md:p-6 relative shadow-lg flex flex-col justify-center overflow-y-auto rounded-lg"
+                                    className="flex flex-col bg-white h-auto justify-center p-4 rounded-lg shadow-lg w-full max-w-lg md:p-6 overflow-y-auto relative"
                                     initial={{ y: 50, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ duration: 0.4 }}
                                 >
                                     {/* Close Button */}
                                     <motion.button
-                                        className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-2xl"
+                                        className="text-2xl text-gray-400 absolute hover:text-gray-600 right-3 top-3"
                                         onClick={() => setIsOpen(false)}
                                         whileHover={{ scale: 1.2 }}
                                         transition={{ duration: 0.2 }}
@@ -180,7 +180,7 @@ const Navigation = () => {
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.5 }}
                                     >
-                                        <h2 className="text-3xl font-semibold text-gray-400">
+                                        <h2 className="text-3xl text-gray-400 font-semibold">
                                             Say Hello
                                         </h2>
                                     </motion.div>
@@ -188,7 +188,7 @@ const Navigation = () => {
                                     {/* Form */}
                                     <form
                                         onSubmit={handleSubmit}
-                                        className="space-y-3 mt-3"
+                                        className="mt-3 space-y-3"
                                     >
                                         {[
                                             {
@@ -252,7 +252,7 @@ const Navigation = () => {
                                                         }
                                                         value={formData[name]}
                                                         onChange={handleChange}
-                                                        className="w-full p-2 text-base outline-none placeholder-black hover:font-bold"
+                                                        className="p-2 text-base w-full hover:font-bold outline-none placeholder-black"
                                                         required
                                                     />
                                                 </motion.div>
@@ -274,7 +274,7 @@ const Navigation = () => {
                                                 placeholder="Message"
                                                 value={formData.message}
                                                 onChange={handleChange}
-                                                className="w-full p-2 text-base outline-none resize-none placeholder-black hover:font-bold"
+                                                className="p-2 text-base w-full hover:font-bold outline-none placeholder-black resize-none"
                                                 rows="2"
                                             ></textarea>
                                         </motion.div>
@@ -286,7 +286,7 @@ const Navigation = () => {
                                             animate={{ opacity: 1, scale: 1 }}
                                             whileHover={{ scale: 1.05 }}
                                             transition={{ duration: 0.3 }}
-                                            className="w-full bg-black text-white py-2 text-base font-semibold mt-3 hover:bg-gray-900 hover:font-bold transition-colors"
+                                            className="bg-black text-base text-white w-full font-semibold hover:bg-gray-900 hover:font-bold mt-3 py-2 transition-colors"
                                         >
                                             Submit
                                         </motion.button>
@@ -374,20 +374,20 @@ const Navigation = () => {
 
                         {isMobile && (
                             <motion.div
-                                className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-4"
+                                className="flex bg-black bg-opacity-50 justify-center fixed inset-0 items-center px-4 z-50"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                             >
                                 <motion.div
-                                    className="bg-white w-full max-w-lg h-[90vh] p-4 relative shadow-lg flex flex-col justify-between overflow-hidden rounded-lg"
+                                    className="flex flex-col bg-white h-[90vh] justify-between p-4 rounded-lg shadow-lg w-full max-w-lg overflow-hidden relative"
                                     initial={{ y: 50, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ duration: 0.4 }}
                                 >
                                     {/* Close Button */}
                                     <motion.button
-                                        className="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl"
+                                        className="text-2xl text-gray-500 absolute hover:text-black right-3 top-3"
                                         onClick={() => setIsMobile(false)}
                                         whileHover={{ scale: 1.2 }}
                                         transition={{ duration: 0.2 }}
@@ -397,12 +397,12 @@ const Navigation = () => {
 
                                     {/* Heading */}
                                     <motion.div
-                                        className="mt-6 mb-2 text-center"
+                                        className="text-center mb-2 mt-6"
                                         initial={{ opacity: 0, y: -20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.5 }}
                                     >
-                                        <h2 className="text-2xl font-semibold text-gray-400">
+                                        <h2 className="text-2xl text-gray-400 font-semibold">
                                             Say Hello
                                         </h2>
                                     </motion.div>
@@ -410,7 +410,7 @@ const Navigation = () => {
                                     {/* Form */}
                                     <form
                                         onSubmit={handleSubmit}
-                                        className="space-y-3 flex flex-col flex-grow"
+                                        className="flex flex-col flex-grow space-y-3"
                                     >
                                         {[
                                             {
@@ -474,7 +474,7 @@ const Navigation = () => {
                                                         }
                                                         value={formData[name]}
                                                         onChange={handleChange}
-                                                        className="w-full p-2 text-base outline-none placeholder-black"
+                                                        className="p-2 text-base w-full outline-none placeholder-black"
                                                         required
                                                     />
                                                 </motion.div>
@@ -489,14 +489,14 @@ const Navigation = () => {
                                                 duration: 0.6,
                                                 delay: 1.2,
                                             }}
-                                            className="border-b border-black flex-grow"
+                                            className="flex-grow border-b border-black"
                                         >
                                             <textarea
                                                 name="message"
                                                 placeholder="Message"
                                                 value={formData.message}
                                                 onChange={handleChange}
-                                                className="w-full p-2 text-base outline-none resize-none placeholder-black h-[100px]"
+                                                className="h-[100px] p-2 text-base w-full outline-none placeholder-black resize-none"
                                                 rows="1"
                                             ></textarea>
                                         </motion.div>
@@ -508,7 +508,7 @@ const Navigation = () => {
                                             animate={{ opacity: 1, scale: 1 }}
                                             whileHover={{ scale: 1.05 }}
                                             transition={{ duration: 0.3 }}
-                                            className="w-full bg-black text-white py-2 text-lg font-semibold mt-3 rounded-md hover:bg-gray-900 transition-colors"
+                                            className="bg-black rounded-md text-lg text-white w-full font-semibold hover:bg-gray-900 mt-3 py-2 transition-colors"
                                         >
                                             Submit
                                         </motion.button>

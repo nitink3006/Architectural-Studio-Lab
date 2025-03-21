@@ -13,23 +13,23 @@ const Projects = () => {
   const isInspirationInView = useInView(inspirationRef, { margin: "-100px" });
 
   return (
-    <div className="proj_home mt-0 pb-15 bg-Soft_Grey">
+    <div className="bg-Soft_Grey mt-0 pb-15 proj_home">
       <Projecthead selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <Projectimg  selectedCategory={selectedCategory}/> 
 
       {clickCount >= 1 && <Projectimg2  selectedCategory={selectedCategory}/>}
       {clickCount >= 2 && <Projectimg3  selectedCategory={selectedCategory}/>}
 
-      <div className="mx-auto flex flex-col flex-md-row justify-content-center align-items-center pt-10 gap-5">
+      <div className="flex flex-col flex-md-row align-items-center justify-content-center futura_font gap-5 mx-auto pt-10">
         <button
-          className={`border ps-20 pe-20 pt-3 pb-3 ms-2 me-2 proj_load_more_btn ${clickCount >= 2 ? "disabled opacity-50 cursor-not-allowed" : ""}`}
+          className={`border ps-20 pe-20 pt-3 pb-3 ms-2 me-2 proj_load_more_btn bg-dark text-white ${clickCount >= 2 ? "disabled opacity-50 cursor-not-allowed" : ""}`}
           onClick={() => setClickCount((prev) => prev + 1)}
           disabled={clickCount >= 2}
         >
           Load More
         </button>
       <a href="/projects-all">
-      <button className="border ps-16 pe-16 pt-3 pb-3 ms-2 me-2 bg-dark text-white">
+      <button className="bg-dark border text-white futura_font me-2 ms-2 pb-3 pe-16 ps-16 pt-3">
           View All Projects
         </button>
       </a>

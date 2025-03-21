@@ -73,12 +73,12 @@ const GalleryRow = ({ index, layout, images }) => {
     return (
         <motion.div
             ref={ref}
-            className="gallery container-fluid mb-4"
+            className="container-fluid gallery mb-4"
             initial={{ opacity: 1, y: 40 }}
             animate={shouldAnimate ? { opacity: 1, y: 0 } : { opacity: 1, y: 40 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
         >
-            <div className="gallery_row row">
+            <div className="row gallery_row">
                 {layout.map((colClass, i) => (
                     <div key={i} className={`${colClass} gallery-item`}>
                         <div className="gallery-img-wrapper">
@@ -106,7 +106,7 @@ const AnimatedImage = () => {
         <motion.img
             src="https://static.wixstatic.com/media/76aad7_7b3c5c2a9fcd4bc5a7dbc1ef96078b66~mv2.jpg/v1/fill/w_1440,h_500,fp_0.48_0.68,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MUMBAI-OFFICE-15-06-2023-CAM-05_POST.jpg"
             alt="Japandi Home"
-            className="proj_image mb-4"
+            className="mb-4 proj_image"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -115,38 +115,38 @@ const AnimatedImage = () => {
 };
 const Mumbaioffice = () => {
     return (
-        <div>
+        <div className="bg-Soft_Grey">
             <Navigation />
-            <h1 className="proj_cont1_head pt-20">Mumbai office</h1>
-            <div className="proj_cont1_hr mt-3">
+            <h1 className="futura_font proj_cont1_head pt-20">Mumbai office</h1>
+            <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center mt-3 pb-10 fw-normal">Victory Ventures </h4>
+            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">Victory Ventures </h4>
             <AnimatedImage />
-            <div className="proj_cont_em_para pt-15 pb-8">
+            <div className="pb-8 proj_cont_em_para pt-15">
                 {/* <p>
                     <em>This space is more than just a dwelling; it's a space where every element intertwines to create a space that is both aesthetically pleasing and functionally efficient.</em>
                 </p> */}
             </div>
 
 
-            <div className="flex flex-md-row flex-col justify-content-md-center justify-content-start  gap-12 align-items-center mb-25 proj_cont1_about">
+            <div className="flex flex-col flex-md-row align-items-center justify-content-md-center justify-content-start gap-12 mb-25 proj_cont1_about">
                 <div className="flex flex-row gap-4">
                     <FaBox className="text-gray-400 fs-5" />
-                    <p>2024</p>
+                    <p className="avenir_font">2024</p>
                 </div>
                 <div className="flex flex-row gap-4">
                     <FaRegSquare className="text-gray-400 fs-4" />
-                    <p>3500 sqft</p>
+                    <p className="avenir_font">3500 sqft</p>
                 </div>
                 <div className="flex flex-row gap-4">
                     <CiHome className="text-gray-400 fs-4" />
-                    <p>Residential</p>
+                    <p className="avenir_font">Residential</p>
                 </div>
                 <div className="flex flex-row gap-4">
                     <CiLocationOn className="text-gray-400 fs-4" />
-                    <p>Gurugram</p>
+                    <p className="avenir_font">Gurugram</p>
                 </div>
             </div>
 
@@ -155,7 +155,7 @@ const Mumbaioffice = () => {
                 <GalleryRow key={index} index={index} layout={row.layout} images={row.images} />
             ))}
 
-            <div className="proj_cont1_hr2 mb-30 mt-40">
+            <div className="mb-30 mt-40 proj_cont1_hr2">
                 <hr />
             </div>
 
