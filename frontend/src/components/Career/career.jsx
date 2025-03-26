@@ -5,20 +5,15 @@ import Navigation from "../Navigation";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import "../../Stylesheet/try.css";
+
 const Career = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      if (scrollPosition > 100) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 100);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -46,20 +41,17 @@ const Career = () => {
     { title: "Senior Interior Designer", location: "Gurugram" },
     { title: "Interior Designer", location: "Gurugram" },
     { title: "Sr. Project Manager", location: "Gurugram" },
-    { title: "Interior Design - Intern", location: "Gurugram" },
-    { title: "CAD Designer", location: "Gurugram" },
-    { title: "Accounts Assistant", location: "Gurugram" },
-    { title: "Founder's Office", location: "Gurugram" },
+    { title: "Architect & Interior Design - Intern", location: "Gurugram" },
+    { title: "Accounts", location: "Gurugram" },
     { title: "Site Supervisor", location: "Gurugram" },
-    { title: "3D Visualizer", location: "Gurugram" },
   ];
 
   return (
     <>
       <Navigation />
       <div className="flex flex-col bg-Soft_Grey min-h-screen relative">
-        <div ref={ref} className="p-10 text-center mt-32">
-          <h1 className="text-4xl font-semibold futura_font_bold text_black">
+        <div ref={ref} className="p-6 text-center mt-20 md:mt-32">
+          <h1 className="text-3xl md:text-4xl font-semibold futura_font_bold text_black">
             Career <span className="text-gray-400 font-bold">Opportunities</span>
           </h1>
         </div>
@@ -67,41 +59,34 @@ const Career = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="bg-center bg-cover h-[80vh] w-full relative"
+          className="bg-center bg-cover h-60 md:h-[80vh] w-full relative"
           style={{
             backgroundImage:
               "url('https://static.wixstatic.com/media/11062b_1e00f3c8acda4ab38eeb0378083d5517~mv2.jpg/v1/fill/w_1899,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_1e00f3c8acda4ab38eeb0378083d5517~mv2.jpg')",
           }}
         >
-          <div className="text-5xl text-center text-white -translate-x-1/2 absolute bottom-28 font-bold futura_font_bold left-[54rem] transform">
+          <div className="text-lg md:text-5xl text-center text-white absolute bottom-10 md:bottom-28 font-bold futura_font_bold left-1/2 transform -translate-x-1/2">
             <motion.p
               custom={0}
               variants={textVariants}
               initial="hidden"
               animate={isVisible ? "visible" : "hidden"}
             >
-              We are always
-            </motion.p>
-            <motion.p
-              custom={0.5}
-              variants={textVariants}
-              initial="hidden"
-              animate={isVisible ? "visible" : "hidden"}
-            >
-              looking out for
-            </motion.p>
-            <motion.p
-              custom={1}
-              variants={textVariants}
-              initial="hidden"
-              animate={isVisible ? "visible" : "hidden"}
-            >
-              new talent to join our team.
+              JOIN OUR TEAM AT OPUS ARCHITECTURE LAB
             </motion.p>
           </div>
         </motion.div>
 
-        <div className="flex-1 p-16">
+        <div className="mt-4 px-6 md:mx-28 text-center">
+          <p className="text-gray-400 text-base md:text-xl tracking-widest text_black">
+            DESIGN.INNOVATE.GROW.
+          </p>
+          <p className="text-gray-400 text-sm md:text-base tracking-widest text_black">
+            At Opus Architecture Lab, we believe that great design comes from collaboration, creativity, and continuous learning. We are always looking for passionate architects and designers eager to push boundaries, challenge conventions, and craft meaningful spaces that inspire.
+          </p>
+        </div>
+
+        <div className="flex-1 p-9 md:p-16 ">
           <h2 className="text-gray-400 text-sm futura_font_bold tracking-widest text_black">CURRENT OPENINGS</h2>
           <div className="mt-6">
             {jobs.map((job, index) => (

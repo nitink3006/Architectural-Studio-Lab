@@ -156,7 +156,7 @@ function HRBP() {
             className="mt-4 flex justify-center"
           >
             <Link to='/job-applications'>
-            <button className="bg-[#212121] w-[90%] text-white px-6 py-3 rounded-md shadow-md hover:bg-blue-700 transition">
+            <button className="bg-[#212121] w-auto text-white px-6 py-3 rounded-md shadow-md hover:bg-blue-700 transition">
               Apply Now
             </button>
             </Link>

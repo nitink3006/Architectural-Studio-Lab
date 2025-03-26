@@ -72,7 +72,6 @@ const JobApplication = () => {
         </h1>
 
         <div className="flex flex-col lg:flex-row flex-grow w-full">
-          {/* Image Section */}
           <div className="w-full lg:w-1/2 h-48 lg:h-[80vh] lg:sticky top-0 overflow-y-auto">
             <div
               ref={imageRef}
@@ -85,7 +84,6 @@ const JobApplication = () => {
             />
           </div>
 
-          {/* Form Section */}
           <motion.div
             ref={contentRef}
             className="w-full lg:w-1/2 bg-white p-6 sm:p-8 overflow-y-auto"
