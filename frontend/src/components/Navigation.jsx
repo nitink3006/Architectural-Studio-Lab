@@ -112,15 +112,6 @@ const Navigation = () => {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/careers"
-              className={`nav-link ps-3 pe-3 ${
-                location.pathname === "/careers" ? "active" : ""
-              }`}
-            >
-              Careers
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
               to="/gallery"
               className={`nav-link ps-3 pe-3 ${
                 location.pathname === "/gallery" ? "active" : ""
@@ -137,7 +128,15 @@ const Navigation = () => {
             >
               Blogs
             </Nav.Link>
-
+            <Nav.Link
+              as={Link}
+              to="/careers"
+              className={`nav-link ps-3 pe-3 ${
+                location.pathname === "/careers" ? "active" : ""
+              }`}
+            >
+              Careers
+            </Nav.Link>
             <button
               className="btn-enq bg-black text-lg text-white px-6 py-3"
               onClick={() => setIsOpen(true)}
