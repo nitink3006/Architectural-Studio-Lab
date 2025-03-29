@@ -5,6 +5,12 @@ import Navigation from "../Navigation";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import "../../Stylesheet/try.css";
+import "@fontsource/poppins";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/lato"; // Default weight 400
+import "@fontsource/lato/700.css"; 
+
 
 const Career = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -71,6 +77,7 @@ const Career = () => {
               variants={textVariants}
               initial="hidden"
               animate={isVisible ? "visible" : "hidden"}
+              style={{ fontFamily: "Poppins",fontSize: "4.375rem" }}
             >
               JOIN OUR TEAM AT OPUS ARCHITECTURE LAB
             </motion.p>
@@ -78,10 +85,11 @@ const Career = () => {
         </motion.div>
 
         <div className="mt-4 px-6 md:mx-28 text-center">
-          <p className="text-gray-400 text-base md:text-xl tracking-widest text_black">
+          <p className="text-gray-400 text-base md:text-xl tracking-widest text_black" style={{ fontFamily: "Poppins",fontSize: "2.5rem" }}
+          >
             DESIGN.INNOVATE.GROW.
           </p>
-          <p className="text-gray-400 text-sm md:text-base tracking-widest text_black">
+          <p className="text-gray-400 text-sm md:text-base tracking-widest text_black" style={{ fontFamily: "Lato",fontSize: "1.5rem" }}>
             At Opus Architecture Lab, we believe that great design comes from collaboration, creativity, and continuous learning. We are always looking for passionate architects and designers eager to push boundaries, challenge conventions, and craft meaningful spaces that inspire.
           </p>
         </div>
