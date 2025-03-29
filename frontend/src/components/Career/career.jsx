@@ -67,8 +67,8 @@ const Career = () => {
           transition={{ duration: 1.5 }}
           className="bg-center bg-cover h-60 md:h-[80vh] w-full relative"
           style={{
-            backgroundImage:
-              "url('https://static.wixstatic.com/media/11062b_1e00f3c8acda4ab38eeb0378083d5517~mv2.jpg/v1/fill/w_1899,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_1e00f3c8acda4ab38eeb0378083d5517~mv2.jpg')",
+            backgroundSize: "100%",
+            backgroundImage: "url('src/assets/careerimage.png')",
           }}
         >
           <div className="absolute bottom-10 md:bottom-28 left-1/2 transform -translate-x-1/2 text-center text-white font-bold futura_font_bold px-6 w-full sm:w-3/4">
