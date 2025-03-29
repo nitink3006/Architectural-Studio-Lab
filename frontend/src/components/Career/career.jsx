@@ -68,7 +68,7 @@ const Career = () => {
           className="bg-center bg-cover h-60 md:h-[80vh] w-full relative"
           style={{
             backgroundSize: "100%",
-            backgroundImage: "url('src/assets/careerimage1.png')",
+            backgroundImage: "url('src/assets/careerimage1.jpg')",
           }}
         >
           <div className="absolute bottom-10 md:bottom-28 left-1/2 transform -translate-x-1/2 text-center text-white font-bold futura_font_bold px-6 w-full sm:w-3/4">
