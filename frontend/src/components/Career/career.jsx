@@ -9,7 +9,7 @@ import "@fontsource/poppins";
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/700.css";
 import "@fontsource/lato"; // Default weight 400
-import "@fontsource/lato/700.css"; 
+import "@fontsource/lato/700.css";
 
 
 const Career = () => {
@@ -71,27 +71,40 @@ const Career = () => {
               "url('https://static.wixstatic.com/media/11062b_1e00f3c8acda4ab38eeb0378083d5517~mv2.jpg/v1/fill/w_1899,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_1e00f3c8acda4ab38eeb0378083d5517~mv2.jpg')",
           }}
         >
-          <div className="text-lg md:text-5xl text-center text-white absolute bottom-10 md:bottom-28 font-bold futura_font_bold left-1/2 transform -translate-x-1/2">
+          <div className="absolute bottom-10 md:bottom-28 left-1/2 transform -translate-x-1/2 text-center text-white font-bold futura_font_bold px-6 w-full sm:w-3/4">
             <motion.p
               custom={0}
               variants={textVariants}
               initial="hidden"
               animate={isVisible ? "visible" : "hidden"}
-              style={{ fontFamily: "Poppins",fontSize: "4.375rem" }}
+              className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug sm:leading-tight"
+              style={{ fontFamily: "Poppins" }}
             >
               JOIN OUR TEAM AT OPUS ARCHITECTURE LAB
             </motion.p>
           </div>
-        </motion.div>
 
+        </motion.div>
         <div className="mt-4 px-6 md:mx-28 text-center">
-          <p className="text-gray-400 text-base md:text-xl tracking-widest text_black" style={{ fontFamily: "Poppins",fontSize: "2.5rem" }}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-gray-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-3xl tracking-widest text_black text-center px-6"
+            style={{ fontFamily: "Poppins" }}
           >
-            DESIGN.INNOVATE.GROW.
-          </p>
-          <p className="text-gray-400 text-sm md:text-base tracking-widest text_black" style={{ fontFamily: "Lato",fontSize: "1.5rem" }}>
+            DESIGN. INNOVATE. GROW.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+            className="text-gray-400 text-sm md:text-base tracking-widest text_black"
+            style={{ fontFamily: "Lato", fontSize: "1.5rem" }}
+          >
             At Opus Architecture Lab, we believe that great design comes from collaboration, creativity, and continuous learning. We are always looking for passionate architects and designers eager to push boundaries, challenge conventions, and craft meaningful spaces that inspire.
-          </p>
+          </motion.p>
         </div>
 
         <div className="flex-1 p-9 md:p-16 ">

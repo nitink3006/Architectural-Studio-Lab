@@ -17,6 +17,12 @@ import JobApplication from "./components/Career/JobApplication";
 import Blog from "./components/Blog";
 import Projects from "./components/Projects";
 import Gallery from "./components/Gallery";
+import SeniorInteriorDesigner from "./components/Career/SeniorInteriorDesigner";
+import InteriorDesigner from "./components/Career/InteriorDesigner";
+import ProjectManager from "./components/Career/ProjectManager";
+import InteriorIntern from "./components/Career/InteriorIntern";
+import Accounts from "./components/Career/Accounts";
+import SiteSupervisor from "./components/Career/SiteSupervisor";
 
 function App() {
   return (
@@ -42,6 +48,24 @@ function App() {
           {" "}
         </Route>
         <Route path="/career/hrbp" element={<HRBP />}>
+          {" "}
+        </Route>
+        <Route path="/career/senior-interior-designer" element={<SeniorInteriorDesigner />}>
+          {" "}
+        </Route>
+        <Route path="/career/interior-designer" element={<InteriorDesigner />}>
+          {" "}
+        </Route>
+        <Route path="/career/sr.-project-manager" element={<ProjectManager />}>
+          {" "}
+        </Route>
+        <Route path="/career/architect-&-interior-design---intern" element={<InteriorIntern />}>
+          {" "}
+        </Route>
+        <Route path="/career/accounts" element={<Accounts />}>
+          {" "}
+        </Route>
+        <Route path="/career/site-supervisor" element={<SiteSupervisor/>}>
           {" "}
         </Route>
         <Route path="/job-applications" element={<JobApplication />}>

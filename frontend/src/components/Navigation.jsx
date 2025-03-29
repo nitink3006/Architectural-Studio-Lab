@@ -322,14 +322,7 @@ const Navigation = () => {
               >
                 Projects
               </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to="/careers"
-                className="nav-link"
-                onClick={closeNav}
-              >
-                Careers
-              </Nav.Link>
+             
               <Nav.Link
                 as={Link}
                 to="/gallery"
@@ -346,7 +339,17 @@ const Navigation = () => {
               >
                 Blog
               </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/careers"
+                className="nav-link"
+                onClick={closeNav}
+              >
+                Careers
+              </Nav.Link>
             </Nav>
+
+           
 
             <Nav.Link className="nav-link">
               <button
