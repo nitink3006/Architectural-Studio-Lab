@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
-function InteriorIntern() {
+function Accounts() {
   const contentRef = useRef(null);
   const [isContentScrolled, setIsContentScrolled] = useState(false);
 
@@ -51,7 +51,7 @@ function InteriorIntern() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-3xl text-center font-bold"
           >
-            Architect & Interior Design - Intern
+            Accounts
           </motion.h1>
 
           <motion.p 
@@ -60,7 +60,7 @@ function InteriorIntern() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-gray text-center mb-4"
           >
-            Part-Time • GURUGRAM
+            Full-Time • GURUGRAM
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, width: "0%" }}
@@ -171,4 +171,4 @@ function InteriorIntern() {
 }
 
 
-export default InteriorIntern;
+export default Accounts;
