@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/lato": "^5.2.5",
+    "@fontsource/poppins": "^5.2.5",
     "@tailwindcss/vite": "^4.0.6",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
