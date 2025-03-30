@@ -10,7 +10,7 @@ import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/700.css";
 import "@fontsource/lato"; // Default weight 400
 import "@fontsource/lato/700.css";
-
+import careerimage from "../../assets/careerimage1.jpg";
 
 const Career = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -68,7 +68,7 @@ const Career = () => {
           className="bg-center bg-cover h-60 md:h-[80vh] w-full relative"
           style={{
             backgroundSize: "100%",
-            backgroundImage: "url('src/assets/careerimage1.jpg')",
+            backgroundImage: `url(${careerimage})`,
           }}
         >
           <div className="absolute bottom-10 md:bottom-28 left-1/2 transform -translate-x-1/2 text-center text-white font-bold futura_font_bold px-6 w-full sm:w-3/4">
