@@ -119,7 +119,7 @@ const Career = () => {
               <p className="text-xl sm:text-2xl md:text-2xl" style={{ fontFamily: "Poppins" }}>
                 Design. Innovate. Grow.
               </p>
-              <p className="text-white text-sm md:text-base tracking-widest" style={{ fontFamily: "Lato", fontSize: "1.02rem" }}>
+              <p className="text-white text-sm md:text-base tracking-widest" style={{ fontFamily: "Lato", fontSize: "0.98rem" }}>
                 At Opus Architecture Lab, we believe that great design comes from collaboration, creativity, and continuous learning. We are always looking for passionate architects and designers eager to push boundaries, challenge conventions, and craft meaningful spaces that inspire.
               </p>
             </motion.div>
