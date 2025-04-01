@@ -106,7 +106,7 @@ const Career = () => {
               transition={{ duration: 1 }}
               className="mt-48"
             >
-              <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl futura_font_bold" style={{ fontFamily: "Poppins" }}>
+              <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl" style={{ fontFamily: "Poppins" }}>
                 JOIN OUR TEAM AT OPUS ARCHITECTURE LAB
               </p>
             </motion.div>
