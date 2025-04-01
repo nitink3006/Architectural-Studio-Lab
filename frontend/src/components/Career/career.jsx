@@ -104,7 +104,7 @@ const Career = () => {
               initial={{ opacity: 0, y: 50 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 1 }}
-              className="mt-48"
+              className="mt-60"
             >
               <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl" style={{ fontFamily: "Poppins" }}>
                 JOIN OUR TEAM AT OPUS ARCHITECTURE LAB
@@ -169,7 +169,7 @@ const Career = () => {
         <input type="text" name="experience" placeholder="Years of experience*" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.experience} onChange={handleChange} required />
        
         <div>
-          <p className="text-lg text-gray-600 font-semibold mt-2">Upload Covering Letter</p>
+          <p className="text-lg text-gray-600 font-semibold mt-2">Upload Cover Letter</p>
           <p className="text-sm text-gray-600">Please upload your CV in PDF format. Max File Size - 5 MB.</p>
           <input type="file" name="coverLetterFile" className="w-full border p-3 bg-gray-100 rounded" onChange={handleFileChange} />
         </div>
