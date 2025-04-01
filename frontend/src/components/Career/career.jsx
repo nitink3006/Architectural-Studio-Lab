@@ -11,6 +11,8 @@ import "@fontsource/lato";
 import "@fontsource/lato/700.css";
 import careerimage from "../../assets/careerimage1.jpg";
 import emailjs from "emailjs-com";
+import { FaCircle } from "react-icons/fa";
+
 
 
 const Career = () => {
@@ -33,6 +35,15 @@ const Career = () => {
     portfolioLink: "",
     resumeFile: null,
   });
+
+
+  const [isOpen, setIsOpen] = useState(false);
+  const options = ["Architect", "Interior Designer", "Intern", "Other"];
+
+  const handleSelect = (option) => {
+    setFormData({ ...formData, position: option });
+    setIsOpen(false);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -93,9 +104,9 @@ const Career = () => {
               initial={{ opacity: 0, y: 50 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 1 }}
-              className="mt-60"
+              className="mt-48"
             >
-              <p className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold futura_font_bold" style={{ fontFamily: "Poppins" }}>
+              <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold futura_font_bold" style={{ fontFamily: "Poppins" }}>
                 JOIN OUR TEAM AT OPUS ARCHITECTURE LAB
               </p>
             </motion.div>
@@ -103,12 +114,12 @@ const Career = () => {
               initial={{ opacity: 0, y: 50 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 1, delay: 0.5 }}
-              className="mt-4 px-6 md:mx-28 text-center"
+              className="mt-2 px-6 md:mx-28 text-center"
             >
-              <p className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{ fontFamily: "Poppins" }}>
+              <p className="text-xl sm:text-2xl md:text-3xl" style={{ fontFamily: "Poppins" }}>
                 DESIGN. INNOVATE. GROW.
               </p>
-              <p className="text-white text-sm md:text-base tracking-widest" style={{ fontFamily: "Lato", fontSize: "1.5rem" }}>
+              <p className="text-white text-sm md:text-base tracking-widest" style={{ fontFamily: "Lato", fontSize: "1.02rem" }}>
                 At Opus Architecture Lab, we believe that great design comes from collaboration, creativity, and continuous learning. We are always looking for passionate architects and designers eager to push boundaries, challenge conventions, and craft meaningful spaces that inspire.
               </p>
             </motion.div>
@@ -116,24 +127,37 @@ const Career = () => {
         </div>
         <div className="flex-1 p-6 md:p-12 max-w-3xl mx-auto">
       <h1 className="text-3xl sm:text-4xl font-serif italic text-center mt-6 mb-4 py-2">
-        <span className="font-normal">Job</span> Application
+        <span className="font-normal">Application for</span> Employment
       </h1>
       <form className="space-y-2" onSubmit={handleSubmit}>
-        <div>
-          <select
-            name="position"
-            value={formData.position}
-            onChange={handleChange}
-            className="w-full border p-3 rounded bg-gray-100"
-            required
-          >
-            <option value="">Applying for</option>
-            <option value="Architect">Architect</option>
-            <option value="Interior Designer">Interior Designer</option>
-            <option value="Intern">Intern</option>
-            <option value="Other">Other</option>
-          </select>
+      <div className="relative">
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full border p-3 rounded bg-gray-100 text-left flex justify-between"
+      >
+        {formData.position || "Applying for"}
+        <span>▼</span>
+      </button>
+
+      {isOpen && (
+        <div className="absolute left-0 right-0 mt-1 bg-white border rounded shadow-md z-10">
+          {options.map((option) => (
+            <div
+              key={option}
+              className="flex items-center p-3 -mb-4 cursor-pointer hover:bg-gray-100"
+              onClick={() => handleSelect(option)}
+            >
+              <FaCircle
+                className={`mr-2 ${formData.position === option ? "text-blue-500" : "text-gray-300"}`}
+                size={12}
+              />
+              <span>{option}</span>
+            </div>
+          ))}
         </div>
+      )}
+    </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input type="text" name="firstName" placeholder="First name*" className="w-full border p-3 bg-gray-100 rounded" value={formData.firstName} onChange={handleChange} required />
@@ -143,11 +167,9 @@ const Career = () => {
         <input type="tel" name="phone" placeholder="Contact number*" pattern="^\\+91[6-9]\\d{9}$" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.phone} onChange={handleChange} required />
         <input type="text" name="qualifications" placeholder="Educational qualifications*" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.qualifications} onChange={handleChange} required />
         <input type="text" name="experience" placeholder="Years of experience*" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.experience} onChange={handleChange} required />
-        <input type="text" name="city" placeholder="City you are applying from*" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.city} onChange={handleChange} required />
-        <input type="text" name="relocate" placeholder="If not from Delhi, are you willing to relocate?*" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.relocate} onChange={handleChange} required />
-        
+       
         <div>
-          <p className="text-lg font-semibold mt-2">Upload Covering Letter</p>
+          <p className="text-lg text-gray-600 font-semibold mt-2">Upload Covering Letter</p>
           <p className="text-sm text-gray-600">Please upload your CV in PDF format. Max File Size - 5 MB.</p>
           <input type="file" name="coverLetterFile" className="w-full border p-3 bg-gray-100 rounded" onChange={handleFileChange} />
         </div>
@@ -157,20 +179,53 @@ const Career = () => {
           <p className="text-sm text-gray-600">Upload your CV in PDF format. Max File Size - 5 MB.</p>
           <input type="file" name="resumeFile" className="w-full border p-3 bg-gray-100 rounded" onChange={handleFileChange} required />
         </div>
-        <div>
-          <p className="text-lg font-semibold mt-2">Upload Portfolio *</p>
-          <p className="text-sm text-gray-600">Upload your Portfolio in PDF format. Max File Size - 5 MB.</p>
-          <input type="file" name="resumeFile" className="w-full border p-3 bg-gray-100 rounded" onChange={handleFileChange} required />
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mt-2">
+  <label className="text-lg ">Link to the CV and or Portfolio</label>
+  <input 
+    type="text" 
+    name="portfolioLink" 
+    className="w-full border p-3 bg-gray-100 rounded mt-1" 
+    placeholder="Enter portfolio link"
+  />
+  <p className="text-xs text-gray-600 mt-1">
+    <strong>Note:</strong> Mandatory for all Architects/Designers/CAD, BIM Technicians/3D Visualizer. 
+    You can upload your portfolio through a service like WeTransfer, Dropbox, Google Drive or Issuu.
+  </p>
+</div>
+
+<div className="mt-2">
+  <label className="text-lg ">Portfolio Password (If any)</label>
+  <input 
+    type="text" 
+    name="portfolioPassword" 
+    className="w-full border p-3 bg-gray-100 rounded mt-1" 
+    placeholder="Enter portfolio password (if applicable)"
+  />
+</div>
+</div>
+
+<div className="mt-2">
+  <label className="text-lg">
+    Link to short video of yourself of why do you want to join OPUS ARCHITECTURE LAB
+  </label>
+  <input 
+    type="text" 
+    name="videoLink" 
+    className="w-full border p-3 bg-gray-100 rounded mt-1" 
+    placeholder="Enter video link"
+  />
+</div>
+
         
-        <div className="flex items-start space-x-2 mt-4">
+        <div className="flex items-start space-x-2 mt-2">
           <input type="checkbox" className="mt-1" required />
           <p className="text-sm text-gray-700">
             By clicking the submit button below, I certify that all the information provided is true and complete.
           </p>
         </div>
         
-        <button type="submit" className="w-full bg-black text-white p-3 rounded text-center font-semibold mt-4">Submit</button>
+        <button type="submit" className="w-full bg-black text-white p-3 rounded text-center font-semibold mt-2">Submit</button>
       </form>
     </div>
         </div>
