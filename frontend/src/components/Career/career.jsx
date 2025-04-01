@@ -38,7 +38,7 @@ const Career = () => {
 
 
   const [isOpen, setIsOpen] = useState(false);
-  const options = ["Architect", "Interior Designer", "Intern"];
+  const options = ["Architect", "Interior Designer", "Intern", "Others"];
 
   const handleSelect = (option) => {
     setFormData({ ...formData, position: option });
