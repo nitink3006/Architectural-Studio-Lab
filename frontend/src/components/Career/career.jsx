@@ -38,7 +38,7 @@ const Career = () => {
 
 
   const [isOpen, setIsOpen] = useState(false);
-  const options = ["Architect", "Interior Designer", "Intern", "Other"];
+  const options = ["Architect", "Interior Designer", "Intern"];
 
   const handleSelect = (option) => {
     setFormData({ ...formData, position: option });
@@ -116,8 +116,8 @@ const Career = () => {
               transition={{ duration: 1, delay: 0.5 }}
               className="mt-2 px-6 md:mx-28 text-center"
             >
-              <p className="text-xl sm:text-2xl md:text-3xl" style={{ fontFamily: "Poppins" }}>
-                Design.Innovate.Grow.
+              <p className="text-xl sm:text-2xl md:text-2xl" style={{ fontFamily: "Poppins" }}>
+                Design. Innovate. Grow.
               </p>
               <p className="text-white text-sm md:text-base tracking-widest" style={{ fontFamily: "Lato", fontSize: "1.02rem" }}>
                 At Opus Architecture Lab, we believe that great design comes from collaboration, creativity, and continuous learning. We are always looking for passionate architects and designers eager to push boundaries, challenge conventions, and craft meaningful spaces that inspire.
@@ -126,40 +126,32 @@ const Career = () => {
           </div>
         </div>
         <div className="flex-1 p-6 md:p-12 max-w-3xl mx-auto">
-      <h1 className="text-3xl sm:text-4xl font-serif italic text-center mt-6 mb-4 py-2">
-        <span className="font-normal">Application for</span> Employment
+      <h1 className="text-3xl sm:text-4xl font-normal italic text-center mt-6 mb-4 py-2">
+        <span className="font-normal">Application for</span> <span className="font-normal">Employment</span> 
       </h1>
       <form className="space-y-2" onSubmit={handleSubmit}>
-      <div className="relative">
-      <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full border p-3 rounded bg-gray-100 text-left flex justify-between"
-      >
-        {formData.position || "Applying for"}
-        <span>▼</span>
-      </button>
+      <div className="space-y-2">
+      <h6 className="text-2xl text-gray-600">Applying for</h6>
 
-      {isOpen && (
-        <div className="absolute left-0 right-0 mt-1 bg-white border rounded shadow-md z-10">
-          {options.map((option) => (
-            <div
-              key={option}
-              className="flex items-center p-3 -mb-4 cursor-pointer hover:bg-gray-100"
-              onClick={() => handleSelect(option)}
-            >
-              <FaCircle
-                className={`mr-2 ${formData.position === option ? "text-blue-500" : "text-gray-300"}`}
-                size={12}
-              />
-              <span>{option}</span>
-            </div>
-          ))}
-        </div>
-      )}
+      <div className="flex space-x-4">
+  {options.map((option) => (
+    <div
+      key={option}
+      className="flex items-center p-2 cursor-pointer text-gray-600"
+      onClick={() => handleSelect(option)}
+    >
+      <FaCircle
+        className={`mr-2 ${formData.position === option ? "text-blue-500" : "text-white"}`}
+        size={12}
+      />
+      <span>{option}</span>
+    </div>
+  ))}
+</div>
+
     </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4"style={{ fontFamily: "Lato", }}>
           <input type="text" name="firstName" placeholder="First name*" className="w-full border p-3 bg-gray-100 rounded" value={formData.firstName} onChange={handleChange} required />
           <input type="text" name="lastName" placeholder="Last name*" className="w-full border p-3 bg-gray-100 rounded" value={formData.lastName} onChange={handleChange} required />
         </div>
@@ -175,13 +167,13 @@ const Career = () => {
         </div>
         
         <div>
-          <p className="text-lg font-semibold mt-2">Upload Resume *</p>
+          <p className="text-lg font-semibold text-gray-600 mt-2">Upload Resume *</p>
           <p className="text-sm text-gray-600">Upload your CV in PDF format. Max File Size - 5 MB.</p>
           <input type="file" name="resumeFile" className="w-full border p-3 bg-gray-100 rounded" onChange={handleFileChange} required />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="mt-2">
-  <label className="text-lg ">Link to the CV and or Portfolio</label>
+  <label className="text-lg text-gray-600 ">Link to the CV and or Portfolio</label>
   <input 
     type="text" 
     name="portfolioLink" 
@@ -195,7 +187,7 @@ const Career = () => {
 </div>
 
 <div className="mt-2">
-  <label className="text-lg ">Portfolio Password (If any)</label>
+  <label className="text-lg text-gray-600 ">Portfolio Password (If any)</label>
   <input 
     type="text" 
     name="portfolioPassword" 
@@ -206,7 +198,7 @@ const Career = () => {
 </div>
 
 <div className="mt-2">
-  <label className="text-lg">
+  <label className="text-lg text-gray-600">
     Link to short video of yourself of why do you want to join OPUS ARCHITECTURE LAB
   </label>
   <input 
