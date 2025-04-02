@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { FaTimes } from "react-icons/fa"; // Import close icon
 import { IoIosMenu } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../Stylesheet/try.css";
 import emailjs from "emailjs-com"; // Import emailjs-com
 import { motion } from "framer-motion";
@@ -10,6 +10,7 @@ import logo from "../assets/images/logo2.png";
 
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const location = useLocation(); 
 
   const toggleNav = () => setIsNavOpen(!isNavOpen);
   const closeNav = () => setIsNavOpen(false); // Function to close menu

@@ -1,6 +1,8 @@
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useRef } from "react";
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
+import AboutNavbar from "./AboutNavbar";
+
 import Footer from "./Footer";
 
 const processSteps = [
@@ -41,20 +43,15 @@ const About = () => {
 
   return (
     <div className="flex flex-col bg-Soft_Grey text-black w-full min-h-screen relative scroll-smooth">
-      <Navigation />
-
-      {/* About Us Section */}
-      <div className="flex h-[45vh] justify-center text-center w-full items-center px-4">
-        <h1 className="text-4xl font-bold futura_font md:text-7xl text_black">About Us</h1>
-      </div>
-
+      
+      <AboutNavbar  />
       {/* Sticky Image with Text Overlay */}
       <div ref={targetRef} className="h-screen w-full relative">
         <div className="flex h-screen justify-center items-center overflow-hidden sticky top-0">
           <motion.img
-            src="/aboutmain2.jpg"
+            src="/aboutmain.png"
             alt="Our Mission"
-            className="h-full w-full absolute object-cover top-0"
+            className="w-full h-full absolute top-0"
           />
           <div className="flex flex-col h-screen justify-center text-center text-white w-full absolute futura_font_bold items-center px-6 space-y-4">
             <motion.h2
