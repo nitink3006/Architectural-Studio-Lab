@@ -131,7 +131,7 @@ const Career = () => {
       </h1>
       <form className="space-y-2" onSubmit={handleSubmit}>
       <div className="space-y-2">
-      <h6 className="text-2xl text-gray-600">Applying for</h6>
+      <h6 className="text-2xl text-gray-600" style={{ fontFamily: "Lato", }}>Applying for</h6>
 
       <div className="flex space-x-4">
   {options.map((option) => (
