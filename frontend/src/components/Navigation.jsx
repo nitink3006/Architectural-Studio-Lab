@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { FaTimes } from "react-icons/fa"; // Import close icon
 import { IoIosMenu } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../Stylesheet/try.css";
 import emailjs from "emailjs-com"; // Import emailjs-com
 import { motion } from "framer-motion";
@@ -10,6 +10,7 @@ import logo from "../assets/images/logo2.png";
 
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const location = useLocation(); 
 
   const toggleNav = () => setIsNavOpen(!isNavOpen);
   const closeNav = () => setIsNavOpen(false); // Function to close menu
@@ -112,15 +113,6 @@ const Navigation = () => {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/careers"
-              className={`nav-link ps-3 pe-3 ${
-                location.pathname === "/careers" ? "active" : ""
-              }`}
-            >
-              Careers
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
               to="/gallery"
               className={`nav-link ps-3 pe-3 ${
                 location.pathname === "/gallery" ? "active" : ""
@@ -137,7 +129,15 @@ const Navigation = () => {
             >
               Blogs
             </Nav.Link>
-
+            <Nav.Link
+              as={Link}
+              to="/careers"
+              className={`nav-link ps-3 pe-3 ${
+                location.pathname === "/careers" ? "active" : ""
+              }`}
+            >
+              Careers
+            </Nav.Link>
             <button
               className="btn-enq bg-black text-lg text-white px-6 py-3"
               onClick={() => setIsOpen(true)}
@@ -323,14 +323,7 @@ const Navigation = () => {
               >
                 Projects
               </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to="/careers"
-                className="nav-link"
-                onClick={closeNav}
-              >
-                Careers
-              </Nav.Link>
+             
               <Nav.Link
                 as={Link}
                 to="/gallery"
@@ -347,7 +340,17 @@ const Navigation = () => {
               >
                 Blog
               </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/careers"
+                className="nav-link"
+                onClick={closeNav}
+              >
+                Careers
+              </Nav.Link>
             </Nav>
+
+           
 
             <Nav.Link className="nav-link">
               <button
