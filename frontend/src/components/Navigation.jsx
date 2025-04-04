@@ -91,6 +91,7 @@ const Navigation = () => {
               className={`nav-link ps-3 pe-3 ${
                 location.pathname === "/" ? "active" : ""
               }`}
+              style={{ fontFamily: "Poppins" }}
             >
               Home
             </Nav.Link>
@@ -100,6 +101,7 @@ const Navigation = () => {
               className={`nav-link ps-3 pe-3 ${
                 location.pathname === "/about" ? "active" : ""
               }`}
+              style={{ fontFamily: "Poppins" }}
             >
               About
             </Nav.Link>
@@ -109,6 +111,7 @@ const Navigation = () => {
               className={`nav-link ps-3 pe-3 ${
                 location.pathname === "/projects-all" ? "active" : ""
               }`}
+              style={{ fontFamily: "Poppins" }}
             >
               Projects
             </Nav.Link>
@@ -127,6 +130,7 @@ const Navigation = () => {
               className={`nav-link ps-3 pe-3 ${
                 location.pathname === "/blogs" ? "active" : ""
               }`}
+              style={{ fontFamily: "Poppins" }}
             >
               Blogs
             </Nav.Link>
@@ -136,14 +140,16 @@ const Navigation = () => {
               className={`nav-link ps-3 pe-3 ${
                 location.pathname === "/careers" ? "active" : ""
               }`}
+              style={{ fontFamily: "Poppins" }}
             >
               Careers
             </Nav.Link>
             <button
               className="btn-enq bg-black text-lg text-white px-6 py-3"
               onClick={() => setIsOpen(true)}
+              style={{ fontFamily: "Poppins" }}
             >
-              Enquire Now
+              Contact Us
             </button>
 
             {isOpen && (
@@ -305,6 +311,7 @@ const Navigation = () => {
                 to="/"
                 className="nav-link"
                 onClick={closeNav}
+                style={{ fontFamily: "Poppins" }}
               >
                 Home
               </Nav.Link>
@@ -313,6 +320,7 @@ const Navigation = () => {
                 to="/about"
                 className="nav-link"
                 onClick={closeNav}
+                style={{ fontFamily: "Poppins" }}
               >
                 About
               </Nav.Link>
@@ -321,6 +329,7 @@ const Navigation = () => {
                 to="/projects"
                 className="nav-link"
                 onClick={closeNav}
+                style={{ fontFamily: "Poppins" }}
               >
                 Projects
               </Nav.Link>
@@ -338,6 +347,7 @@ const Navigation = () => {
                 to="/blogs"
                 className="nav-link"
                 onClick={closeNav}
+                style={{ fontFamily: "Poppins" }}
               >
                 Blog
               </Nav.Link>
@@ -346,6 +356,7 @@ const Navigation = () => {
                 to="/careers"
                 className="nav-link"
                 onClick={closeNav}
+                style={{ fontFamily: "Poppins" }}
               >
                 Careers
               </Nav.Link>
@@ -355,8 +366,9 @@ const Navigation = () => {
               <button
                 className="enquire-btn mt-3"
                 onClick={() => setIsMobile(true)} // Modal Open
+                style={{ fontFamily: "Poppins" }}
               >
-                Enquire Now
+                Contact Us
               </button>
             </Nav.Link>
 

@@ -156,7 +156,7 @@ const Testimonials = () => {
           className="border enq_Btn pb-3 pe-29 ps-29 pt-3"
           onClick={() => setIsOpen(true)}
         >
-          Enquire Now
+          Contact Us
         </button>
 
         {isOpen && (
