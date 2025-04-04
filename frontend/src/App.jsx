@@ -23,11 +23,13 @@ import ProjectManager from "./components/Career/ProjectManager";
 import InteriorIntern from "./components/Career/InteriorIntern";
 import Accounts from "./components/Career/Accounts";
 import SiteSupervisor from "./components/Career/SiteSupervisor";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       {/* Set up Routes */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />}>
           {" "}
@@ -50,7 +52,10 @@ function App() {
         <Route path="/career/hrbp" element={<HRBP />}>
           {" "}
         </Route>
-        <Route path="/career/senior-interior-designer" element={<SeniorInteriorDesigner />}>
+        <Route
+          path="/career/senior-interior-designer"
+          element={<SeniorInteriorDesigner />}
+        >
           {" "}
         </Route>
         <Route path="/career/interior-designer" element={<InteriorDesigner />}>
@@ -59,13 +64,16 @@ function App() {
         <Route path="/career/sr.-project-manager" element={<ProjectManager />}>
           {" "}
         </Route>
-        <Route path="/career/architect-&-interior-design---intern" element={<InteriorIntern />}>
+        <Route
+          path="/career/architect-&-interior-design---intern"
+          element={<InteriorIntern />}
+        >
           {" "}
         </Route>
         <Route path="/career/accounts" element={<Accounts />}>
           {" "}
         </Route>
-        <Route path="/career/site-supervisor" element={<SiteSupervisor/>}>
+        <Route path="/career/site-supervisor" element={<SiteSupervisor />}>
           {" "}
         </Route>
         <Route path="/job-applications" element={<JobApplication />}>
