@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../Stylesheet/Project.css";
- 
+
 const projects = [
   {
     src: "https://static.wixstatic.com/media/820b23_7f3179837f104ca690816660998f87a5~mv2.jpg/v1/fill/w_464,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Copy%20of%20DSC08585%20copy%20(3).jpg",
@@ -12,7 +12,6 @@ const projects = [
     size: "3500 sqft",
     place: " Gurugram",
     link: "/Demo2",
-
   },
   {
     src: "https://static.wixstatic.com/media/820b23_aa3ad3e8319e40338fe5be92d1357647~mv2.jpg/v1/fill/w_464,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Copy%20of%20YJP-CS-20.jpg",
@@ -33,11 +32,7 @@ const projects = [
     link: "/Projectcontent1",
   },
 
-
-
-
-
-//------------------------------------------ row2-----------------------------------------------
+  //------------------------------------------ row2-----------------------------------------------
   {
     src: "https://static.wixstatic.com/media/820b23_fb3439180db948b8b6e2ce10727307c1~mv2.png/v1/fill/w_464,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Living_AA.png",
     title: "The Japandi Home",
@@ -66,14 +61,7 @@ const projects = [
     link: "/Projectcontent1",
   },
 
-
-
-
-
-
-
-
-//------------------------------------------ row3-----------------------------------------------
+  //------------------------------------------ row3-----------------------------------------------
   {
     src: "https://static.wixstatic.com/media/748419_c30fb606858b433ca25092a1c00c0e7e~mv2.jpg/v1/fill/w_464,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ChalkDS_Mang_-2-min.jpg",
     title: "The Japandi Home",
@@ -99,14 +87,7 @@ const projects = [
     place: "Rishikesh",
   },
 
-
-
-
-
-
-
-
-//------------------------------------------ row4-----------------------------------------------
+  //------------------------------------------ row4-----------------------------------------------
   {
     src: "https://static.wixstatic.com/media/aaeed6_328be93fa6b54a79b22163bf3bd2f276~mv2.jpg/v1/fill/w_464,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%C2%A9AG-CS-DSC00787-HDR%20copy%202%20(1).jpg",
     title: "The Japandi Home",
@@ -175,7 +156,8 @@ const Projectimg = ({ selectedCategory }) => {
   }, [groupedProjects]);
 
   return (
-    <div className="bg-Soft_Grey mt-2 pb-15 proj_home">
+    <div className="mt-2 pb-15 proj_home">
+      {/* bg-Soft_Grey */}
       {groupedProjects.length === 0 ? (
         <p className="no-results">No projects found in this category.</p>
       ) : (
@@ -198,12 +180,14 @@ const Projectimg = ({ selectedCategory }) => {
                   <div className="gallery-item image-overlay">
                     <img src={project.src} alt={`Gallery ${index + 1}`} />
                     <div className="overlay-box">
-                      <p className="futura_font overlay-title">{project.title}</p>
+                      <p className="futura_font overlay-title">
+                        {project.title}
+                      </p>
                       <div className="overlay-content">
                         <hr />
                         <p className="avenir_font">{project.location}</p>
                         <hr />
-                         <p className="avenir_font">{project.category}</p>
+                        <p className="avenir_font">{project.category}</p>
                         <hr />
                         <p className="avenir_font">{project.size}</p>
                         <hr />
