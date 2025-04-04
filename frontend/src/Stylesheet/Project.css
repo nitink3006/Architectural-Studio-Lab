@@ -1,6 +1,6 @@
-.bg-Soft_Grey{ 
+/* .bg-Soft_Grey{ 
   background-color: #D6D6D6 !important;
-}
+} */
 
 
 /* .proj_home{
@@ -31,9 +31,14 @@ text-decoration: none;
 text-align: center;
 letter-spacing: 0.5em;
 line-height: normal;
+margin-top: 1.5rem;
 }
 .proj_head_right button:hover{
   border: 1px solid black !important;
+}
+
+.proj_head_right{
+  margin-top: 0.7rem;
 }
 
 .btn{
@@ -58,8 +63,8 @@ line-height: normal;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   padding: 20px;
-  /* background-color: white; */
-  background-color:#D6D6D6;
+  background-color: white;
+  /* background-color:#D6D6D6; */
 }
 
 .gallery-item {
@@ -146,8 +151,8 @@ line-height: normal;
 
 .proj_head_sec {
   width: 100%;
-  /* background-color: white; */
-  background-color:#D6D6D6;
+  background-color: white;
+  /* background-color:#D6D6D6; */
   padding: 15px 0;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;

@@ -10,7 +10,7 @@ import logo from "../assets/images/logo2.png";
 
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const location = useLocation(); 
+  const location = useLocation();
 
   const toggleNav = () => setIsNavOpen(!isNavOpen);
   const closeNav = () => setIsNavOpen(false); // Function to close menu
@@ -69,8 +69,9 @@ const Navigation = () => {
         className="shadow-sm w-100"
       >
         <div
-          className="container-fluid d-flex align-items-center justify-content-between bg_soft_gray_nav"
-          style={{ padding: "0rem" }}
+          className="container-fluid d-flex align-items-center justify-content-between "
+          // bg_soft_gray_nav
+          style={{ padding: "0rem", minHeight: "70px" }}
         >
           <Navbar.Brand href="#" className="fs-4 fw-normal px-4">
             {/* Opus Architectural Lab */}
@@ -111,7 +112,7 @@ const Navigation = () => {
             >
               Projects
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               as={Link}
               to="/gallery"
               className={`nav-link ps-3 pe-3 ${
@@ -119,7 +120,7 @@ const Navigation = () => {
               }`}
             >
               Gallery
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               as={Link}
               to="/blogs"
@@ -323,15 +324,15 @@ const Navigation = () => {
               >
                 Projects
               </Nav.Link>
-             
-              <Nav.Link
+
+              {/* <Nav.Link
                 as={Link}
                 to="/gallery"
                 className="nav-link"
                 onClick={closeNav}
               >
                 Gallery
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 as={Link}
                 to="/blogs"
@@ -349,8 +350,6 @@ const Navigation = () => {
                 Careers
               </Nav.Link>
             </Nav>
-
-           
 
             <Nav.Link className="nav-link">
               <button

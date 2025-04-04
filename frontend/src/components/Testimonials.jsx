@@ -92,6 +92,8 @@ const Testimonials = () => {
       });
   };
 
+  const [isMobile, setIsMobile] = useState(false);
+
   return (
     <div
       className="bg-Soft_Grey testimonial-container"
@@ -159,26 +161,40 @@ const Testimonials = () => {
 
         {isOpen && (
           <motion.div
-            className="flex bg-black bg-opacity-50 justify-center fixed inset-0 items-start z-[1000] pt-10"
+            className="flex bg-black bg-opacity-50 justify-center fixed inset-0 items-center z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              width: "100vw",
+              height: "100vh",
+              zIndex: 3000,
+            }}
           >
             <motion.div
-              className="flex flex-col bg-white h-auto justify-center p-4 rounded-lg shadow-lg w-full max-w-lg md:p-6 overflow-y-auto relative"
+              className="flex flex-col bg-white h-auto justify-center p-4 rounded-lg shadow-lg w-full max-w-lg md:p-6 overflow-y-auto relative z-100"
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.4 }}
+              style={{ zIndex: 100 }}
             >
+              {/* Close Button */}
               <motion.button
-                className="bg-white text-4xl text-gray-600 absolute hover:text-gray-600 right-3 top-3"
+                className="text-2xl text-gray-400 absolute hover:text-gray-600 right-3 top-3 z-150"
                 onClick={() => setIsOpen(false)}
                 whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.2 }}
+                style={{ zIndex: 150 }}
               >
                 ×
               </motion.button>
 
+              {/* Heading */}
               <motion.div
                 className="text-center"
                 initial={{ opacity: 0, y: -20 }}
@@ -190,6 +206,7 @@ const Testimonials = () => {
                 </h2>
               </motion.div>
 
+              {/* Form */}
               <form onSubmit={handleSubmit} className="mt-3 space-y-3">
                 {[
                   { name: "firstName", placeholder: "First Name" },
@@ -222,6 +239,7 @@ const Testimonials = () => {
                   </motion.div>
                 ))}
 
+                {/* Message Textarea */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -238,6 +256,7 @@ const Testimonials = () => {
                   ></textarea>
                 </motion.div>
 
+                {/* Submit Button */}
                 <motion.button
                   type="submit"
                   initial={{ opacity: 0, scale: 0.8 }}

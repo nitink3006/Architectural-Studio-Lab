@@ -30,7 +30,10 @@ function Projectnav() {
       </div>
 
       {/* Project Filter Navigation */}
-      <Projectnavheader selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+      <Projectnavheader
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+      />
 
       {/* Filtered Projects */}
       <Projectimg selectedCategory={selectedCategory} />
@@ -49,7 +52,6 @@ function Projectnav() {
           Load More
         </button>
       </div>
-
 
       <Footer />
     </div>

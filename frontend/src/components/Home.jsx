@@ -9,18 +9,13 @@ import Projects from "./Projects";
 
 const Home = () => {
   return (
-    <div className=" bg-gray-100">
-
-   
-    <Navigation />
-   <FullScreenVideo />
-    <HomeContent />
-    <Projects />
-    <Testimonials />
-    <Footer />
-    
-  
-
+    <div className=" ">
+      <Navigation />
+      <FullScreenVideo />
+      <HomeContent />
+      <Projects />
+      <Testimonials />
+      <Footer />
     </div>
   );
 };
