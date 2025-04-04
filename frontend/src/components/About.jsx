@@ -1,5 +1,7 @@
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useRef } from "react";
+// import Navigation from "./Navigation";
+
 
 import Footer from "./Footer";
 import Navigation from "./Navigation";
@@ -42,8 +44,7 @@ const About = () => {
 
   return (
     <div className="flex flex-col bg-Soft_Grey text-black w-full min-h-screen relative scroll-smooth">
-      
-      <Navigation/>
+      <Navigation />
       {/* Sticky Image with Text Overlay */}
       <div ref={targetRef} className="h-screen w-full relative">
         <div className="flex h-screen justify-center items-center overflow-hidden sticky top-0">
