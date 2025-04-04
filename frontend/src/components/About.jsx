@@ -1,8 +1,6 @@
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useRef } from "react";
 
-// import AboutNavbar from "./AboutNavbar";
-
 import Footer from "./Footer";
 import Navigation from "./Navigation";
 
