@@ -151,14 +151,14 @@ const Career = () => {
 
     </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4"style={{ fontFamily: "Lato", }}>
-          <input type="text" name="firstName" placeholder="First name*" className="w-full border p-3 bg-gray-100 rounded" value={formData.firstName} onChange={handleChange} required />
-          <input type="text" name="lastName" placeholder="Last name*" className="w-full border p-3 bg-gray-100 rounded" value={formData.lastName} onChange={handleChange} required />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3"style={{ fontFamily: "Lato", }}>
+          <input type="text" name="firstName" placeholder="First name*" className="w-full h-10 border p-3 bg-gray-100 rounded" value={formData.firstName} onChange={handleChange} required />
+          <input type="text" name="lastName" placeholder="Last name*" className="w-full h-10 border p-3 bg-gray-100 rounded" value={formData.lastName} onChange={handleChange} required />
         </div>
-        <input type="email" name="email" placeholder="Your email address*" className="w-full border p-3 bg-gray-100 rounded" value={formData.email} onChange={handleChange} required />
-        <input type="tel" name="phone" placeholder="Contact number*" pattern="^\\+91[6-9]\\d{9}$" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.phone} onChange={handleChange} required />
-        <input type="text" name="qualifications" placeholder="Educational qualifications*" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.qualifications} onChange={handleChange} required />
-        <input type="text" name="experience" placeholder="Years of experience*" className="w-full border p-3 bg-gray-100 rounded mt-2" value={formData.experience} onChange={handleChange} required />
+        <input type="email" name="email" placeholder="Your email address*" className="w-full h-10 border p-3 bg-gray-100 rounded mt-2" value={formData.email} onChange={handleChange} required />
+        <input type="tel" name="phone" placeholder="Contact number*" pattern="^\\+91[6-9]\\d{9}$" className="w-full h-10 border p-3 bg-gray-100 rounded mt-3" value={formData.phone} onChange={handleChange} required />
+        <input type="text" name="qualifications" placeholder="Educational qualifications*" className="w-full h-10 border p-3 bg-gray-100 rounded mt-3" value={formData.qualifications} onChange={handleChange} required />
+        <input type="text" name="experience" placeholder="Years of experience*" className="w-full h-10 border p-3 bg-gray-100 rounded mt-3" value={formData.experience} onChange={handleChange} required />
        
         <div>
           <p className="text-lg text-gray-600 font-semibold mt-2">Upload Cover Letter</p>
@@ -172,8 +172,8 @@ const Career = () => {
           <input type="file" name="resumeFile" className="w-full border p-3 bg-gray-100 rounded" onChange={handleFileChange} required />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="mt-2">
-  <label className="text-lg text-gray-600 ">Link to the CV and or Portfolio</label>
+        <div className="mt-2 ">
+  <label className="text-lg  text-gray-600 ">Link to the CV and or Portfolio</label>
   <input 
     type="text" 
     name="portfolioLink" 
