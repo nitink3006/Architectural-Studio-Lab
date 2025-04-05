@@ -69,8 +69,8 @@ const Navigation = () => {
         className="shadow-sm w-100"
       >
         <div
-          className="container-fluid d-flex align-items-center justify-content-between "
-          // bg_soft_gray_nav
+          className="container-fluid d-flex align-items-center justify-content-between bg_soft_gray_nav"
+      
           style={{ padding: "0rem", minHeight: "70px" }}
         >
           <Navbar.Brand href="#" className="fs-4 fw-normal px-4">
