@@ -163,7 +163,7 @@ const Career = () => {
                       className={`mr-2 ${
                         formData.position === option
                           ? "text-blue-500"
-                          : "text-white"
+                          : "text-gray-200"
                       }`}
                       size={12}
                     />
@@ -181,7 +181,7 @@ const Career = () => {
                 type="text"
                 name="firstName"
                 placeholder="First name*"
-                className="w-full h-10 border p-3 bg-gray-100 rounded"
+                className="w-full h-10 border p-3 bg-gray-200 rounded"
                 value={formData.firstName}
                 onChange={handleChange}
                 required
@@ -190,7 +190,7 @@ const Career = () => {
                 type="text"
                 name="lastName"
                 placeholder="Last name*"
-                className="w-full h-10 border p-3 bg-gray-100 rounded"
+                className="w-full h-10 border p-3 bg-gray-200 rounded"
                 value={formData.lastName}
                 onChange={handleChange}
                 required
@@ -200,7 +200,7 @@ const Career = () => {
               type="email"
               name="email"
               placeholder="Your email address*"
-              className="w-full h-10 border p-3 bg-gray-100 rounded mt-2"
+              className="w-full h-10 border p-3 bg-gray-200 rounded mt-2"
               value={formData.email}
               onChange={handleChange}
               required
@@ -210,7 +210,7 @@ const Career = () => {
               name="phone"
               placeholder="Contact number*"
               pattern="^\\+91[6-9]\\d{9}$"
-              className="w-full h-10 border p-3 bg-gray-100 rounded mt-3"
+              className="w-full h-10 border p-3 bg-gray-200 rounded mt-3"
               value={formData.phone}
               onChange={handleChange}
               required
@@ -219,7 +219,7 @@ const Career = () => {
               type="text"
               name="qualifications"
               placeholder="Educational qualifications*"
-              className="w-full h-10 border p-3 bg-gray-100 rounded mt-3"
+              className="w-full h-10 border p-3 bg-gray-200 rounded mt-3"
               value={formData.qualifications}
               onChange={handleChange}
               required
@@ -228,7 +228,7 @@ const Career = () => {
               type="text"
               name="experience"
               placeholder="Years of experience*"
-              className="w-full h-10 border p-3 bg-gray-100 rounded mt-3"
+              className="w-full h-10 border p-3 bg-gray-200 rounded mt-3"
               value={formData.experience}
               onChange={handleChange}
               required
@@ -244,7 +244,7 @@ const Career = () => {
               <input
                 type="file"
                 name="coverLetterFile"
-                className="w-full border p-3 bg-gray-100 rounded"
+                className="w-full border p-3 bg-gray-200 rounded"
                 onChange={handleFileChange}
               />
             </div>
@@ -259,7 +259,7 @@ const Career = () => {
               <input
                 type="file"
                 name="resumeFile"
-                className="w-full border p-3 bg-gray-100 rounded"
+                className="w-full border p-3 bg-gray-200 rounded"
                 onChange={handleFileChange}
                 required
               />
@@ -272,7 +272,7 @@ const Career = () => {
                 <input
                   type="text"
                   name="portfolioLink"
-                  className="w-full border p-3 bg-gray-100 rounded mt-1"
+                  className="w-full border p-3 bg-gray-200 rounded mt-1"
                   placeholder="Enter portfolio link"
                 />
                 <p className="text-xs text-gray-600 mt-1">
@@ -290,7 +290,7 @@ const Career = () => {
                 <input
                   type="text"
                   name="portfolioPassword"
-                  className="w-full border p-3 bg-gray-100 rounded mt-1"
+                  className="w-full border p-3 bg-gray-200 rounded mt-1"
                   placeholder="Enter portfolio password (if applicable)"
                 />
               </div>
@@ -304,7 +304,7 @@ const Career = () => {
               <input
                 type="text"
                 name="videoLink"
-                className="w-full border p-3 bg-gray-100 rounded mt-1"
+                className="w-full border p-3 bg-gray-200 rounded mt-1"
                 placeholder="Enter video link"
               />
             </div>
