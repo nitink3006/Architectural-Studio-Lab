@@ -75,6 +75,16 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
                 Residential
               </button>
             </div>
+            <div className="pe-2 proj_head_right_btn3 ps-2">
+              <button
+                className={`text_black btn border ${
+                  selectedCategory === "Recreational" ? "active" : ""
+                }`}
+                onClick={() => setSelectedCategory("Recreational")}
+              >
+                Recreational
+              </button>
+            </div>
           </div>
         </div>
       </div>
