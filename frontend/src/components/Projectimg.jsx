@@ -12,9 +12,9 @@ import com3 from "../assets/home/commercial/1.JPG";
 import com7 from "../assets/home/commercial/8 - Conference Room.jpg";
 import com8 from "../assets/home/commercial/9 - Cabin_Revised.jpg";
 import com9 from "../assets/home/commercial/9.JPG";
+import rec1 from "../assets/home/recreational/Creche View-01.jpg";
+import rec2 from "../assets/home/recreational/Creche View-02.jpg";
 
-import com13 from "../assets/home/commercial/IMG-20240913-WA0042.jpg";
-import com14 from "../assets/home/commercial/Lobby-B-02.jpg";
 
 
 import res11 from "../assets/home/residential/Screenshot 2024-11-27 235321.png";
@@ -134,23 +134,24 @@ const projects = [
 
 
   //------------------------------------------ row5-----------------------------------------------
-  {
-    src: com13,
-    title: "The Japandi Home",
-    location: "Pioneer Araya",
-    category: "Commercial",
-    size: "3500 sqft",
-    place: " Gurugram",
-  },
-  {
-    src: com14,
+ 
+{
+    src: rec1,
     title: "The Zephyr Villa",
     location: "Goa Villa",
-    category: "Commercial",
+    category: "Recreational",
     size: "3000 sqft",
     place: "Siolim , Goa",
   },
 
+  {
+    src: rec2,
+    title: "Home in the Hills",
+    location: "Rishikesh Villa",
+    category: "Recreational",
+    size: "5000 sqft",
+    place: "Rishikesh",
+  },
   {
       src: rec4,
       title: "Home in the Hills",
