@@ -235,7 +235,7 @@ const Career = () => {
             />
 
             <div>
-              <p className="text-lg text-gray-600 font-semibold mt-2">
+              <p className="text-lg  text-gray-600 font-semibold mt-2">
                 Upload Cover Letter
               </p>
               <p className="text-sm text-gray-600">
@@ -244,7 +244,7 @@ const Career = () => {
               <input
                 type="file"
                 name="coverLetterFile"
-                className="w-full border p-3 bg-gray-200 rounded"
+                className="w-full h-10 border p-2 bg-gray-200 rounded cursor-pointer"
                 onChange={handleFileChange}
               />
             </div>
@@ -259,7 +259,7 @@ const Career = () => {
               <input
                 type="file"
                 name="resumeFile"
-                className="w-full border p-3 bg-gray-200 rounded"
+                className="w-full h-10 border p-2 bg-gray-200 rounded cursor-pointer"
                 onChange={handleFileChange}
                 required
               />
@@ -272,7 +272,7 @@ const Career = () => {
                 <input
                   type="text"
                   name="portfolioLink"
-                  className="w-full border p-3 bg-gray-200 rounded mt-1"
+                  className="w-full h-10 border p-2 bg-gray-200 rounded mt-1"
                   placeholder="Enter portfolio link"
                 />
                 <p className="text-xs text-gray-600 mt-1">
@@ -290,7 +290,7 @@ const Career = () => {
                 <input
                   type="text"
                   name="portfolioPassword"
-                  className="w-full border p-3 bg-gray-200 rounded mt-1"
+                  className="w-full h-10 border p-2 bg-gray-200 rounded mt-1"
                   placeholder="Enter portfolio password (if applicable)"
                 />
               </div>
@@ -304,7 +304,7 @@ const Career = () => {
               <input
                 type="text"
                 name="videoLink"
-                className="w-full border p-3 bg-gray-200 rounded mt-1"
+                className="w-full h-10 border p-2 bg-gray-200 rounded mt-1"
                 placeholder="Enter video link"
               />
             </div>
@@ -319,7 +319,7 @@ const Career = () => {
 
             <button
               type="submit"
-              className="w-full bg-black text-white p-3 rounded text-center font-semibold mt-2"
+              className="w-full  bg-black text-white p-3 rounded text-center font-semibold mt-2"
             >
               Submit
             </button>
