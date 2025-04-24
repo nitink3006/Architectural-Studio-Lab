@@ -24,7 +24,7 @@ import rec3 from "../assets/home/recreational/Indoor games view (1).jpg";
 
 const projects = [
     /////////////////////////////////hospitality////////////////
-     //------------------------------------------ row2-----------------------------------------------
+     //------------------------------------------ row1-----------------------------------------------
       {
         src: com4,
         title: "The Japandi Home",
@@ -52,7 +52,7 @@ const projects = [
         place: "Rishikesh",
         link: "/Projectcontent1",
       },
-      //------------------------------------------ row6-----------------------------------------------
+      //------------------------------------------ row2-----------------------------------------------
       {
        src: hos1,
        title: "The Japandi Home",
@@ -60,6 +60,7 @@ const projects = [
        category: "Hospitality",
        size: "3500 sqft",
        place: " Gurugram",
+       link: "/Projectcontent1",
      },
      
      {
@@ -69,6 +70,7 @@ const projects = [
        category: "Hospitality",
        size: "3000 sqft",
        place: "Siolim , Goa",
+       link: "/Projectcontent1",
      },
      {
        src: hos3,
@@ -77,9 +79,10 @@ const projects = [
        category: "Hospitality",
        size: "5000 sqft",
        place: "Rishikesh",
+       link: "/Projectcontent1",
      },
      
-         //------------------------------------------ row8-----------------------------------------------
+         //------------------------------------------ row3-----------------------------------------------
       {
        src: hos7,
        title: "The Japandi Home",
@@ -87,6 +90,7 @@ const projects = [
        category: "Hospitality",
        size: "3500 sqft",
        place: " Gurugram",
+       link: "/Projectcontent1",
      },
      {
        src: hos8,
@@ -95,6 +99,7 @@ const projects = [
        category: "Hospitality",
        size: "3000 sqft",
        place: "Siolim , Goa",
+       link: "/Projectcontent1",
      },
      ////////////////////////////residential////////////////////////////////////////////////////////////////
      {
@@ -102,8 +107,10 @@ const projects = [
        title: "Home in the Hills",
        location: "Rishikesh Villa",
        category: "Residential",
-       size: "5000 sqft",
+       size: "4000 sqft",
        place: "Rishikesh",
+       link: '../components/ProjectData/Casa',
+       
      },
       //------------------------------------------ row9-----------------------------------------------
       {
@@ -113,6 +120,7 @@ const projects = [
        category: "Residential",
        size: "3500 sqft",
        place: " Gurugram",
+       link: "/Projectcontent1",
      },
      {
        src: res3,
@@ -121,6 +129,7 @@ const projects = [
        category: "Residential",
        size: "3000 sqft",
        place: "Siolim , Goa",
+       link: "/Projectcontent1",
      },
    
      {
@@ -130,6 +139,7 @@ const projects = [
        category: "Residential",
        size: "5000 sqft",
        place: "Rishikesh",
+       link: "/Projectcontent1",
      },
       //------------------------------------------ row10-----------------------------------------------
       {
@@ -139,6 +149,7 @@ const projects = [
        category: "Residential",
        size: "3500 sqft",
        place: " Gurugram",
+       link: "/Projectcontent1",
      },
      {
        src: res6,
@@ -147,6 +158,7 @@ const projects = [
        category: "Residential",
        size: "3000 sqft",
        place: "Siolim , Goa",
+       link: "/Projectcontent1",
      },
      {
        src: rec3,
@@ -155,6 +167,7 @@ const projects = [
        category: "Recreational",
        size: "3000 sqft",
        place: "Siolim , Goa",
+       link: "/Projectcontent1",
      },
      
 ];
@@ -216,7 +229,7 @@ const Projectimg = ({ selectedCategory }) => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               {row.map((project, index) => (
-                <Link
+                <Link 
                   to={project.link}
                   key={index}
                   className="gallery-item image-overlay"
@@ -228,8 +241,8 @@ const Projectimg = ({ selectedCategory }) => {
                       <div className="overlay-content">
                         <hr />
                         <p className="avenir_font">{project.location}</p>
-                        <hr />
-                        <p className="avenir_font">{project.category}</p>
+                        {/* <hr />
+                        <p className="avenir_font">{project.category}</p> */}
                         <hr />
                         <p className="avenir_font">{project.size}</p>
                         <hr />

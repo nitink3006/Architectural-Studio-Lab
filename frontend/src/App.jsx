@@ -24,7 +24,7 @@ import InteriorIntern from "./components/Career/InteriorIntern";
 import Accounts from "./components/Career/Accounts";
 import SiteSupervisor from "./components/Career/SiteSupervisor";
 import ScrollToTop from "./components/ScrollToTop";
-
+import Casa from "./components/ProjectData/Casa";
 function App() {
   return (
     <Router>
@@ -43,6 +43,7 @@ function App() {
         </Route>
 
         <Route path="/Projectcontent1" element={<Projectcontent1 />} />
+        <Route path="/components/ProjectData/Casa" element={<Casa />} />
         <Route path="/Demo2" element={<Demo2 />} />
         <Route path="/mumbai-office" element={<Mumbaioffice />} />
 

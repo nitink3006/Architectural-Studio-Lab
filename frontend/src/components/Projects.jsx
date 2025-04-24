@@ -11,7 +11,7 @@ const Projects = () => {
   const [clickCount, setClickCount] = useState(0);
   const inspirationRef = useRef(null);
   const isInspirationInView = useInView(inspirationRef, { margin: "-100px" });
-
+ 
   return (
     <div className=" mt-0 pb-15 proj_home">
       {/* bg-Soft_Grey */}
