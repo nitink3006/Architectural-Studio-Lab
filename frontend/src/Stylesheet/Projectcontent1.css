@@ -72,6 +72,7 @@
   object-fit: cover;
   display: block;
   transition: transform 2s ease-in-out;
+  /* padding-bottom:30px ; */
 }
 
 
@@ -95,4 +96,13 @@
 .casa_img{
   width: 100vw;
   height: 500px;
+}
+@media (max-width: 770px){
+  .gallery-img-wrapper img{
+    padding-bottom: 30px;
+  }
+
+}
+.fsbox{
+  margin-left: -28px;
 }
