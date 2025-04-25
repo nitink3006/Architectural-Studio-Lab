@@ -95,12 +95,14 @@ margin-top: 1.5rem;
   transition: opacity 0.4s ease-in-out;
   padding: 20px;
   color: white; 
+ 
 }
 
 
 .image-overlay:hover .overlay-box {
   opacity: 1;
-  background-color: rgba(128, 128, 128,.7);
+  background-color:  rgba(221, 221, 221,.9);
+ 
 }
 
 
@@ -198,3 +200,27 @@ margin-top: 1.5rem;
 }
 
 
+
+
+
+
+
+@media (max-width: 480px) {
+  .proj_head_right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .proj_head_right > div {
+    width: 38%; 
+  }
+}
+@media (max-width: 330px) {
+  .proj_head_right {
+   margin-left: -30px;
+  }
+
+  
+}
