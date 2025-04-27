@@ -6,55 +6,74 @@ import { FaBox, FaRegSquare } from "react-icons/fa";
 import { CiHome, CiLocationOn } from "react-icons/ci";
 import Morework from "../Morework";
 import Footer from "../Footer";
-import casa1 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271587301_959431154989136_237295068018475377_n.jpg';
-import casa2 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271628856_515811689631632_7400783504794154935_n.jpg';
-import casa3 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271957191_408176991103924_8820647754944047115_n.jpg';
-// import casa4 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/COVER PAGE.png';
-import casa5 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/dgf.png';
 
-import casa6 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/drg.png';
+import mod1 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/34r.jpg';
+import mod2 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/a.jpg';
+import mod3 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/b.jpg';
+import mod4 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/bbb.jpg';
+import mod5 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/bedroom 2.2.jpg';
+import mod6 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/bedroom 2.jpg';
+import mod7 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/bedroom1.jpg';
+import mod8 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/dfwarf3333.png';
+import mod9 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/hfdhdfhd.jpg';
+import mod10 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/hy.jpg';
+import mod11 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/n.jpg';
+import mod12 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/ryh.jpg';
+import mod13 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/STUDY ROOM.jpg';
+import mod14 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/STUDY, POOJA  ROOM.jpeg';
+import mod15 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/vfdgdgsd.jpg';
+import mod16 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/washing area.jpg';
+import mod17 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/we.jpg';
+import mod18 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/z (1).jpg';
+import mod19 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/z (2).jpg';
+import mod20 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/z (3).jpg';
+import mod21 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/z (4).jpg';
 
 
-import casa7 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/e.png';
-import casa8 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/ef.png';
-import casa9 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fdg.png';
-import casa10 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fg.png';
-import casa11 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fghb.png';
-import casa12 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/sdf.png';
-import casa13 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/sxdgvf.png';
-import casa14 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/wes.png';
-import casa15 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/WQADEWED.jpg';
-import casa16 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/yf.png';
+
 
 
 const galleryLayout = [
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa1,casa2
-           ,casa3
+            mod1,mod2
+           ,mod3
             
         ]
     },
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa16,casa5,casa6
+            mod4,mod5,mod6
         ]
     },
     {
         layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
-            casa7,casa8,casa9
+            mod7,mod8,mod9
         ]
     },
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa10,casa11,casa12
+            mod10,mod11,mod12
         ]
     },
     {
         layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-            casa13,casa14,casa15
+            mod13,mod14,mod15
         ]
     },
+    {
+        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+            mod16,mod17
+           ,mod18
+            
+        ]
+    },
+    {
+        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+            mod19,mod20,mod21
+        ]
+    },
+   
 
 ];
 
@@ -102,69 +121,19 @@ const GalleryRow = ({ index, layout, images }) => {
         </motion.div>
     );
 };
-// Component for the animated image after Pioneer Araya
-// const AnimatedImage = () => {
-//     const ref = useRef(null);
-//     const isInView = useInView(ref, { threshold: 0.2 });
-//     const [hasAnimated, setHasAnimated] = useState(false);
 
-//     useEffect(() => {
-//         if (isInView && !hasAnimated) {
-//             setHasAnimated(true); // Store that animation has already happened
-//         }
-//     }, [isInView, hasAnimated]);
-
-//     return (
-//         <motion.img
-//             src={casa5}
-//             alt="Japandi Home"
-//             className="mb-4 proj_image casa_img"
-//             initial={{ opacity: 0, y: 50 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ duration: 1, ease: "easeOut" }}
-//         />
-//     );
-// };
-const Casa = () => {
+const TheModern = () => {
     return (
         <div className="bg-Soft_Grey proj_data">
             <Navigation />
             <div className="bg-Soft_Grey">
-            <h1 className="futura_font proj_cont1_head pt-20">Casa Kaleido</h1>
+            <h1 className="futura_font proj_cont1_head pt-20">The Modern Muse</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">Gurugram</h4>
-            {/* <AnimatedImage /> */}
-            {/* <div className="pb-8 proj_cont_em_para pt-15">
-                <p className="avenir_font">
-                    <em>This space is more than just a dwelling; it's a space where every element intertwines to create a space that is both aesthetically pleasing and functionally efficient.</em>
-                </p>
-            </div> */}
-
-
-            {/* <div className="d-md-flex d-none flex flex-row align-items-center justify-content-md-center justify-content-start gap-12 mb-25 proj_cont1_about">
-                <div className="flex flex-row gap-4">
-                    <FaBox className="text-gray-400 fs-5" />
-                    <p className="avenir_font">2024</p>
-                </div>
-                <div className="flex flex-row gap-4">
-                    <FaRegSquare className="text-gray-400 fs-4" />
-                    <p className="avenir_font">4000 sqft</p>
-                </div>
-                <div className="flex flex-row gap-4">
-                    <CiHome className="text-gray-400 fs-4" />
-                    <p className="avenir_font">Residential</p>
-                </div>
-                <div className="flex flex-row gap-4">
-                    <CiLocationOn className="text-gray-400 fs-4" />
-                    <p className="avenir_font">Gurugram</p>
-                </div>
-            </div> */}
-
-
-            {/* mobile */}
+            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">New Delhi</h4>
+          
             {/* <div className="d-md-none d-block flex-col justify-content-md-center justify-content-start   align-items-center mb-25 
             w-90 mx-auto">
                 <div className="flex flex-row gap-4">
@@ -212,5 +181,5 @@ const Casa = () => {
         </div>
     );
 };
-
-export default Casa;
+ 
+export default TheModern;
