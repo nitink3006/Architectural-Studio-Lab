@@ -6,55 +6,87 @@ import { FaBox, FaRegSquare } from "react-icons/fa";
 import { CiHome, CiLocationOn } from "react-icons/ci";
 import Morework from "../Morework";
 import Footer from "../Footer";
-import casa1 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271587301_959431154989136_237295068018475377_n.jpg';
-import casa2 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271628856_515811689631632_7400783504794154935_n.jpg';
-import casa3 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271957191_408176991103924_8820647754944047115_n.jpg';
-// import casa4 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/COVER PAGE.png';
-import casa5 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/dgf.png';
 
-import casa6 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/drg.png';
-
-
-import casa7 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/e.png';
-import casa8 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/ef.png';
-import casa9 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fdg.png';
-import casa10 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fg.png';
-import casa11 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fghb.png';
-import casa12 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/sdf.png';
-import casa13 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/sxdgvf.png';
-import casa14 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/wes.png';
-import casa15 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/WQADEWED.jpg';
-import casa16 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/yf.png';
+import aes1 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/3e4t.jpeg';
+import aes2 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/3q45.jpeg';
+import aes3 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/4wert.jpeg';
+import aes4 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/5er6d.jpeg';
+import aes5 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/34.jpeg';
+import aes6 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/34r.jpeg';
+import aes7 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/34r5.jpeg';
+import aes8 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/56y.jpeg';
+import aes9 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/67.jpeg';
+import aes10 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/67u.jpeg';
+import aes11 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/456y7.jpeg';
+import aes12 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/COVER PAGE.jpeg';
+import aes13 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/e3d.jpeg';
+import aes14 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/e3rwfd.jpeg';
+import aes15 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/er.jpeg';
+import aes16 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/erygts.jpeg';
+import aes17 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/ESFRAZS.jpeg';
+import aes18 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/ew.jpeg';
+import aes19 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/r567tr.jpeg';
+import aes20 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/rtg.jpeg';
+import aes21 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/rtyhr.jpeg';
+import aes22 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/ry.jpeg';
+import aes23 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/rytg.jpeg';
+import aes24 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/sef.jpeg';
+import aes25 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/t6u.jpeg';
+import aes26 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/tyht6yf.jpeg';
+import aes27 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/we.jpeg';
 
 
 const galleryLayout = [
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa1,casa2
-           ,casa3
+            aes1, aes2
+           , aes3
             
         ]
     },
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa16,casa5,casa6
+             aes4, aes5, aes6
         ]
     },
     {
         layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
-            casa7,casa8,casa9
+             aes7, aes8, aes9
         ]
     },
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa10,casa11,casa12
+             aes10, aes11, aes12
         ]
     },
     {
         layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-            casa13,casa14,casa15
+             aes13, aes14, aes15
         ]
     },
+    {
+        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
+             aes16, aes17, aes18
+        ]
+    },
+
+    {
+        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
+             aes19, aes20, aes21
+        ]
+    },
+
+    {
+        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
+             aes22, aes23, aes24
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
+             aes25, aes26,aes27
+        ]
+    },
+
 
 ];
 
@@ -116,7 +148,7 @@ const GalleryRow = ({ index, layout, images }) => {
 
 //     return (
 //         <motion.img
-//             src={casa5}
+//             src={aes12}
 //             alt="Japandi Home"
 //             className="mb-4 proj_image casa_img"
 //             initial={{ opacity: 0, y: 50 }}
@@ -130,12 +162,13 @@ const Casa = () => {
         <div className="bg-Soft_Grey proj_data">
             <Navigation />
             <div className="bg-Soft_Grey">
-            <h1 className="futura_font proj_cont1_head pt-20">Casa Kaleido</h1>
+          
+            <h1 className="futura_font proj_cont1_head pt-20">Aesthetic Echoes</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">Gurugram</h4>
+            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">Noida</h4>
             {/* <AnimatedImage /> */}
             {/* <div className="pb-8 proj_cont_em_para pt-15">
                 <p className="avenir_font">
@@ -151,7 +184,7 @@ const Casa = () => {
                 </div>
                 <div className="flex flex-row gap-4">
                     <FaRegSquare className="text-gray-400 fs-4" />
-                    <p className="avenir_font">4000 sqft</p>
+                    <p className="avenir_font">3900 sqft</p>
                 </div>
                 <div className="flex flex-row gap-4">
                     <CiHome className="text-gray-400 fs-4" />

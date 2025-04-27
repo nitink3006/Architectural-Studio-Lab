@@ -13,12 +13,17 @@ import hos3 from "../assets/home/hospitality/05_Changspa.png";
 import hos7 from "../assets/home/hospitality/hyatt.jpg";
 import hos8 from "../assets/home/hospitality/wsefa.JPG";
 //residential
-import res1 from "../assets/home/residential/271835779_345557460461187_6619998005896475181_n.jpg";
-import res2 from "../assets/home/residential/Aerial view.jpg";
-import res3 from "../assets/home/residential/IMG20210218185656.jpg";
-import res4 from "../assets/home/residential/IMG20210222181701.jpg";
-import res5 from "../assets/home/residential/IMG20210222181818.jpg";
-import res6 from "../assets/home/residential/IMG20210223145758.jpg";
+// import res1 from "../assets/home/residential/271835779_345557460461187_6619998005896475181_n.jpg";
+
+import res1 from "../assets/residential/4.The Ivory Nest -Noida- 2800 sq ft/COVER PAGE.jpeg";
+// import res2 from "../assets/home/residential/Aerial view.jpg";
+import res2 from "../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/COVER PAGE.jpeg";
+import res3 from "../assets/residential/6.Shades of Still-Greater noida-1200sq ft/COVER PAGE.jpeg";
+import res4 from "../assets/residential/7.The Greystone Grove-Lucknow-10,800 sqft/COVER PAGE.jpg";
+
+// import res4 from "../assets/home/residential/IMG20210222181701.jpg";
+// import res5 from "../assets/home/residential/IMG20210222181818.jpg";
+// import res6 from "../assets/home/residential/IMG20210223145758.jpg";
 import rec3 from "../assets/home/recreational/Indoor games view (1).jpg";
 
 
@@ -104,62 +109,65 @@ const projects = [
      ////////////////////////////residential////////////////////////////////////////////////////////////////
      {
        src: res1,
-       title: "Home in the Hills",
-       location: "Rishikesh Villa",
+       title: "The Ivory Nest",
+       location: "Noida",
        category: "Residential",
-       size: "4000 sqft",
-       place: "Rishikesh",
-       link: '../components/ProjectData/Casa',
+       size: "2800 sqft",
+       place: "Noida",
+       link: '../components/ProjectData/Ivorynest',
        
      },
       //------------------------------------------ row9-----------------------------------------------
       {
+        
        src: res2,
-       title: "The Japandi Home",
-       location: "Pioneer Araya",
+       title: "Aesthetic Echoes",
+       location: "Noida",
        category: "Residential",
-       size: "3500 sqft",
-       place: " Gurugram",
-       link: "/Projectcontent1",
+       size: "3900 sqft",
+       place: "Noida",
+       link: '../components/ProjectData/Aesthetic',
      },
      {
+
        src: res3,
-       title: "The Zephyr Villa",
-       location: "Goa Villa",
+       title: "Shades of Still",
+       location: "Greater noida",
        category: "Residential",
-       size: "3000 sqft",
-       place: "Siolim , Goa",
-       link: "/Projectcontent1",
+       size: "1200 sqft",
+       place: "Greater noida",
+       link: '../components/ProjectData/Shades',
      },
-   
+     
      {
        src: res4,
-       title: "Home in the Hills",
-       location: "Rishikesh Villa",
+       title: "The Greystone Grove",
+       location: "Lucknow",
        category: "Residential",
-       size: "5000 sqft",
-       place: "Rishikesh",
-       link: "/Projectcontent1",
+       size: "10,800 sqft",
+       place: "Lucknow",
+       link: '../components/ProjectData/Greystone',
      },
       //------------------------------------------ row10-----------------------------------------------
-      {
-       src: res5,
-       title: "The Japandi Home",
-       location: "Pioneer Araya",
-       category: "Residential",
-       size: "3500 sqft",
-       place: " Gurugram",
-       link: "/Projectcontent1",
-     },
-     {
-       src: res6,
-       title: "The Zephyr Villa",
-       location: "Goa Villa",
-       category: "Residential",
-       size: "3000 sqft",
-       place: "Siolim , Goa",
-       link: "/Projectcontent1",
-     },
+    //   {
+       
+    //    src: res5,
+    //    title: "Aesthetic Echoes",
+    //    location: "Noida",
+    //    category: "Residential",
+    //    size: "3900 sqft",
+    //    place: "Noida",
+    //    link: '../components/ProjectData/Aesthetic',
+    //  },
+    //  {
+    //    src: res6,
+    //    title: "The Zephyr Villa",
+    //    location: "Goa Villa",
+    //    category: "Residential",
+    //    size: "3000 sqft",
+    //    place: "Siolim , Goa",
+    //    link: "/Projectcontent1",
+    //  },
      {
        src: rec3,
        title: "The Zephyr Villa",

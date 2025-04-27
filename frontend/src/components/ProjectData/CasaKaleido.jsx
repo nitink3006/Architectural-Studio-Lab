@@ -6,53 +6,118 @@ import { FaBox, FaRegSquare } from "react-icons/fa";
 import { CiHome, CiLocationOn } from "react-icons/ci";
 import Morework from "../Morework";
 import Footer from "../Footer";
-import casa1 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271587301_959431154989136_237295068018475377_n.jpg';
-import casa2 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271628856_515811689631632_7400783504794154935_n.jpg';
-import casa3 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271957191_408176991103924_8820647754944047115_n.jpg';
-// import casa4 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/COVER PAGE.png';
-import casa5 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/dgf.png';
 
-import casa6 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/drg.png';
+import urb1 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/2.jpg';
+import urb2 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/aa.png';
+import urb3 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/AD.jpg';
+import urb4 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/awd.jpg';
+import urb5 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/b.jpg';
+import urb6 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/c.jpg';
+import urb7 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/c1.jpg';
+import urb8 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/D1.jpg';
+import urb9 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/dcd.jpg';
+import urb10 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/dcf.jpg';
+import urb11 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/dd.jpg';
+import urb12 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/ddddd.jpg';
+import urb13 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/dgrf.jpg';
+import urb14 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/dining areaa.jpg';
+import urb15 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/ergt.jpeg';
+import urb16 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/ERTGS.jpg';
+import urb17 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/final 1.jpg';
+import urb18 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/final 12.jpg';
+import urb19 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/ftrhy.jpg';
+import urb20 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/gg.jpg';
+import urb21 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/hh.jpg';
+import urb22 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/mandir.jpg';
+import urb23 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/master wardrobe view 1.jpg';
+import urb24 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/master wardrobe view 2.jpg';
+import urb25 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/o1.jpg';
+import urb26 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/o2.jpg';
+import urb27 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/s.jpg';
+import urb28 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/study area final.jpg';
+import urb29 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/view 1.jpg';
+import urb30 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/view 2.jpg';
+import urb31 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/view 3.jpg';
+import urb32 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/view1.jpg';
+import urb33 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/view12.jpg';
+import urb34 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/we.jpg';
+import urb35 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/wer.jpg';
+import urb36 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/xzsdf.jpg';
+import urb37 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/z4.png';
 
 
-import casa7 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/e.png';
-import casa8 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/ef.png';
-import casa9 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fdg.png';
-import casa10 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fg.png';
-import casa11 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/fghb.png';
-import casa12 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/sdf.png';
-import casa13 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/sxdgvf.png';
-import casa14 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/wes.png';
-import casa15 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/WQADEWED.jpg';
-import casa16 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/yf.png';
 
 
 const galleryLayout = [
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa1,casa2
-           ,casa3
+            urb1,urb2
+           ,urb3
             
         ]
     },
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa16,casa5,casa6
+            urb16,urb5,urb6
         ]
     },
     {
         layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
-            casa7,casa8,casa9
+            urb7,urb8,urb9
         ]
     },
     {
         layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa10,casa11,casa12
+            urb10,urb11,urb12
         ]
     },
     {
         layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-            casa13,casa14,casa15
+            urb13,urb14,urb15
+        ]
+    },
+    {
+        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+            urb16,urb17
+           ,urb18
+            
+        ]
+    },
+    {
+        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+            urb19,urb20,urb21
+        ]
+    },
+    {
+        layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
+            urb22,urb23,urb24
+        ]
+    },
+    {
+        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+            urb25,urb26,urb27
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
+            urb28,urb29,urb30
+        ]
+    },
+    {
+        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+            urb31,urb32
+           ,urb33
+            
+        ]
+    },
+    {
+        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+            urb34,urb35,urb36
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb37,urb4
         ]
     },
 
@@ -102,40 +167,18 @@ const GalleryRow = ({ index, layout, images }) => {
         </motion.div>
     );
 };
-// Component for the animated image after Pioneer Araya
-// const AnimatedImage = () => {
-//     const ref = useRef(null);
-//     const isInView = useInView(ref, { threshold: 0.2 });
-//     const [hasAnimated, setHasAnimated] = useState(false);
 
-//     useEffect(() => {
-//         if (isInView && !hasAnimated) {
-//             setHasAnimated(true); // Store that animation has already happened
-//         }
-//     }, [isInView, hasAnimated]);
-
-//     return (
-//         <motion.img
-//             src={casa5}
-//             alt="Japandi Home"
-//             className="mb-4 proj_image casa_img"
-//             initial={{ opacity: 0, y: 50 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ duration: 1, ease: "easeOut" }}
-//         />
-//     );
-// };
-const Casa = () => {
+const TheUrban = () => {
     return (
         <div className="bg-Soft_Grey proj_data">
             <Navigation />
             <div className="bg-Soft_Grey">
-            <h1 className="futura_font proj_cont1_head pt-20">Casa Kaleido</h1>
+            <h1 className="futura_font proj_cont1_head pt-20">The Urban Retreat</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">Gurugram</h4>
+            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">New Delhi-10</h4>
             {/* <AnimatedImage /> */}
             {/* <div className="pb-8 proj_cont_em_para pt-15">
                 <p className="avenir_font">
@@ -165,7 +208,7 @@ const Casa = () => {
 
 
             {/* mobile */}
-            {/* <div className="d-md-none d-block flex-col justify-content-md-center justify-content-start   align-items-center mb-25 
+            <div className="d-md-none d-block flex-col justify-content-md-center justify-content-start   align-items-center mb-25 
             w-90 mx-auto">
                 <div className="flex flex-row gap-4">
                     <FaBox className="text-gray-400 fs-5" size={19}/>
@@ -187,7 +230,7 @@ const Casa = () => {
                     <p className="avenir_font mb-0">Gurugram</p>
                 </div>
                 <hr></hr>
-            </div> */}
+            </div>
 
 
 
@@ -213,4 +256,4 @@ const Casa = () => {
     );
 };
 
-export default Casa;
+export default TheUrban;
