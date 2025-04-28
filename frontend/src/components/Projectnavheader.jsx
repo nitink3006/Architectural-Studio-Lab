@@ -28,7 +28,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
 
   return (
     <>
-      <div
+      <div 
         ref={placeholderRef}
         style={{
           height: isFixed ? `${projectHeadRef.current?.offsetHeight}px` : "0px",
@@ -36,14 +36,14 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
       ></div>
 
       {/* Project Header Section */}
-      <div
+      <div 
         ref={projectHeadRef}
-        className={`pb-2 proj_head_sec ${isFixed ? "fixed" : ""}`}
+        className={`pb-2  proj_head_sec ${isFixed ? "fixed" : ""}`}
       >
         <div className="hr_line">
           <hr />
         </div>
-        <div className="flex flex-row justify-center pe-18 proj_head ps-18">
+        <div className="flex flex-row justify-center pe-18 proj_head ps-18 pb-3">
           <div className="flex flex-row proj_head_right">
             <div className="pe-2 proj_head_right_btn1 ps-2">
               <button
