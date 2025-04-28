@@ -326,7 +326,7 @@ const Navigation = () => {
               </Nav.Link>
               <Nav.Link
                 as={Link}
-                to="/projects"
+                to="/projects-all"
                 className="nav-link"
                 onClick={closeNav}
                 style={{ fontFamily: "Poppins" }}

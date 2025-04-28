@@ -30,7 +30,8 @@ function Projectnav() {
       </div> */}
 
       {/* Project Filter Navigation */}
-      <Projectnavheader
+      <div className=" pt-15"></div>
+      <Projectnavheader 
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
