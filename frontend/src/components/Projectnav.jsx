@@ -16,14 +16,14 @@ function Projectnav() {
     <div className="bg-Soft_Grey">
       <Navigation />
 
-      <div className="bg-Soft_Grey text-5xl text-center pt-40">
+{/*       <div className="bg-Soft_Grey text-5xl text-center pt-40">
         <p className="futura_font text_black">
           <em>Our </em>
           <span>
             <strong>Projects</strong>
           </span>
         </p>
-      </div>
+      </div> */}
 
       {/* <div className="bg-Soft_Grey text-center avenir_font_light text_dark_grey">
         <p>2018 - 2024</p>
