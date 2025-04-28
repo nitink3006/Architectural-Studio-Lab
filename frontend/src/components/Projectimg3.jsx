@@ -73,14 +73,14 @@ const projects = [
   // },
   
   //------------------------------------------ row13-----------------------------------------------
-  {
-    src: res14,
-    title: "The Japandi Home",
-    location: "Pioneer Araya",
-    category: "Residential",
-    size: "3500 sqft",
-    place: " Gurugram",
-  },
+  // {
+  //   src: res14,
+  //   title: "The Japandi Home",
+  //   location: "Pioneer Araya",
+  //   category: "Residential",
+  //   size: "3500 sqft",
+  //   place: " Gurugram",
+  // },
   /////////////////////////recreatinal////////////////////////////
   {
     src: com13,
@@ -100,14 +100,14 @@ const projects = [
   },
    //------------------------------------------ row14-----------------------------------------------
 
-   {
-    src: res7,
-    title: "Home in the Hills",
-    location: "Rishikesh Villa",
-    category: "Residential",
-    size: "5000 sqft",
-    place: "Rishikesh",
-  },
+  //  {
+  //   src: res7,
+  //   title: "Home in the Hills",
+  //   location: "Rishikesh Villa",
+  //   category: "Residential",
+  //   size: "5000 sqft",
+  //   place: "Rishikesh",
+  // },
 
   {
     src: com15,
