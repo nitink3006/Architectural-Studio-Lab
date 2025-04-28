@@ -101,7 +101,7 @@ margin-top: 1.5rem;
 
 .image-overlay:hover .overlay-box {
   opacity: 1;
-  background-color:  rgba(221, 221, 221,.9);
+  background-color:  rgba(221, 221, 221,.6);
  
 }
 

@@ -25,9 +25,9 @@ function Projectnav() {
         </p>
       </div>
 
-      <div className="bg-Soft_Grey text-center avenir_font_light text_dark_grey">
+      {/* <div className="bg-Soft_Grey text-center avenir_font_light text_dark_grey">
         <p>2018 - 2024</p>
-      </div>
+      </div> */}
 
       {/* Project Filter Navigation */}
       <Projectnavheader
