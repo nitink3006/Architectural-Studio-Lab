@@ -159,7 +159,7 @@ margin-top: 1.5rem;
   /* padding: 15px 0; */
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 
@@ -196,12 +196,15 @@ margin-top: 1.5rem;
   }
   .fixed {
    
-    top: 0px;
+    top: 50px;
    
   }
-  .proj_head{
-    padding-top: 50px;
+  .proj_head_sec .fixed{
+    padding-top: 100px;
   }
+  /* .proj_head{
+    padding-top: 10px;
+  } */
 }
 
 
