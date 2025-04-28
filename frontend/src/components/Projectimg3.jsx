@@ -187,12 +187,13 @@ const Projectimg = ({ selectedCategory }) => {
                     <div className="overlay-box">
                       <p className="futura_font overlay-title">{project.title}</p>
                       <div className="overlay-content">
-                        <hr />
-                        <p className="avenir_font">{project.location}</p>
-                        <hr />
+                      <hr />
                         <p className="avenir_font">{project.category}</p>
                         <hr />
                         <p className="avenir_font">{project.size}</p>
+                        <hr />
+                        
+                        <p className="avenir_font">{project.location}</p>
                         <hr />
                         {/* <p className="avenir_font">{project.place}</p>
                         <hr /> */}
