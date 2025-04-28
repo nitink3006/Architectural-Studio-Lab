@@ -250,8 +250,8 @@ const Projectimg = ({ selectedCategory }) => {
                         <hr />
                         <p className="avenir_font">{project.size}</p>
                         <hr />
-                        <p className="avenir_font">{project.place}</p>
-                        <hr />
+                        {/* <p className="avenir_font">{project.place}</p>
+                        <hr /> */}
                       </div>
                     </div>
                   </div>
