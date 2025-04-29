@@ -70,9 +70,9 @@ const projects = [
   { 
     src: res12,
     title: "The Urban Retreat",
-    location: "New Delhi-10",
+    location: "New Delhi",
     category: "Residential",
-    size: "200 sqft",
+    size: "10,200 sqft",
     place: "New Delhi-10",
      link: '../components/ProjectData/TheUrban'
   },
@@ -197,7 +197,7 @@ const Projectimg = ({ selectedCategory }) => {
         const observer = new IntersectionObserver(
           ([entry]) => {
             setInViewRows((prev) => ({
-              ...prev,
+              ...prev, 
               [index]: entry.isIntersecting,
             }));
           },
@@ -232,23 +232,23 @@ const Projectimg = ({ selectedCategory }) => {
             >
               {row.map((project, index) => (
                 <Link
-                  to={project.link}
+                  to={project.link} 
                   key={index}
                   className="gallery-item image-overlay"
                 >
                   <div className="gallery-item image-overlay">
-                    <img src={project.src} alt={`Gallery ${index + 1}`} />
+                    <img src={project.src} alt={`Gallery ${index + 1}`} loading="lazy"/>
                     <div className="overlay-box">
-                      <p className="futura_font overlay-title">
+                      <p className="poppins-regular overlay-title">
                         {project.title}
                       </p>
                       <div className="overlay-content">
                       <hr />
-                        <p className="avenir_font">{project.category}</p>
+                        <p className="lato-regular">{project.category}</p>
                         <hr />
-                        <p className="avenir_font">{project.size}</p>
+                        <p className="lato-regular">{project.size}</p>
                         <hr />
-                        <p className="avenir_font">{project.location}</p>
+                        <p className="lato-regular">{project.location}</p>
                        
                       
                         <hr />

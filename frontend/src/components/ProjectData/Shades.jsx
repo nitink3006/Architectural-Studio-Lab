@@ -18,15 +18,20 @@ import sha5 from '../../assets/residential/6.Shades of Still-Greater noida-1200s
 
 const galleryLayout = [
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+        layout: ["col-md-6 col-12",  "col-md-6 col-12"], images: [
             sha1,sha2
-           ,sha3
+           
             
         ]
     },
     {
         layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            sha4,sha5
+            sha3, sha4,sha5
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12"], images: [
+           sha5
         ]
     },
   
@@ -69,7 +74,7 @@ const GalleryRow = ({ index, layout, images }) => {
                 {layout.map((colClass, i) => (
                     <div key={i} className={`${colClass} gallery-item`}>
                         <div className="gallery-img-wrapper">
-                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  />
+                            <img src={images[i]} alt={`Gallery Image ${i + 1}`} loading="lazy" />
                         </div>
                     </div>
                 ))}
@@ -83,12 +88,12 @@ const Shades = () => {
         <div className="bg-Soft_Grey proj_data">
             <Navigation />
             <div className="bg-Soft_Grey">
-            <h1 className="futura_font proj_cont1_head pt-20">Shades of Still</h1>
+            <h1 className="poppins-regular proj_cont1_head pt-20">Shades of Still</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
           
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">Greater noida</h4>
+            <h4 className="text-center lato-regular fw-normal mt-3 pb-10">Greater noida</h4>
          
 
 

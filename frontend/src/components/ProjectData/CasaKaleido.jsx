@@ -159,7 +159,7 @@ const GalleryRow = ({ index, layout, images }) => {
                 {layout.map((colClass, i) => (
                     <div key={i} className={`${colClass} gallery-item`}>
                         <div className="gallery-img-wrapper">
-                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  />
+                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  loading="lazy" />
                         </div>
                     </div>
                 ))}
@@ -173,12 +173,12 @@ const TheUrban = () => {
         <div className="bg-Soft_Grey proj_data">
             <Navigation />
             <div className="bg-Soft_Grey">
-            <h1 className="futura_font proj_cont1_head pt-20">The Urban Retreat</h1>
+            <h1 className="poppins-regular proj_cont1_head pt-20">The Urban Retreat</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">New Delhi-10</h4>
+            <h4 className="text-center lato-regular fw-normal mt-3 pb-10">New Delhi-10</h4>
             {/* <AnimatedImage /> */}
             {/* <div className="pb-8 proj_cont_em_para pt-15">
                 <p className="avenir_font">

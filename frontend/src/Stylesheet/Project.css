@@ -8,6 +8,17 @@
 
 } */
 /*hr*/
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .hr_line{
   width: 90%;
   margin: auto;
@@ -108,7 +119,7 @@ margin-top: 1.5rem;
 
 .overlay-title {
   font-size: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 15px;
   text-align: center;
   color: white;
@@ -193,7 +204,7 @@ margin-top: 1.5rem;
   }
   .proj_head_right{
     justify-content: center;
-  }
+  } 
   .fixed {
    
     top: 50px;

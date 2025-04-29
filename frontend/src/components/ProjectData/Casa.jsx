@@ -9,7 +9,7 @@ import Footer from "../Footer";
 import casa1 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271587301_959431154989136_237295068018475377_n.jpg';
 import casa2 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271628856_515811689631632_7400783504794154935_n.jpg';
 import casa3 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/271957191_408176991103924_8820647754944047115_n.jpg';
-// import casa4 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/COVER PAGE.png';
+import casa4 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/COVER PAGE.png';
 import casa5 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/dgf.png';
 
 import casa6 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/drg.png';
@@ -29,30 +29,45 @@ import casa16 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/yf
 
 const galleryLayout = [
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+        layout: ["col-md-6 col-12",  "col-md-6 col-12"], images: [
             casa1,casa2
-           ,casa3
+           
             
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa16,casa5,casa6
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            casa3, casa16
         ]
     },
     {
-        layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
-            casa7,casa8,casa9
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           casa5,casa6
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            casa10,casa11,casa12
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            casa7,casa8
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-            casa13,casa14,casa15
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            casa9, casa10
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           casa11,casa12
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            casa13,casa14
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            casa4,casa15
         ]
     },
 
@@ -94,7 +109,7 @@ const GalleryRow = ({ index, layout, images }) => {
                 {layout.map((colClass, i) => (
                     <div key={i} className={`${colClass} gallery-item`}>
                         <div className="gallery-img-wrapper">
-                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  />
+                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  loading="lazy" />
                         </div>
                     </div>
                 ))}
@@ -130,12 +145,12 @@ const Casa = () => {
         <div className="bg-Soft_Grey proj_data">
             <Navigation />
             <div className="bg-Soft_Grey">
-            <h1 className="futura_font proj_cont1_head pt-20">Casa Kaleido</h1>
+            <h1 className="poppins-regular proj_cont1_head pt-20">Casa Kaleido</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">Gurugram</h4>
+            <h4 className="text-center lato-regular fw-normal mt-3 pb-10">Gurugram</h4>
             {/* <AnimatedImage /> */}
             {/* <div className="pb-8 proj_cont_em_para pt-15">
                 <p className="avenir_font">

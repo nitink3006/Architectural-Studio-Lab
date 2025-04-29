@@ -243,16 +243,16 @@ const Projectimg = ({ selectedCategory }) => {
                   className="gallery-item image-overlay"
                 >
                   <div className="gallery-item image-overlay">
-                    <img src={project.src} alt={`Gallery ${index + 1}`} />
+                    <img src={project.src} alt={`Gallery ${index + 1}`} loading="lazy" />
                     <div className="overlay-box">
-                      <p className="futura_font overlay-title">{project.title}</p>
+                      <p className="poppins-regular overlay-title">{project.title}</p>
                       <div className="overlay-content">
                         <hr />
-                        <p className="avenir_font">{project.category}</p>
+                        <p className="lato-regular">{project.category}</p>
                         <hr />
-                        <p className="avenir_font">{project.size}</p>
+                        <p className="lato-regular">{project.size}</p>
                         <hr />
-                        <p className="avenir_font">{project.location}</p>
+                        <p className="lato-regular">{project.location}</p>
                         <hr />
                         
                        
