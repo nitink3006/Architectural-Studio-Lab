@@ -28,6 +28,7 @@ import mod18 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 s
 import mod19 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/z (2).jpg';
 import mod20 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/z (3).jpg';
 import mod21 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/z (4).jpg';
+import mod22 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/COVER PAGE.jpg';
 
 
 
@@ -35,42 +36,65 @@ import mod21 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 s
 
 const galleryLayout = [
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
             mod1,mod2
-           ,mod3
+           ,
             
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            mod4,mod5,mod6
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            mod3, mod4
         ]
     },
     {
-        layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
-            mod7,mod8,mod9
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           mod5,mod6
+        ]
+    },
+    
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            mod7,mod8,
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            mod10,mod11,mod12
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            mod9, mod10
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-            mod13,mod14,mod15
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           mod11,mod12
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            mod16,mod17
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            mod13,mod14
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            mod15,  mod16
+            
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           mod17
            ,mod18
             
         ]
     },
+    
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            mod19,mod20,mod21
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            mod19,mod20
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           mod21,mod22
         ]
     },
    
@@ -113,7 +137,7 @@ const GalleryRow = ({ index, layout, images }) => {
                 {layout.map((colClass, i) => (
                     <div key={i} className={`${colClass} gallery-item`}>
                         <div className="gallery-img-wrapper">
-                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  />
+                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  loading="lazy" />
                         </div>
                     </div>
                 ))}
@@ -127,12 +151,12 @@ const TheModern = () => {
         <div className="bg-Soft_Grey proj_data">
             <Navigation />
             <div className="bg-Soft_Grey">
-            <h1 className="futura_font proj_cont1_head pt-20">The Modern Muse</h1>
+            <h1 className="poppins-regular proj_cont1_head pt-20">The Modern Muse</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">New Delhi</h4>
+            <h4 className="text-center lato-regular  fw-normal mt-3 pb-10">New Delhi</h4>
           
             {/* <div className="d-md-none d-block flex-col justify-content-md-center justify-content-start   align-items-center mb-25 
             w-90 mx-auto">

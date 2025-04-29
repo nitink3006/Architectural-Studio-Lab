@@ -50,69 +50,100 @@ import urb37 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200
 
 const galleryLayout = [
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
             urb1,urb2
-           ,urb3
+           
             
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            urb16,urb5,urb6
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb3, urb16
         ]
     },
     {
-        layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
-            urb7,urb8,urb9
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb5,urb6
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            urb10,urb11,urb12
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb7,urb8
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-            urb13,urb14,urb15
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb9, urb10
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            urb16,urb17
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           urb11,urb12
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb13,urb14
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb15,  urb16
+            
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+          urb17
            ,urb18
             
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            urb19,urb20,urb21
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb19,urb20
         ]
     },
     {
-        layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
-            urb22,urb23,urb24
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb21 , urb22
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            urb25,urb26,urb27
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           urb23,urb24
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-            urb28,urb29,urb30
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb25,urb26
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb27, urb28
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           urb29,urb30
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
             urb31,urb32
-           ,urb33
+           
             
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-            urb34,urb35,urb36
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb33, urb34
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb35,urb36
         ]
     },
     {
@@ -159,7 +190,7 @@ const GalleryRow = ({ index, layout, images }) => {
                 {layout.map((colClass, i) => (
                     <div key={i} className={`${colClass} gallery-item`}>
                         <div className="gallery-img-wrapper">
-                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  />
+                            <img src={images[i]} alt={`Gallery Image ${i + 1}`} loading="lazy" />
                         </div>
                     </div>
                 ))}
@@ -173,65 +204,13 @@ const TheUrban = () => {
         <div className="bg-Soft_Grey proj_data">
             <Navigation />
             <div className="bg-Soft_Grey">
-            <h1 className="futura_font proj_cont1_head pt-20">The Urban Retreat</h1>
+            <h1 className="poppins-regular proj_cont1_head pt-20">The Urban Retreat</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">New Delhi-10</h4>
-            {/* <AnimatedImage /> */}
-            {/* <div className="pb-8 proj_cont_em_para pt-15">
-                <p className="avenir_font">
-                    <em>This space is more than just a dwelling; it's a space where every element intertwines to create a space that is both aesthetically pleasing and functionally efficient.</em>
-                </p>
-            </div> */}
-
-
-            {/* <div className="d-md-flex d-none flex flex-row align-items-center justify-content-md-center justify-content-start gap-12 mb-25 proj_cont1_about">
-                <div className="flex flex-row gap-4">
-                    <FaBox className="text-gray-400 fs-5" />
-                    <p className="avenir_font">2024</p>
-                </div>
-                <div className="flex flex-row gap-4">
-                    <FaRegSquare className="text-gray-400 fs-4" />
-                    <p className="avenir_font">4000 sqft</p>
-                </div>
-                <div className="flex flex-row gap-4">
-                    <CiHome className="text-gray-400 fs-4" />
-                    <p className="avenir_font">Residential</p>
-                </div>
-                <div className="flex flex-row gap-4">
-                    <CiLocationOn className="text-gray-400 fs-4" />
-                    <p className="avenir_font">Gurugram</p>
-                </div>
-            </div> */}
-
-
-            {/* mobile */}
-            {/* <div className="d-md-none d-block flex-col justify-content-md-center justify-content-start   align-items-center mb-25 
-            w-90 mx-auto">
-                <div className="flex flex-row gap-4">
-                    <FaBox className="text-gray-400 fs-5" size={19}/>
-                    <p className="avenir_font mb-0">2024</p>
-                </div>
-                <hr></hr>
-                <div className="flex flex-row gap-4">
-                    <FaRegSquare className="text-gray-400 fs-4" />
-                    <p className="avenir_font mb-0">3500 sqft</p>
-                </div>
-                <hr></hr>
-                <div className="flex flex-row gap-4">
-                    <CiHome className="text-gray-400 fs-4" />
-                    <p className="avenir_font mb-0">Residential</p>
-                </div>
-                <hr></hr>
-                <div className="flex flex-row gap-4">
-                    <CiLocationOn className="text-gray-400 fs-4" />
-                    <p className="avenir_font mb-0">Gurugram</p>
-                </div>
-                <hr></hr>
-            </div> */}
-
+            <h4 className="text-center lato-regular fw-normal mt-3 pb-10">New Delhi-10</h4>
+  
 
 
 

@@ -38,54 +38,75 @@ import aes27 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/
 
 const galleryLayout = [
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
             aes1, aes2
-           , aes3
+           
             
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-             aes4, aes5, aes6
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+             aes3,  aes4
         ]
     },
     {
-        layout: ["col-md-2 col-12", "col-md-5 col-12", "col-md-5 col-12"], images: [
-             aes7, aes8, aes9
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+             aes5, aes6
         ]
     },
     {
-        layout: ["col-md-3 col-12", "col-md-3 col-12", "col-md-6 col-12"], images: [
-             aes10, aes11, aes12
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+             aes7, aes8 
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-             aes13, aes14, aes15
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            aes9 , aes10, aes11, aes12
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-             aes16, aes17, aes18
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            aes11, aes27
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+             aes13, aes14 
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            aes15, aes16
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            aes17, aes18
         ]
     },
 
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-             aes19, aes20, aes21
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+             aes19, aes20, 
         ]
     },
 
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-             aes22, aes23, aes24
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            aes21 , aes22
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-3 col-12", "col-md-3 col-12"], images: [
-             aes25, aes26,aes27
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            aes23, aes24
         ]
     },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+             aes25, aes26
+        ]
+    },
+   
 
 
 ];
@@ -101,7 +122,7 @@ const GalleryRow = ({ index, layout, images }) => {
             const currentScrollY = window.scrollY;
             const isScrollingDown = currentScrollY > prevScrollY;
 
-            if (isScrollingDown && isInView) {
+            if (isScrollingDown && isInView) { 
                 setShouldAnimate(true);
             } else if (!isScrollingDown) {
                 setShouldAnimate(false);
@@ -126,7 +147,7 @@ const GalleryRow = ({ index, layout, images }) => {
                 {layout.map((colClass, i) => (
                     <div key={i} className={`${colClass} gallery-item`}>
                         <div className="gallery-img-wrapper">
-                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  />
+                            <img src={images[i]} alt={`Gallery Image ${i + 1}`}  loading="lazy" />
                         </div>
                     </div>
                 ))}
@@ -163,12 +184,12 @@ const Casa = () => {
             <Navigation />
             <div className="bg-Soft_Grey">
           
-            <h1 className="futura_font proj_cont1_head pt-20">Aesthetic Echoes</h1>
+            <h1 className="poppins-regular proj_cont1_head pt-20">Aesthetic Echoes</h1>
             <div className="mt-3 proj_cont1_hr">
                 <hr />
             </div>
 
-            <h4 className="text-center avenir_font fw-normal mt-3 pb-10">Noida</h4>
+            <h4 className="text-center lato-regular fw-normal mt-3 pb-10">Noida</h4>
             {/* <AnimatedImage /> */}
             {/* <div className="pb-8 proj_cont_em_para pt-15">
                 <p className="avenir_font">
