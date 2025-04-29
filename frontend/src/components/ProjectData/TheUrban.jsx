@@ -209,7 +209,7 @@ const TheUrban = () => {
                 <hr />
             </div>
 
-            <h4 className="text-center lato-regular fw-normal mt-3 pb-10">New Delhi-10</h4>
+            <h4 className="text-center lato-regular fw-normal mt-3 pb-10">New Delhi</h4>
   
 
 
