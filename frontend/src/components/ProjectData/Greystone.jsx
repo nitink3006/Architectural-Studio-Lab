@@ -19,6 +19,7 @@ import gre6 from '../../assets/residential/7.The Greystone Grove-Lucknow-10,800 
 
 const galleryLayout = [
     {
+
         layout: ["col-md-4 col-12",  "col-md-4 col-12",  "col-md-4 col-12"], images: [
             gre1,gre2, gre3
            
@@ -31,6 +32,24 @@ const galleryLayout = [
         ]
     },
    
+
+        layout: ["col-md-6 col-12",  "col-md-6 col-12"], images: [
+            gre1,gre2
+           
+            
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            gre3, gre4
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            gre5,gre6
+        ]
+    },
+
  
 
 ];

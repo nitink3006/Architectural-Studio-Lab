@@ -50,6 +50,7 @@ import urb37 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200
 
 const galleryLayout = [
     {
+
         layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
             urb1,urb2, urb3
            
@@ -81,10 +82,58 @@ const galleryLayout = [
     {
         layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
             urb16, urb17
+
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb1,urb2
+           
+            
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb3, urb16
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb5,urb6
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb7,urb8
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb9, urb10
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           urb11,urb12
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb13,urb14
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb15,  urb16
+            
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+          urb17
+
            ,urb18
             
         ]
     },
+
     
     {
         layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
@@ -123,6 +172,57 @@ const galleryLayout = [
    
     {
         layout: ["col-md-4 col-12", "col-md-4 col-12"], images: [
+
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb19,urb20
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb21 , urb22
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           urb23,urb24
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb25,urb26
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb27, urb28
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+           urb29,urb30
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb31,urb32
+           
+            
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb33, urb34
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+            urb35,urb36
+        ]
+    },
+    {
+        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+
             urb37,urb4
         ]
     },
