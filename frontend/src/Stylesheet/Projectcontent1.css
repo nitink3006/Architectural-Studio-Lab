@@ -7,6 +7,10 @@
     letter-spacing: 0em;
     line-height: normal;
     color: rgb(87,87,87);
+    background-color: #dddddd;
+}
+.proj_data{
+  background-color: #dddddd !important;
 }
 /*-------------------------------hr---------------------------*/
 .proj_cont1_hr hr{
@@ -14,7 +18,7 @@
     margin: auto;
     font-weight: bold;
     flex-shrink: 2px;
-    height: 2px;
+    height: 2px; 
     height: 1px;
     color: #333;
     background-color: #333;
@@ -72,6 +76,7 @@
   object-fit: cover;
   display: block;
   transition: transform 2s ease-in-out;
+  /* padding-bottom:30px ; */
 }
 
 
@@ -89,4 +94,19 @@
   margin-left: 50px;
 }
 
+}
+
+/*-----------------------------casa.jsx--------------------------*/
+.casa_img{
+  width: 100vw;
+  height: 500px;
+}
+@media (max-width: 770px){
+  .gallery-img-wrapper img{
+    padding-bottom: 30px;
+  }
+
+}
+.fsbox{
+  margin-left: -28px;
 }

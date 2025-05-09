@@ -46,7 +46,7 @@ function Projecthead({ selectedCategory, setSelectedCategory }) {
           <hr />
         </div>
 
-        <div className="flex flex-col flex-md-row justify-between pe-18 proj_head ps-18">
+        <div className="flex flex-col flex-md-row justify-between pe-md-18 proj_head ps-md-18 ps-10  pe-10">
           {/* Left Section - "OUR WORK" */}
           <div className="proj_head_left">
             <h3 className="text_black">OUR WORK</h3>

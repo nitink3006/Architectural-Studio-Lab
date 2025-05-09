@@ -104,7 +104,7 @@ const Career = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="mt-64"
+              className="mt-74"
             >
               <p
                 className="text-xl sm:text-xl md:text-2xl lg:text-4xl"

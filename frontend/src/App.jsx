@@ -24,7 +24,13 @@ import InteriorIntern from "./components/Career/InteriorIntern";
 import Accounts from "./components/Career/Accounts";
 import SiteSupervisor from "./components/Career/SiteSupervisor";
 import ScrollToTop from "./components/ScrollToTop";
-
+import Casa from "./components/ProjectData/Casa";
+import Aesthetic from "./components/ProjectData/Aesthetic";
+import TheUrban from "./components/ProjectData/TheUrban";
+import TheModern from "./components/ProjectData/TheModern";
+import Ivorynest from "./components/ProjectData/Ivorynest";
+import Shades from "./components/ProjectData/Shades";
+import Greystone from "./components/ProjectData/Greystone";
 function App() {
   return (
     <Router>
@@ -43,6 +49,13 @@ function App() {
         </Route>
 
         <Route path="/Projectcontent1" element={<Projectcontent1 />} />
+        <Route path="/components/ProjectData/Casa" element={<Casa />} />
+        <Route path="/components/ProjectData/TheUrban" element={<TheUrban />} />
+        <Route path="/components/ProjectData/TheModern" element={<TheModern />} />
+        <Route path="/components/ProjectData/Ivorynest" element={<Ivorynest />} />
+        <Route path="/components/ProjectData/Shades" element={<Shades />} />
+        <Route path="/components/ProjectData/Greystone" element={<Greystone />} />
+        <Route path="/components/ProjectData/Aesthetic" element={<Aesthetic />} />
         <Route path="/Demo2" element={<Demo2 />} />
         <Route path="/mumbai-office" element={<Mumbaioffice />} />
 

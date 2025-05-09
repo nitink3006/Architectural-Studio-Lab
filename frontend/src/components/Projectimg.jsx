@@ -16,10 +16,13 @@ import com9 from "../assets/home/commercial/9.JPG";
 
 import rec1 from "../assets/home/recreational/Creche View-01.jpg";
 import rec2 from "../assets/home/recreational/Creche View-02.jpg";
+import res8 from "../assets/home/residential/Screenshot 2024-11-27 234701.png";
 
-import res11 from "../assets/home/residential/Screenshot 2024-11-27 235321.png";
-import res12 from "../assets/home/residential/Screenshot 2024-11-27 235451.png";
-import res13 from "../assets/home/residential/Screenshot 2024-11-27 235519.png";
+// import res12 from "../assets/home/residential/Screenshot 2024-11-27 235451.png";
+import res12 from "../assets/residential/2.The Urban Retreat-New Delhi-10,200 sqft/COVER PAGE.jpg";
+// import res13 from "../assets/home/residential/Screenshot 2024-11-27 235519.png";
+
+import res13 from "../assets/residential/3.The Modern Muses-New Delhi- 3900 sq ft/COVER PAGE.jpg";
 import rec4 from "../assets/home/recreational/Reception View-01.jpg";
 
 
@@ -53,30 +56,35 @@ const projects = [
     link: "/Projectcontent1",
   },
  //------------------------------------------ row12(residential)-----------------------------------------------
-   {
-    src: res11,
-    title: "The Japandi Home",
-    location: "Pioneer Araya",
+{ 
+    src: res8,
+    title: "Casa Kaleido",
+    location: "Gurugram",
     category: "Residential",
-    size: "3500 sqft",
+    size: "4000 sqft",
     place: " Gurugram",
+    link: '../components/ProjectData/Casa'
   },
-  {
+
+
+  { 
     src: res12,
-    title: "The Zephyr Villa",
-    location: "Goa Villa",
+    title: "The Urban Retreat",
+    location: "New Delhi",
     category: "Residential",
-    size: "3000 sqft",
-    place: "Siolim , Goa",
+    size: "10,200 sqft",
+    place: "New Delhi-10",
+     link: '../components/ProjectData/TheUrban'
   },
 
   {
     src: res13,
-    title: "Home in the Hills",
-    location: "Rishikesh Villa",
+    title: "The Modern Muse",
+    location: "New Delhi",
     category: "Residential",
-    size: "5000 sqft",
-    place: "Rishikesh",
+    size: "3900 sqft",
+    place: "New Delhi",
+     link: '../components/ProjectData/TheModern'
   },
    //------------------------------------------ row7 (hospitality)-----------------------------------------------
         {
@@ -189,7 +197,7 @@ const Projectimg = ({ selectedCategory }) => {
         const observer = new IntersectionObserver(
           ([entry]) => {
             setInViewRows((prev) => ({
-              ...prev,
+              ...prev, 
               [index]: entry.isIntersecting,
             }));
           },
@@ -224,26 +232,28 @@ const Projectimg = ({ selectedCategory }) => {
             >
               {row.map((project, index) => (
                 <Link
-                  to={project.link}
+                  to={project.link} 
                   key={index}
                   className="gallery-item image-overlay"
                 >
                   <div className="gallery-item image-overlay">
-                    <img src={project.src} alt={`Gallery ${index + 1}`} />
+                    <img src={project.src} alt={`Gallery ${index + 1}`} loading="lazy"/>
                     <div className="overlay-box">
-                      <p className="futura_font overlay-title">
+                      <p className="poppins-regular overlay-title">
                         {project.title}
                       </p>
                       <div className="overlay-content">
+                      <hr />
+                        <p className="lato-regular">{project.category}</p>
                         <hr />
-                        <p className="avenir_font">{project.location}</p>
+                        <p className="lato-regular">{project.size}</p>
                         <hr />
-                        <p className="avenir_font">{project.category}</p>
+                        <p className="lato-regular">{project.location}</p>
+                       
+                      
                         <hr />
-                        <p className="avenir_font">{project.size}</p>
-                        <hr />
-                        <p className="avenir_font">{project.place}</p>
-                        <hr />
+                        {/* <p className="avenir_font">{project.place}</p>
+                        <hr /> */}
                       </div>
                     </div>
                   </div>

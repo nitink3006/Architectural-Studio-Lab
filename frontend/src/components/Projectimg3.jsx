@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../Stylesheet/Project.css";
 
-import res8 from "../assets/home/residential/Screenshot 2024-11-27 234701.png";
-import res9 from "../assets/home/residential/Screenshot 2024-11-27 235051.png";
-import res10 from "../assets/home/residential/Screenshot 2024-11-27 235227.png";
+// import res11 from "../assets/home/residential/Screenshot 2024-11-27 235321.png";
+// import res9 from "../assets/home/residential/Screenshot 2024-11-27 235051.png";
+// import res10 from "../assets/home/residential/Screenshot 2024-11-27 235227.png";
 
 import res14 from "../assets/home/residential/Street View.jpg";
 //recreational
@@ -17,7 +17,7 @@ import res7 from "../assets/home/residential/Residence.jpg";
 import com10 from "../assets/home/commercial/11.JPG";
 import com11 from "../assets/home/commercial/IMG-20240913-WA0028.jpg";
 import com12 from "../assets/home/commercial/IMG-20240913-WA0038.jpg";
-import com15 from "../assets/home/commercial/Lobby-C.jpg";
+import com15 from "../assets/home/commercial/Lobby-C.jpg"; 
 
 const projects = [
   //------------------------------------------ row4-----------------------------------------------
@@ -28,7 +28,7 @@ const projects = [
       category: "Commercial",
       size: "3500 sqft",
       place: " Gurugram",
-    },
+    }, 
     {
       src: com11,
       title: "The Zephyr Villa",
@@ -46,41 +46,41 @@ const projects = [
       place: "Rishikesh",
     },
    //------------------------------------------ row11-----------------------------------------------
-   {
-    src: res8,
-    title: "The Japandi Home",
-    location: "Pioneer Araya",
-    category: "Residential",
-    size: "3500 sqft",
-    place: " Gurugram",
-  },
-  {
-    src: res9,
-    title: "The Zephyr Villa",
-    location: "Goa Villa",
-    category: "Residential",
-    size: "3000 sqft",
-    place: "Siolim , Goa",
-  },
+  //     {
+  //      src: res11,
+  //      title: "The Japandi Home",
+  //      location: "Pioneer Araya",
+  //      category: "Residential",
+  //      size: "3500 sqft",
+  //      place: " Gurugram",
+  //    },
+  // {
+  //   src: res9,
+  //   title: "The Zephyr Villa",
+  //   location: "Goa Villa",
+  //   category: "Residential",
+  //   size: "3000 sqft",
+  //   place: "Siolim , Goa",
+  // },
 
-  {
-    src: res10,
-    title: "Home in the Hills",
-    location: "Rishikesh Villa",
-    category: "Residential",
-    size: "5000 sqft",
-    place: "Rishikesh",
-  },
+  // {
+  //   src: res10,
+  //   title: "Home in the Hills",
+  //   location: "Rishikesh Villa",
+  //   category: "Residential",
+  //   size: "5000 sqft",
+  //   place: "Rishikesh",
+  // },
   
   //------------------------------------------ row13-----------------------------------------------
-  {
-    src: res14,
-    title: "The Japandi Home",
-    location: "Pioneer Araya",
-    category: "Residential",
-    size: "3500 sqft",
-    place: " Gurugram",
-  },
+  // {
+  //   src: res14,
+  //   title: "The Japandi Home",
+  //   location: "Pioneer Araya",
+  //   category: "Residential",
+  //   size: "3500 sqft",
+  //   place: " Gurugram",
+  // },
   /////////////////////////recreatinal////////////////////////////
   {
     src: com13,
@@ -100,14 +100,14 @@ const projects = [
   },
    //------------------------------------------ row14-----------------------------------------------
 
-   {
-    src: res7,
-    title: "Home in the Hills",
-    location: "Rishikesh Villa",
-    category: "Residential",
-    size: "5000 sqft",
-    place: "Rishikesh",
-  },
+  //  {
+  //   src: res7,
+  //   title: "Home in the Hills",
+  //   location: "Rishikesh Villa",
+  //   category: "Residential",
+  //   size: "5000 sqft",
+  //   place: "Rishikesh",
+  // },
 
   {
     src: com15,
@@ -183,19 +183,20 @@ const Projectimg = ({ selectedCategory }) => {
                   className="gallery-item image-overlay"
                 >
                   <div className="gallery-item image-overlay">
-                    <img src={project.src} alt={`Gallery ${index + 1}`} />
+                    <img src={project.src} alt={`Gallery ${index + 1}`} loading="lazy"/>
                     <div className="overlay-box">
-                      <p className="futura_font overlay-title">{project.title}</p>
+                      <p className="poppins-regular overlay-title">{project.title}</p>
                       <div className="overlay-content">
+                      <hr />
+                        <p className="lato-regular">{project.category}</p>
                         <hr />
-                        <p className="avenir_font">{project.location}</p>
+                        <p className="lato-regular">{project.size}</p>
                         <hr />
-                        <p className="avenir_font">{project.category}</p>
+                        
+                        <p className="lato-regular">{project.location}</p>
                         <hr />
-                        <p className="avenir_font">{project.size}</p>
-                        <hr />
-                        <p className="avenir_font">{project.place}</p>
-                        <hr />
+                        {/* <p className="avenir_font">{project.place}</p>
+                        <hr /> */}
                       </div>
                     </div>
                   </div>

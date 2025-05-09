@@ -47,12 +47,12 @@ const About = () => {
       <Navigation />
       {/* Sticky Image with Text Overlay */}
       <div ref={targetRef} className="h-screen w-full relative">
-        <div className="flex h-screen justify-center items-center overflow-hidden sticky top-0">
-          <motion.img
-            src="/aboutmain.png"
-            alt="Our Mission"
-            className="w-full h-full absolute top-0"
-          />
+      <div className="relative h-screen w-screen overflow-hidden">
+      <motion.img
+  src="/aboutmain.png"
+  alt="Our Mission"
+  className="absolute inset-0 w-full h-full object-contain md:object-cover"
+/>
           <div className="flex flex-col h-screen justify-center text-center text-white w-full absolute futura_font_bold items-center px-6 space-y-4">
             <motion.h2
               className="text-2xl font-bold md:text-4xl"
