@@ -36,65 +36,52 @@ import mod22 from '../../assets/residential/3.The Modern Muses-New Delhi- 3900 s
 
 const galleryLayout = [
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
             mod1,mod2
-           ,
+           , mod3
             
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            mod3, mod4
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            mod4, mod5,mod6
         ]
     },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-           mod5,mod6
-        ]
-    },
+  
     
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            mod7,mod8,
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            mod7,mod8, mod9
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            mod9, mod10
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            mod10, mod11,mod12
+        ]
+    },
+  
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            mod13,mod14,  mod15
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-           mod11,mod12
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            mod13,mod14
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            mod15,  mod16
-            
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-           mod17
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            mod16, mod17
            ,mod18
             
         ]
     },
+
     
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            mod19,mod20
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            mod19,mod20, mod21
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-           mod21,mod22
+        layout: ["col-md-4 col-12"], images: [
+          mod22
         ]
     },
    
