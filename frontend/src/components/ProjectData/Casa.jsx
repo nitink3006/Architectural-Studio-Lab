@@ -29,6 +29,38 @@ import casa16 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/yf
 
 const galleryLayout = [
     {
+
+        layout: ["col-md-4 col-12",  "col-md-4 col-12",  "col-md-4 col-12"], images: [
+            casa1,casa2, casa3
+           
+            
+        ]
+    },
+   
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+             casa16, casa5,casa6
+        ]
+    },
+   
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            casa7,casa8,  casa9
+        ]
+    },
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+          casa10,casa11,casa12
+        ]
+    },
+   
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            casa13,casa14,casa15
+        ]
+    },
+   
+
         layout: ["col-md-6 col-12",  "col-md-6 col-12"], images: [
             casa1,casa2
            
@@ -70,6 +102,7 @@ const galleryLayout = [
             casa4,casa15
         ]
     },
+
 
 ];
 

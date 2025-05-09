@@ -18,6 +18,20 @@ import ivo6 from '../../assets/residential/4.The Ivory Nest -Noida- 2800 sq ft/w
 
 const galleryLayout = [
     {
+
+        layout: ["col-md-4 col-12",  "col-md-4 col-12",  "col-md-4 col-12"], images: [
+            ivo1,ivo2, ivo3
+           
+            
+        ]
+    },
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12",  "col-md-4 col-12"], images: [
+             ivo4, ivo5,ivo6
+        ]
+    },
+   
+
         layout: ["col-md-6 col-12",  "col-md-6 col-12"], images: [
             ivo1,ivo2
            
@@ -35,6 +49,7 @@ const galleryLayout = [
         ]
     },
  
+
     
 
 ];

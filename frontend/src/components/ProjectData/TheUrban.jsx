@@ -50,6 +50,39 @@ import urb37 from '../../assets/residential/2.The Urban Retreat-New Delhi-10,200
 
 const galleryLayout = [
     {
+
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb1,urb2, urb3
+           
+            
+        ]
+    },
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+          urb5,urb6 , urb16
+        ]
+    },
+   
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb7,urb8, urb9
+        ]
+    },
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb10, urb11,urb12
+        ]
+    },
+    
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb13,urb14, urb15
+        ]
+    },
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb16, urb17
+
         layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
             urb1,urb2
            
@@ -95,10 +128,51 @@ const galleryLayout = [
     {
         layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
           urb17
+
            ,urb18
             
         ]
     },
+
+    
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb19,urb20, urb21
+        ]
+    },
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb22,urb23,urb24
+        ]
+    },
+   
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb25,urb26, urb27
+        ]
+    },
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb28, urb29,urb30
+        ]
+    },
+  
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb31,urb32, urb33
+           
+            
+        ]
+    },
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            urb34,urb35,urb36
+        ]
+    },
+   
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12"], images: [
+
     {
         layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
             urb19,urb20
@@ -148,6 +222,7 @@ const galleryLayout = [
     },
     {
         layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
+
             urb37,urb4
         ]
     },
