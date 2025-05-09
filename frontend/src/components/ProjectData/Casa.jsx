@@ -29,47 +29,35 @@ import casa16 from '../../assets/residential/1.Casa Kaleido-Gurugram-4000sqft/yf
 
 const galleryLayout = [
     {
-        layout: ["col-md-6 col-12",  "col-md-6 col-12"], images: [
-            casa1,casa2
+        layout: ["col-md-4 col-12",  "col-md-4 col-12",  "col-md-4 col-12"], images: [
+            casa1,casa2, casa3
            
             
         ]
     },
+ 
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            casa3, casa16
+        layout: ["col-md-4 col-12", "col-md-4 col-12",  "col-md-4 col-12"], images: [
+           casa5,casa6 , casa16
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-           casa5,casa6
+        layout: ["col-md-4 col-12", "col-md-4 col-12",  "col-md-4 col-12"], images: [
+            casa7,casa8,  casa9
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            casa7,casa8
+        layout: ["col-md-4 col-12", "col-md-4 col-12",  "col-md-4 col-12"], images: [
+           casa10, casa11,casa12
         ]
     },
+  
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            casa9, casa10
+        layout: ["col-md-4 col-12", "col-md-4 col-12",  "col-md-4 col-12"], images: [
+            casa13,casa14,  casa15
         ]
     },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-           casa11,casa12
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            casa13,casa14
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            casa4,casa15
-        ]
-    },
+  
 
 ];
 

@@ -18,22 +18,18 @@ import sha5 from '../../assets/residential/6.Shades of Still-Greater noida-1200s
 
 const galleryLayout = [
     {
-        layout: ["col-md-6 col-12",  "col-md-6 col-12"], images: [
-            sha1,sha2
+        layout: ["col-md-4 col-12",  "col-md-4 col-12",  "col-md-4 col-12"], images: [
+            sha1,sha2, sha3
            
             
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            sha3, sha4,sha5
+        layout: ["col-md-4 col-12", "col-md-4 col-12"], images: [
+            sha4,sha5
         ]
     },
-    {
-        layout: ["col-md-6 col-12"], images: [
-           sha5
-        ]
-    },
+ 
   
 
 ];

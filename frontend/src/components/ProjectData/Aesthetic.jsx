@@ -38,74 +38,58 @@ import aes27 from '../../assets/residential/5.Aesthetic Echoes-Noida-3900 sq ft/
 
 const galleryLayout = [
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            aes1, aes2
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            aes1, aes2, aes3
            
             
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-             aes3,  aes4
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+              aes4, aes5, aes6
+        ]
+    },
+  
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+             aes7, aes8 , aes9
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-             aes5, aes6
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+             aes10, aes11, aes12
+        ]
+    },
+   
+    {
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+             aes13, aes14 , aes27
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-             aes7, aes8 
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            aes15, aes16,  aes17
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            aes9 , aes10, aes11, aes12
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            aes11, aes27
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-             aes13, aes14 
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            aes15, aes16
-        ]
-    },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            aes17, aes18
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+           aes18, aes19, aes20, 
         ]
     },
 
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-             aes19, aes20, 
-        ]
-    },
+   
 
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            aes21 , aes22
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            aes21 , aes22, aes23
         ]
     },
     {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-            aes23, aes24
+        layout: ["col-md-4 col-12", "col-md-4 col-12", "col-md-4 col-12"], images: [
+            aes24,  aes25, aes26
         ]
     },
-    {
-        layout: ["col-md-6 col-12", "col-md-6 col-12"], images: [
-             aes25, aes26
-        ]
-    },
+  
    
 
 
